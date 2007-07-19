@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p><b>Pushing <font color="#000080">something</font> to <font color="#000080">something</font> </b><a name=PushDir></a> (<i>past tense</i> pushed it to)<br>
+<p>This action covers pushing
+a large object, not being carried, so that the actor pushes it from one room
+to another: for instance, pushing a bale of hay to the east.<br><br>This is really a special case of the going action, and it works in a special
+way (for reasons to do with the history of Inform). If the noun object has
+the either/or property 'pushable between rooms', then the action is converted
+to going at the before stage - so no instead or subsequent rules can apply.
+That means that any rules to do with successful pushes between rooms should
+be applied to the 'going' action, not this one. Rules should only be written
+for this action in order to catch attempts to push exotic, non-pushable
+between rooms objects - people, say.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;push [something] [direction]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;push [something]
+to [direction]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor pushing something to</i>&nbsp;&nbsp;<font color="#800000">block pushing in directions rule</font><br>
+<p><p></font></body></html>

@@ -1,0 +1,9 @@
+! Blurb file created by NI build 4U67
+variable [RELEASE] = "1"
+storyfile "/Users/sussman/projects/robber/robber.inform/Build/output.z5" include
+metadata "/Users/sussman/projects/robber/robber.inform/Metadata.iFiction" include
+variable [YEAR] = "2007"
+variable [TITLE] = "InfoComp Game Entry"
+variable [AUTHOR] = "Ben Collins-Sussman and David Anderson"
+variable [BLURB] = "Here is an introductory paragraph. Make it clear that we're in rural Wyoming in 1870... just one year after the first transcontinental railway was completed, and 3 years after the invention of dynamite. Dynamite is a new thing. Player is an anti-hero, attempting to rob a train."
+variable [IFID] = "8AA7291E-9709-4B6E-A228-FECE28AABCD5"

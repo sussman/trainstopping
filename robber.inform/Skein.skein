@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x69b8a0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x69b8a0" />
+  <item nodeId="node-0x69b8a0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+Here is an introductory paragraph.  Make it clear that we&apos;re in rural Wyoming in 1870... just one year after the first transcontinental railway was completed, and 3 years after the invention of dynamite.  Dynamite is a new thing.  Player is an anti-hero, attempting to rob a train. 
+
+InfoComp Game Entry
+A really cool game. by Ben Collins-Sussman and David Anderson
+Release 1 / Serial number 070719 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
+
+Bluff
+You&apos;re standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3">NO</temporary>
+    <children>
+      <child nodeId="node-0x69b920" />
+    </children>
+  </item>
+  <item nodeId="node-0x69b920">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a hat (being worn)
+  a pocketwatch
+  a train schedule
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3">YES</temporary>
+    <children>
+      <child nodeId="node-0x69b9a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x69b9a0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Bluff
+You&apos;re standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="2">YES</temporary>
+  </item>
+</Skein>

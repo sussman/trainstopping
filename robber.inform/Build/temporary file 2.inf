@@ -1,0 +1,23 @@
+[ Resolver_0 t_0 t_1 filename line;
+if ((((t_0 ofclass K3_direction))) && (((t_1 ofclass K1_room)))) { return   I7_RoomOrDoorFrom(t_1,t_0)  ; }
+Runtime_Type_Error(filename, line);
+  rfalse; ];
+[ Resolver_1 t_0 t_1 filename line;
+if ((((t_0 ofclass K4_door))) && (((t_1 ofclass K1_room)))) { return   I7_OtherSide(t_0,t_1)  ; }
+Runtime_Type_Error(filename, line);
+  rfalse; ];
+[ Resolver_2 t_0 filename line;
+if ((((t_0 ofclass K8_person)))) {   HisHerTheir(t_0);   rtrue; }
+  rfalse; ];
+[ Resolver_3 t_0 t_1 filename line;
+if ((((t_0 ofclass K1_room))) && (((t_1 ofclass K1_room)))) {   return I7_ReckonLight(t_0, t_1);   rtrue; }
+Runtime_Type_Error(filename, line);
+  rfalse; ];
+[ Resolver_4 t_0 t_1 filename line;
+if ((((t_0 ofclass K3_direction))) && (((t_1 ofclass K1_room)))) { return   I7_RoomFrom(t_1,t_0,2)  ; }
+Runtime_Type_Error(filename, line);
+  rfalse; ];
+[ Resolver_5 t_0 t_1 filename line;
+if ((((t_1 ofclass K1_room)))) { return   I7_RoomOrDoorFrom(t_1,t_0)  ; }
+Runtime_Type_Error(filename, line);
+  rfalse; ];
