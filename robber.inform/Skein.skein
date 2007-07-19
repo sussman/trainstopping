@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x69b8a0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x69ffe0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x69b8a0" />
-  <item nodeId="node-0x69b8a0">
+  <activeNode nodeId="node-0x69ffe0" />
+  <item nodeId="node-0x69ffe0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,20 +12,20 @@ Here is an introductory paragraph.  Make it clear that we&apos;re in rural Wyomi
 
 InfoComp Game Entry
 A really cool game. by Ben Collins-Sussman and David Anderson
-Release 1 / Serial number 070719 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
+Release 1 / Serial number 070720 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
 
 Bluff
-You&apos;re standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills.
+You&apos;re standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills. Down and to the north are the railway tracks.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="3">NO</temporary>
     <children>
-      <child nodeId="node-0x69b920" />
+      <child nodeId="node-0x6a0060" />
     </children>
   </item>
-  <item nodeId="node-0x69b920">
+  <item nodeId="node-0x6a0060">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a hat (being worn)
@@ -37,10 +37,10 @@ You&apos;re standing on a bluff, overlooking a combination of sun-blasted plains
     <changed>YES</changed>
     <temporary score="3">YES</temporary>
     <children>
-      <child nodeId="node-0x69b9a0" />
+      <child nodeId="node-0x6a00e0" />
     </children>
   </item>
-  <item nodeId="node-0x69b9a0">
+  <item nodeId="node-0x6a00e0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Bluff
 You&apos;re standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills.

@@ -45,4 +45,4 @@ Every turn when a random chance of 1 in 20 succeeds:
 
 Chapter 1 - The Robbery
 
-The Bluff is a room.  "You're standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills."
+The Bluff is a room.  "You're standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills. Down and to the north are the railway tracks."
