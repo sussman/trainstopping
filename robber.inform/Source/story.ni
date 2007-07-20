@@ -1,7 +1,8 @@
-"InfoComp Game Entry" by Ben Collins-Sussman and David Anderson.
+"Robber" by Ben Collins-Sussman and David Anderson.
 
-The story headline is "A really cool game.".
-The story description is "Here is an introductory paragraph.  Make it clear that we're in rural Wyoming in 1870... just one year after the first transcontinental railway was completed, and 3 years after the invention of dynamite.  Dynamite is a new thing.  Player is an anti-hero, attempting to rob a train.
+The story headline is "An IntroComp 2007 game entry".
+
+The story description is "Here is an introductory paragraph.  Make it clear that we're in rural Wyoming in 1868... just one year before the first transcontinental railway was completed, and one year after the invention of dynamite.  Dynamite is a new thing.  Player is an anti-hero, attempting to rob a train.
 "
 
 [ Background reading:
@@ -11,19 +12,28 @@ http://en.wikipedia.org/wiki/First_Transcontinental_Railroad
 http://en.wikipedia.org/wiki/Dynamite
 ...add more links here..
 
+IDEA:  run into a 21-year old Jesse James, make an impression on him?  (Jesse's first crime was 1868)
+
+IDEA:  remember to describe multiple senses.
+
+REMEMBER:  write tests via 'test me with "command / command / command" '.
+
+IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the chance that your command results in a  no-op (tripping, stumbling, spacing out..).  Allow inebriation to naturally decrease over time, or increase when the player drinks from the flask.  When not inebriated, player can go N turns before a craving kicks in.  The craving increases over time.  The higher the craving, the more likely each command results in a no-op (staring at the flask, caressing the flask, pausing to consider the flask.)  The net result is that the two extremes are equally debilitating;  one wants to keep the protagonist constantly drunk, but only mildly so.  This strategy presents the least disruption to play.  (Will this irritate players too much?  It's sort of a puzzle onto itself, no?)
 ]
 
 Chapter 0 - World Modifications
 
 Use full-length room descriptions and the serial comma.
 When play begins, say the story description.
-When play begins, change the time of day to 9:10 AM.
+When play begins, change the time of day to 10:27 AM.
+
 
 
 Section 1 - Inventory
 
-The player wears a hat.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and to clearly advertise yourself as a denizen of the plains."  The hat is a portable container.  The carrying capacity of the hat is 1.
+The player wears a hat.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains."  The hat is a portable container.  The carrying capacity of the hat is 1.
 
+[Note that we can have a puzzle that involves concealing something from an NPC at some point: ]
 Rule for deciding the concealed possessions of player:
 	if the particular possession is inside the hat and the player wears the hat, yes;
 	otherwise no.
@@ -35,14 +45,42 @@ Carry out time-checking:
 	if the player carries the pocketwatch, say "Your pocketwatch reads [time of day].";
 	otherwise say "You have no way of checking the time."
 	
-The player carries a train schedule.  The description of the train schedule is "blah blah".
-	
 Section 2 - Environmental Effects
 
 Every turn when a random chance of 1 in 20 succeeds:
 	Say "A distant wind blows, echoing over the valley."
 
 
+Section 3 - Inebriation
+
+
+Section 4 - Pistols
+
+
 Chapter 1 - The Robbery
 
-The Bluff is a room.  "You're standing on a bluff, overlooking a combination of sun-blasted plains and craggy hills. Down and to the north are the railway tracks."
+
+Section 1 - The Train
+
+The Train is a backdrop.  The description of the Train is "It's a hulking, steam-driven locomotive, pulling at least ten cars behind it.  [if it is before 10:32 AM] You can see it chugging along, getting closer by the second."
+
+When play begins, remove the train from play.
+Every turn:  if the train is visible, say "There's a train moving down the track, getting closer.".
+
+At 10:29 AM: 
+	Move the train to the Hill Area.;
+	Say "A train appears in the distance, bellowing steam!"
+At 10:34 AM: 
+	Say "The train is now entering the tunnel.".
+At 10:36 AM: 
+	Say "The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam."; 
+	Remove the train from play.
+
+
+Section 2 - Hill Area
+
+The Hill Area is a region.  Bluff, Track are in the Hill Area.
+
+The Track is a backdrop.  Understand "track" and "train track" as The Track.  "The track extends off into the distance, then curves out of sight around a bend." 
+
+The Bluff is a room.  "You're standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain."  Instead of going down, say "You'd surely fall to your death."
