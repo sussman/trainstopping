@@ -1,4 +1,0 @@
-  say__c=0; say__p=1;  print (I7_string) SC_79;    print (PrintTimeOfDay) the_time;    print (I7_string) SC_14;   .L_Say93;
-  rtrue;
-];
-
