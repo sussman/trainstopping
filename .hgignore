@@ -1,0 +1,3 @@
+syntax: glob
+robber.inform/Build/*
+robber.inform/Index/*
