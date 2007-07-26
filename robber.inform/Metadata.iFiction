@@ -6,19 +6,19 @@
             <format>zcode</format>
         </identification>
         <bibliographic>
-            <title>InfoComp Game Entry</title>
+            <title>Robber</title>
             <author>Ben Collins-Sussman and David Anderson</author>
-            <headline>A really cool game.</headline>
+            <headline>An IntroComp 2007 game entry</headline>
             <genre>Fiction</genre>
             <firstpublished>2007</firstpublished>
-            <description>Here is an introductory paragraph. Make it clear that we're in rural Wyoming in 1870... just one year after the first transcontinental railway was completed, and 3 years after the invention of dynamite. Dynamite is a new thing. Player is an anti-hero, attempting to rob a train.</description>
+            <description>Here is an introductory paragraph. Make it clear that we're in rural Wyoming in 1868... just one year before the first transcontinental railway was completed, and one year after the invention of dynamite. Dynamite is a new thing. Player is an anti-hero, attempting to rob a train.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2007-07-19</releasedate>
+                    <releasedate>2007-07-23</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>4U67</compilerversion>
@@ -28,10 +28,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>4U67</generatorversion>
-            <originated>2007-07-19</originated>
+            <originated>2007-07-23</originated>
         </colophon>
         <zcode>
-            <serial>070719</serial>
+            <serial>070723</serial>
             <release>1</release>
             <compiler>Inform 7 build 4U67</compiler>
         </zcode>

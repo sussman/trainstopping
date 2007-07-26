@@ -54,7 +54,28 @@ Every turn when a random chance of 1 in 20 succeeds:
 Section 3 - Inebriation
 
 
-Section 4 - Pistols
+Section 4 - Guns
+
+A gun is a kind of thing.  A gun has a number called the bullet count.  Definition:  a gun is unloaded if its bullet count is 0.   Definition:  a gun is loaded if its bullet count is greater than 0.  After examining a loaded gun, say "It appears to contain [bullet count in words] bullets."
+
+Shooting it with is an action with past participle shot, applying to two visible things.
+Understand "shoot [something] with [something]" as shooting it with. 
+
+Instead of shooting something:
+	if a gun (called the firearm) is held by the player,
+		try shooting the noun with the firearm;
+	otherwise say "You need some sort of firearm to do that."
+
+
+Check shooting it with:
+	if the second noun is not a gun, say "[The second noun] isn't much of a firearm." instead;
+	if the second noun is not loaded, say "[The second noun] isn't loaded." instead.
+Carry out shooting it with:
+	change the bullet count of the second noun to the bullet count of the second noun - 1.
+Report shooting it with:  say "BANG!"
+
+A pistol is a gun.  The player carries a pistol.  The bullet count of the pistol is 4.  The description of the pistol is "It's a mean-looking pistol."
+ 
 
 
 Chapter 1 - The Robbery
@@ -83,4 +104,4 @@ The Hill Area is a region.  Bluff, Track are in the Hill Area.
 
 The Track is a backdrop.  Understand "track" and "train track" as The Track.  "The track extends off into the distance, then curves out of sight around a bend." 
 
-The Bluff is a room.  "You're standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain."  Instead of going down, say "You'd surely fall to your death."
+The Bluff is a room.  "You're standing on a wide bluff fitfy feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain."  Instead of going down, say "You'd surely fall to your death."

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x6b69b0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x6a6080" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x431b580" />
-  <item nodeId="node-0x6b69b0">
+  <activeNode nodeId="node-0x6a6080" />
+  <item nodeId="node-0x6a6080">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -12,245 +12,124 @@ Here is an introductory paragraph.  Make it clear that we&apos;re in rural Wyomi
 
 Robber
 An IntroComp 2007 game entry by Ben Collins-Sussman and David Anderson
-Release 1 / Serial number 070719 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
+Release 1 / Serial number 070723 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
 
 Bluff
-You&apos;re standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain.
+You&apos;re standing on a wide bluff fitfy feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="137">NO</temporary>
+    <temporary score="11">NO</temporary>
     <children>
-      <child nodeId="node-0x3abb170" />
-      <child nodeId="node-0x3d3c8e0" />
-      <child nodeId="node-0x3abad90" />
-      <child nodeId="node-0x3d03940" />
-      <child nodeId="node-0x6b6a30" />
-      <child nodeId="node-0x3a9e2b0" />
-      <child nodeId="node-0x3a0dbe0" />
+      <child nodeId="node-0x15e28110" />
+      <child nodeId="node-0x15e27610" />
+      <child nodeId="node-0x15e27090" />
+      <child nodeId="node-0x15e26b10" />
+      <child nodeId="node-0x15e26910" />
+      <child nodeId="node-0x15e26890" />
+      <child nodeId="node-0x15e258c0" />
+      <child nodeId="node-0x15e257c0" />
+      <child nodeId="node-0x6a5970" />
     </children>
   </item>
-  <item nodeId="node-0x3a0dbe0">
-    <command xml:space="preserve">x track</command>
-    <result xml:space="preserve">The train track extends off into the distance, then curves out of sight around a bend.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="71">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d48d10" />
-      <child nodeId="node-0x3d1ebd0" />
-      <child nodeId="node-0x3d111a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d111a0">
+  <item nodeId="node-0x6a5970">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="71">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="68">YES</temporary>
     <children>
-      <child nodeId="node-0x3d8e050" />
+      <child nodeId="node-0x6a5b90" />
     </children>
   </item>
-  <item nodeId="node-0x3d8e050">
+  <item nodeId="node-0x6a5b90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="68">YES</temporary>
+    <children>
+      <child nodeId="node-0x6a5c10" />
+    </children>
+  </item>
+  <item nodeId="node-0x6a5c10">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:28 am.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="70">YES</temporary>
-  </item>
-  <item nodeId="node-0x3d1ebd0">
-    <command xml:space="preserve">down</command>
-    <result xml:space="preserve">You&apos;d surely fall to your death.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="51">YES</temporary>
+    <temporary score="68">YES</temporary>
     <children>
-      <child nodeId="node-0x3ade600" />
-      <child nodeId="node-0x3aeb9c0" />
+      <child nodeId="node-0x6a5c90" />
     </children>
   </item>
-  <item nodeId="node-0x3aeb9c0">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a82950" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a82950">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:30 am.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d9d260" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d9d260">
-    <command xml:space="preserve">x track</command>
-    <result xml:space="preserve">The train track extends off into the distance, then curves around a bend.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x3dbdc60" />
-    </children>
-  </item>
-  <item nodeId="node-0x3dbdc60">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:32 am.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a6cc30" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a6cc30">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x3aecf60" />
-    </children>
-  </item>
-  <item nodeId="node-0x3aecf60">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-A distant wind blows, echoing over the valley.
-
-You hear the train approaching!
-
-The train is entering the tunnel.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d9d560" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d9d560">
-    <command xml:space="preserve">x train</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a163b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a163b0">
-    <command xml:space="preserve">down</command>
-    <result xml:space="preserve">You&apos;d surely fall to your death.
-
-You hear the train approaching!
-
-The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="50">YES</temporary>
-  </item>
-  <item nodeId="node-0x3ade600">
+  <item nodeId="node-0x6a5c90">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:29 am.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="41">YES</temporary>
+    <temporary score="68">YES</temporary>
     <children>
-      <child nodeId="node-0x3da25d0" />
+      <child nodeId="node-0x6a5d70" />
     </children>
   </item>
-  <item nodeId="node-0x3da25d0">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="41">YES</temporary>
-    <children>
-      <child nodeId="node-0x3aed770" />
-    </children>
-  </item>
-  <item nodeId="node-0x3aed770">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="41">YES</temporary>
-    <children>
-      <child nodeId="node-0x3ae8f20" />
-    </children>
-  </item>
-  <item nodeId="node-0x3ae8f20">
+  <item nodeId="node-0x6a5d70">
     <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:32 am.
+    <result xml:space="preserve">Your pocketwatch reads 10:30 am.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="41">YES</temporary>
+    <temporary score="68">YES</temporary>
     <children>
-      <child nodeId="node-0x33eff60" />
+      <child nodeId="node-0x6a5dc0" />
     </children>
   </item>
-  <item nodeId="node-0x33eff60">
+  <item nodeId="node-0x6a5dc0">
+    <command xml:space="preserve">x train</command>
+    <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least 10 cars behind it.   You can see it chugging in the distance, getting closer by the second. 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="68">YES</temporary>
+    <children>
+      <child nodeId="node-0x6a5e40" />
+    </children>
+  </item>
+  <item nodeId="node-0x6a5e40">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="41">YES</temporary>
+    <temporary score="68">YES</temporary>
     <children>
-      <child nodeId="node-0x3da16d0" />
+      <child nodeId="node-0x15e25590" />
     </children>
   </item>
-  <item nodeId="node-0x3da16d0">
+  <item nodeId="node-0x15e25590">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="68">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e256a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e256a0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -259,473 +138,54 @@ The train is entering the tunnel.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="40">YES</temporary>
-  </item>
-  <item nodeId="node-0x3d48d10">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Bluff
-You&apos;re standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill, and then extends off into the distance and around a bend.  Multiple paths lead further up the mountain.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="56">YES</temporary>
+    <temporary score="68">YES</temporary>
     <children>
-      <child nodeId="node-0x3d8c460" />
+      <child nodeId="node-0x15e256f0" />
     </children>
   </item>
-  <item nodeId="node-0x3d8c460">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-
-*** Run-time problem P1: Tried to move the Train (a backdrop) to Approaching Track, which is not a region.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="56">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a04080" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a04080">
-    <command xml:space="preserve">quit</command>
-    <result xml:space="preserve">Are you sure you want to quit? </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="56">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a3e940" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a3e940">
-    <command xml:space="preserve">y</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="55">YES</temporary>
-  </item>
-  <item nodeId="node-0x3a9e2b0">
-    <command xml:space="preserve">down</command>
-    <result xml:space="preserve">You&apos;d surely fall to your death.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="33">YES</temporary>
-    <children>
-      <child nodeId="node-0x16dd6640" />
-      <child nodeId="node-0x33ea230" />
-    </children>
-  </item>
-  <item nodeId="node-0x33ea230">
-    <command xml:space="preserve">x track</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="32">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a39e70" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a39e70">
-    <command xml:space="preserve">x train track</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="30">YES</temporary>
-  </item>
-  <item nodeId="node-0x16dd6640">
-    <command xml:space="preserve">up</command>
-    <result xml:space="preserve">
-Bluff
-You&apos;re standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill, and then extends off into the distance and around a bend.  Multiple paths lead further up the mountain.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
-  </item>
-  <item nodeId="node-0x6b6a30">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a hat (being worn)
-  a pocketwatch
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x3de6070" />
-      <child nodeId="node-0x16d4b960" />
-    </children>
-  </item>
-  <item nodeId="node-0x16d4b960">
-    <command xml:space="preserve">x hat</command>
-    <result xml:space="preserve">A wide-brimmed hat to protect you from the sun, and to clearly advertise yourself as a denizen of the plains.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="9">YES</temporary>
-    <children>
-      <child nodeId="node-0x16d715d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x16d715d0">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 9:12 am.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="9">YES</temporary>
-  </item>
-  <item nodeId="node-0x3de6070">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x3ae98b0" />
-      <child nodeId="node-0x3dddce0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3dddce0">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-A train appears in the distance, bellowing steam!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x43542a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x43542a0">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-There&apos;s a train moving down the track, getting closer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x43a81d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x43a81d0">
+  <item nodeId="node-0x15e256f0">
     <command xml:space="preserve">x train</command>
-    <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.   You can see it chugging along, getting closer by the second.
-
-A distant wind blows, echoing over the valley.
-
-There&apos;s a train moving down the track, getting closer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d59a80" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d59a80">
-    <command xml:space="preserve">jump</command>
-    <result xml:space="preserve">You jump on the spot, fruitlessly.
-
-There&apos;s a train moving down the track, getting closer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x4377810" />
-    </children>
-  </item>
-  <item nodeId="node-0x4377810">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:33 am.
-
-There&apos;s a train moving down the track, getting closer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a946b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a946b0">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:34 am.
-
-There&apos;s a train moving down the track, getting closer.
-
-The train is now entering the tunnel.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x682820" />
-    </children>
-  </item>
-  <item nodeId="node-0x682820">
-    <command xml:space="preserve">jump down</command>
-    <result xml:space="preserve">I only understood you as far as wanting to jump.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x3a96340" />
-    </children>
-  </item>
-  <item nodeId="node-0x3a96340">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">Bluff
-You&apos;re standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain.
-
-There&apos;s a train moving down the track, getting closer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x431b580" />
-    </children>
-  </item>
-  <item nodeId="node-0x431b580">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-There&apos;s a train moving down the track, getting closer.
+    <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least 10 cars behind it.  
 
 The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="136">YES</temporary>
-  </item>
-  <item nodeId="node-0x3ae98b0">
-    <command xml:space="preserve">down</command>
-    <result xml:space="preserve">You&apos;d surely fall to your death.
-
-A train appears in the distance, bellowing steam!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="103">YES</temporary>
+    <temporary score="68">YES</temporary>
     <children>
-      <child nodeId="node-0x435e020" />
+      <child nodeId="node-0x15e25740" />
     </children>
   </item>
-  <item nodeId="node-0x435e020">
-    <command xml:space="preserve">x</command>
-    <result xml:space="preserve">What do you want to examine?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="103">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d9c110" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d9c110">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  a hat (being worn)
-  a pocketwatch
-
-There&apos;s a train, moving down the track.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="102">YES</temporary>
-  </item>
-  <item nodeId="node-0x3d03940">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:27 am.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x6a4db0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6a4db0">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-A distant wind blows, echoing over the valley.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x16d48f10" />
-    </children>
-  </item>
-  <item nodeId="node-0x16d48f10">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x6b7e00" />
-    </children>
-  </item>
-  <item nodeId="node-0x6b7e00">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x16d55e10" />
-    </children>
-  </item>
-  <item nodeId="node-0x16d55e10">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:31 am.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x3ae6420" />
-    </children>
-  </item>
-  <item nodeId="node-0x3ae6420">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:32 am.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x16da6fa0" />
-    </children>
-  </item>
-  <item nodeId="node-0x16da6fa0">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:33 am.
-
-You hear the train approaching!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x161c1d30" />
-    </children>
-  </item>
-  <item nodeId="node-0x161c1d30">
+  <item nodeId="node-0x15e25740">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="21">YES</temporary>
+    <temporary score="67">YES</temporary>
+  </item>
+  <item nodeId="node-0x15e257c0">
+    <command xml:space="preserve">shoot track</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
     <children>
-      <child nodeId="node-0x33000f0" />
+      <child nodeId="node-0x15e25840" />
     </children>
   </item>
-  <item nodeId="node-0x33000f0">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:34 am.
-
-You hear the train approaching!
-
-The train is entering the tunnel.
+  <item nodeId="node-0x15e25840">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x161dde50" />
-    </children>
+    <temporary score="6">YES</temporary>
   </item>
-  <item nodeId="node-0x161dde50">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-You hear the train approaching!
-
-The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x16d4ab60" />
-    </children>
-  </item>
-  <item nodeId="node-0x16d4ab60">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="21">YES</temporary>
-    <children>
-      <child nodeId="node-0x16d6c1a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x16d6c1a0">
-    <command xml:space="preserve">x train</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="20">YES</temporary>
-  </item>
-  <item nodeId="node-0x3abad90">
+  <item nodeId="node-0x15e258c0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -734,11 +194,11 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>NO</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x3afb310" />
-      <child nodeId="node-0x3abd960" />
+      <child nodeId="node-0x15e26390" />
+      <child nodeId="node-0x15e25940" />
     </children>
   </item>
-  <item nodeId="node-0x3abd960">
+  <item nodeId="node-0x15e25940">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -747,10 +207,10 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>NO</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x6855f0" />
+      <child nodeId="node-0x15e259c0" />
     </children>
   </item>
-  <item nodeId="node-0x6855f0">
+  <item nodeId="node-0x15e259c0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -761,12 +221,12 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x3da0150" />
-      <child nodeId="node-0x3a6a7f0" />
-      <child nodeId="node-0x6c9b40" />
+      <child nodeId="node-0x15e26060" />
+      <child nodeId="node-0x15e25de0" />
+      <child nodeId="node-0x15e25a40" />
     </children>
   </item>
-  <item nodeId="node-0x6c9b40">
+  <item nodeId="node-0x15e25a40">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.   You can see it chugging in the distance, getting closer by the second. 
 
@@ -775,10 +235,10 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="80">YES</temporary>
     <children>
-      <child nodeId="node-0x3dcef60" />
+      <child nodeId="node-0x15e25c10" />
     </children>
   </item>
-  <item nodeId="node-0x3dcef60">
+  <item nodeId="node-0x15e25c10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -787,10 +247,10 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="80">YES</temporary>
     <children>
-      <child nodeId="node-0x3db5df0" />
+      <child nodeId="node-0x15e25610" />
     </children>
   </item>
-  <item nodeId="node-0x3db5df0">
+  <item nodeId="node-0x15e25610">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:32 am.
 
@@ -799,10 +259,10 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="80">YES</temporary>
     <children>
-      <child nodeId="node-0x3dbd0e0" />
+      <child nodeId="node-0x15e25c60" />
     </children>
   </item>
-  <item nodeId="node-0x3dbd0e0">
+  <item nodeId="node-0x15e25c60">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:33 am.
 
@@ -811,10 +271,10 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="80">YES</temporary>
     <children>
-      <child nodeId="node-0x16db4590" />
+      <child nodeId="node-0x15e25ce0" />
     </children>
   </item>
-  <item nodeId="node-0x16db4590">
+  <item nodeId="node-0x15e25ce0">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:34 am.
 
@@ -825,10 +285,10 @@ The train is entering the tunnel.
     <changed>YES</changed>
     <temporary score="80">YES</temporary>
     <children>
-      <child nodeId="node-0x3dec800" />
+      <child nodeId="node-0x15e25d60" />
     </children>
   </item>
-  <item nodeId="node-0x3dec800">
+  <item nodeId="node-0x15e25d60">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.  
 
@@ -839,7 +299,7 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="79">YES</temporary>
   </item>
-  <item nodeId="node-0x3a6a7f0">
+  <item nodeId="node-0x15e25de0">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -850,11 +310,11 @@ You see the train approaching!  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="87">YES</temporary>
     <children>
-      <child nodeId="node-0x3ac1d20" />
-      <child nodeId="node-0x3ab94c0" />
+      <child nodeId="node-0x15e25ee0" />
+      <child nodeId="node-0x15e25e60" />
     </children>
   </item>
-  <item nodeId="node-0x3ab94c0">
+  <item nodeId="node-0x15e25e60">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -863,7 +323,7 @@ You see the train approaching!  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="25">YES</temporary>
   </item>
-  <item nodeId="node-0x3ac1d20">
+  <item nodeId="node-0x15e25ee0">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:31 am.
 
@@ -874,10 +334,10 @@ You see the train approaching!  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="87">YES</temporary>
     <children>
-      <child nodeId="node-0x3d34d50" />
+      <child nodeId="node-0x15e25f60" />
     </children>
   </item>
-  <item nodeId="node-0x3d34d50">
+  <item nodeId="node-0x15e25f60">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a hat (being worn)
@@ -890,10 +350,10 @@ You see the train approaching!  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="87">YES</temporary>
     <children>
-      <child nodeId="node-0x430f540" />
+      <child nodeId="node-0x15e25fe0" />
     </children>
   </item>
-  <item nodeId="node-0x430f540">
+  <item nodeId="node-0x15e25fe0">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:33 am.
 
@@ -904,7 +364,7 @@ You see the train approaching!  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="86">YES</temporary>
   </item>
-  <item nodeId="node-0x3da0150">
+  <item nodeId="node-0x15e26060">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:30 am.
 
@@ -915,10 +375,10 @@ There&apos;s a train moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x16dce330" />
+      <child nodeId="node-0x15e260e0" />
     </children>
   </item>
-  <item nodeId="node-0x16dce330">
+  <item nodeId="node-0x15e260e0">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.   You can see it chugging along, getting closer by the second. 
 
@@ -929,10 +389,10 @@ There&apos;s a train moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x4314790" />
+      <child nodeId="node-0x15e25ac0" />
     </children>
   </item>
-  <item nodeId="node-0x4314790">
+  <item nodeId="node-0x15e25ac0">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.  
 
@@ -943,10 +403,10 @@ There&apos;s a train moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x3d62880" />
+      <child nodeId="node-0x15e25b40" />
     </children>
   </item>
-  <item nodeId="node-0x3d62880">
+  <item nodeId="node-0x15e25b40">
     <command xml:space="preserve">xtrain</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -955,10 +415,10 @@ There&apos;s a train moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x3d47880" />
+      <child nodeId="node-0x15e25bc0" />
     </children>
   </item>
-  <item nodeId="node-0x3d47880">
+  <item nodeId="node-0x15e25bc0">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.  
 
@@ -969,10 +429,10 @@ There&apos;s a train moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x4358150" />
+      <child nodeId="node-0x15e26190" />
     </children>
   </item>
-  <item nodeId="node-0x4358150">
+  <item nodeId="node-0x15e26190">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.   It&apos;s now directly under foot, about to enter the tunnel!
 
@@ -985,10 +445,10 @@ The train is now entering the tunnel.
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x3a21ed0" />
+      <child nodeId="node-0x15e26210" />
     </children>
   </item>
-  <item nodeId="node-0x3a21ed0">
+  <item nodeId="node-0x15e26210">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.   It&apos;s now directly under foot, about to enter the tunnel!
 
@@ -999,10 +459,10 @@ There&apos;s a train moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x43254e0" />
+      <child nodeId="node-0x15e26290" />
     </children>
   </item>
-  <item nodeId="node-0x43254e0">
+  <item nodeId="node-0x15e26290">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.   It&apos;s now directly under foot, about to enter the tunnel!
 
@@ -1015,10 +475,10 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="126">YES</temporary>
     <children>
-      <child nodeId="node-0x3d686d0" />
+      <child nodeId="node-0x15e26310" />
     </children>
   </item>
-  <item nodeId="node-0x3d686d0">
+  <item nodeId="node-0x15e26310">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -1027,7 +487,7 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="125">YES</temporary>
   </item>
-  <item nodeId="node-0x3afb310">
+  <item nodeId="node-0x15e26390">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:28 am.
 
@@ -1036,10 +496,10 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x3d03660" />
+      <child nodeId="node-0x15e26410" />
     </children>
   </item>
-  <item nodeId="node-0x3d03660">
+  <item nodeId="node-0x15e26410">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a hat (being worn)
@@ -1052,10 +512,10 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x3dd11d0" />
+      <child nodeId="node-0x15e26490" />
     </children>
   </item>
-  <item nodeId="node-0x3dd11d0">
+  <item nodeId="node-0x15e26490">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">What do you want to examine?
 
@@ -1064,10 +524,10 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x3d590e0" />
+      <child nodeId="node-0x15e26510" />
     </children>
   </item>
-  <item nodeId="node-0x3d590e0">
+  <item nodeId="node-0x15e26510">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Bluff
 You&apos;re standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain.
@@ -1079,10 +539,10 @@ You see the train approaching.  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x33e4510" />
+      <child nodeId="node-0x15e26590" />
     </children>
   </item>
-  <item nodeId="node-0x33e4510">
+  <item nodeId="node-0x15e26590">
     <command xml:space="preserve">x track</command>
     <result xml:space="preserve">The train track extends off into the distance, then curves out of sight around a bend.
 
@@ -1093,10 +553,10 @@ You see the train approaching.  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x3d8e7b0" />
+      <child nodeId="node-0x15e26610" />
     </children>
   </item>
-  <item nodeId="node-0x3d8e7b0">
+  <item nodeId="node-0x15e26610">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:32 am.
 
@@ -1107,10 +567,10 @@ You see the train approaching.  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x3d47200" />
+      <child nodeId="node-0x15e26690" />
     </children>
   </item>
-  <item nodeId="node-0x3d47200">
+  <item nodeId="node-0x15e26690">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1121,10 +581,10 @@ You see the train approaching.  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x4302ac0" />
+      <child nodeId="node-0x15e26710" />
     </children>
   </item>
-  <item nodeId="node-0x4302ac0">
+  <item nodeId="node-0x15e26710">
     <command xml:space="preserve">time</command>
     <result xml:space="preserve">Your pocketwatch reads 10:34 am.
 
@@ -1137,10 +597,10 @@ The train is entering the tunnel.
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x432eeb0" />
+      <child nodeId="node-0x15e26790" />
     </children>
   </item>
-  <item nodeId="node-0x432eeb0">
+  <item nodeId="node-0x15e26790">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.  
 
@@ -1151,10 +611,10 @@ You see the train approaching.  It&apos;s moving slowly towards you, down the tr
     <changed>YES</changed>
     <temporary score="98">YES</temporary>
     <children>
-      <child nodeId="node-0x3ab0ea0" />
+      <child nodeId="node-0x15e26810" />
     </children>
   </item>
-  <item nodeId="node-0x3ab0ea0">
+  <item nodeId="node-0x15e26810">
     <command xml:space="preserve">x watch</command>
     <result xml:space="preserve">It&apos;s a rusty wind-up timepiece, handed down from your uncle.  It currently reads 10:36 am.
 
@@ -1167,140 +627,68 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="97">YES</temporary>
   </item>
-  <item nodeId="node-0x3d3c8e0">
-    <command xml:space="preserve">x train</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d57be0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d57be0">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
+  <item nodeId="node-0x15e26890">
+    <command xml:space="preserve">x pistol</command>
+    <result xml:space="preserve">It&apos;s a mean-looking pistol.  It appears to have four bullets in it.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d49920" />
-    </children>
+    <temporary score="4">YES</temporary>
   </item>
-  <item nodeId="node-0x3d49920">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:28 am.
+  <item nodeId="node-0x15e26910">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a hat (being worn)
+  a pocketwatch
+  a pistol
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="68">YES</temporary>
+    <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x33ebfe0" />
+      <child nodeId="node-0x15e26990" />
     </children>
   </item>
-  <item nodeId="node-0x33ebfe0">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:29 am.
+  <item nodeId="node-0x15e26990">
+    <command xml:space="preserve">shoot hat</command>
+    <result xml:space="preserve">You shoot hat.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="68">YES</temporary>
+    <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x3ab67d0" />
+      <child nodeId="node-0x15e26a10" />
     </children>
   </item>
-  <item nodeId="node-0x3ab67d0">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 10:30 am.
+  <item nodeId="node-0x15e26a10">
+    <command xml:space="preserve">drop pistol</command>
+    <result xml:space="preserve">Dropped.
+
+A train appears in the distance, bellowing steam!
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="68">YES</temporary>
+    <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x3091bb0" />
+      <child nodeId="node-0x15e26a90" />
     </children>
   </item>
-  <item nodeId="node-0x3091bb0">
-    <command xml:space="preserve">x train</command>
-    <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least 10 cars behind it.   You can see it chugging in the distance, getting closer by the second. 
+  <item nodeId="node-0x15e26a90">
+    <command xml:space="preserve">shoot hat</command>
+    <result xml:space="preserve">You don&apos;t have a gun.
+
+There&apos;s a train moving down the track, getting closer.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0x4306d80" />
-    </children>
+    <temporary score="10">YES</temporary>
   </item>
-  <item nodeId="node-0x4306d80">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d7d930" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d7d930">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d59b10" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d59b10">
-    <command xml:space="preserve">z</command>
-    <result xml:space="preserve">Time passes.
-
-The train is entering the tunnel.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0x3dcf2d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x3dcf2d0">
-    <command xml:space="preserve">x train</command>
-    <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least 10 cars behind it.  
-
-The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0x3d5d050" />
-    </children>
-  </item>
-  <item nodeId="node-0x3d5d050">
-    <command xml:space="preserve">x train</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="67">YES</temporary>
-  </item>
-  <item nodeId="node-0x3abb170">
+  <item nodeId="node-0x15e26b10">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">What do you want to examine?
 
@@ -1309,10 +697,10 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3df15f0" />
+      <child nodeId="node-0x15e26b90" />
     </children>
   </item>
-  <item nodeId="node-0x3df15f0">
+  <item nodeId="node-0x15e26b90">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   a hat (being worn)
@@ -1323,10 +711,10 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3d59bc0" />
+      <child nodeId="node-0x15e26c10" />
     </children>
   </item>
-  <item nodeId="node-0x3d59bc0">
+  <item nodeId="node-0x15e26c10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1335,10 +723,10 @@ The train disappears into the tunnel below you, echoing loudly, leaving behind a
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3a37810" />
+      <child nodeId="node-0x15e26c90" />
     </children>
   </item>
-  <item nodeId="node-0x3a37810">
+  <item nodeId="node-0x15e26c90">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1349,10 +737,10 @@ A train appears in the distance, bellowing steam!
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3d8e6c0" />
+      <child nodeId="node-0x15e26d10" />
     </children>
   </item>
-  <item nodeId="node-0x3d8e6c0">
+  <item nodeId="node-0x15e26d10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1363,10 +751,10 @@ There&apos;s a train, moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3aeb360" />
+      <child nodeId="node-0x15e26d90" />
     </children>
   </item>
-  <item nodeId="node-0x3aeb360">
+  <item nodeId="node-0x15e26d90">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1377,10 +765,10 @@ There&apos;s a train, moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x33b7310" />
+      <child nodeId="node-0x15e26e10" />
     </children>
   </item>
-  <item nodeId="node-0x33b7310">
+  <item nodeId="node-0x15e26e10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1391,10 +779,10 @@ There&apos;s a train, moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x433e230" />
+      <child nodeId="node-0x15e26e90" />
     </children>
   </item>
-  <item nodeId="node-0x433e230">
+  <item nodeId="node-0x15e26e90">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1405,10 +793,10 @@ There&apos;s a train, moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3d710e0" />
+      <child nodeId="node-0x15e26f10" />
     </children>
   </item>
-  <item nodeId="node-0x3d710e0">
+  <item nodeId="node-0x15e26f10">
     <command xml:space="preserve">z</command>
     <result xml:space="preserve">Time passes.
 
@@ -1421,10 +809,10 @@ The train is now entering the tunnel.
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3d563f0" />
+      <child nodeId="node-0x15e26f90" />
     </children>
   </item>
-  <item nodeId="node-0x3d563f0">
+  <item nodeId="node-0x15e26f90">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">What do you want to examine?
 
@@ -1433,10 +821,10 @@ The train is now entering the tunnel.
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x3d58670" />
+      <child nodeId="node-0x15e27010" />
     </children>
   </item>
-  <item nodeId="node-0x3d58670">
+  <item nodeId="node-0x15e27010">
     <command xml:space="preserve">x train</command>
     <result xml:space="preserve">It&apos;s a hulking, steam-driven locomotive, pulling at least ten cars behind it.  
 
@@ -1446,5 +834,471 @@ There&apos;s a train, moving down the track, getting closer.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="113">YES</temporary>
+  </item>
+  <item nodeId="node-0x15e27090">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:27 am.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27110" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27110">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+A distant wind blows, echoing over the valley.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27190" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27190">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27210" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27210">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27290" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27290">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:31 am.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27310" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27310">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:32 am.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27390" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27390">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:33 am.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27410" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27410">
+    <command xml:space="preserve">x train</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27490" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27490">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:34 am.
+
+You hear the train approaching!
+
+The train is entering the tunnel.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27510" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27510">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+You hear the train approaching!
+
+The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27590" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27590">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="21">YES</temporary>
+  </item>
+  <item nodeId="node-0x15e27610">
+    <command xml:space="preserve">x track</command>
+    <result xml:space="preserve">The train track extends off into the distance, then curves out of sight around a bend.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="71">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27f10" />
+      <child nodeId="node-0x15e27790" />
+      <child nodeId="node-0x15e27690" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27690">
+    <command xml:space="preserve">x train</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="71">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27710" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27710">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:28 am.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="70">YES</temporary>
+  </item>
+  <item nodeId="node-0x15e27790">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">You&apos;d surely fall to your death.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27c10" />
+      <child nodeId="node-0x15e27810" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27810">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27890" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27890">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:30 am.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27910" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27910">
+    <command xml:space="preserve">x track</command>
+    <result xml:space="preserve">The train track extends off into the distance, then curves around a bend.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27990" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27990">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:32 am.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27a10" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27a10">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+You hear the train approaching!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27a90" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27a90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+A distant wind blows, echoing over the valley.
+
+You hear the train approaching!
+
+The train is entering the tunnel.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27b10">
+    <command xml:space="preserve">x train</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27b90" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27b90">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">You&apos;d surely fall to your death.
+
+You hear the train approaching!
+
+The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="50">YES</temporary>
+  </item>
+  <item nodeId="node-0x15e27c10">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:29 am.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27c90" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27c90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27d10" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27d10">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27d90" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27d90">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 10:32 am.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27e10" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27e10">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27e90" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27e90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The train is entering the tunnel.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+  </item>
+  <item nodeId="node-0x15e27f10">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Bluff
+You&apos;re standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill, and then extends off into the distance and around a bend.  Multiple paths lead further up the mountain.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e27f90" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e27f90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+
+*** Run-time problem P1: Tried to move the Train (a backdrop) to Approaching Track, which is not a region.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e28010" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e28010">
+    <command xml:space="preserve">quit</command>
+    <result xml:space="preserve">Are you sure you want to quit? </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e28090" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e28090">
+    <command xml:space="preserve">y</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="55">YES</temporary>
+  </item>
+  <item nodeId="node-0x15e28110">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">You&apos;d surely fall to your death.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="33">YES</temporary>
+    <children>
+      <child nodeId="node-0x6a59c0" />
+      <child nodeId="node-0x15e28190" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e28190">
+    <command xml:space="preserve">x track</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="32">YES</temporary>
+    <children>
+      <child nodeId="node-0x15e28210" />
+    </children>
+  </item>
+  <item nodeId="node-0x15e28210">
+    <command xml:space="preserve">x train track</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="30">YES</temporary>
+  </item>
+  <item nodeId="node-0x6a59c0">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Bluff
+You&apos;re standing on a wide bluff halfway up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill, and then extends off into the distance and around a bend.  Multiple paths lead further up the mountain.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="27">YES</temporary>
   </item>
 </Skein>
