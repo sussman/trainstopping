@@ -56,9 +56,12 @@ Section 3 - Inebriation
 
 Section 4 - Guns
 
-A gun is a kind of thing.  A gun has a number called the bullet count.  Definition:  a gun is unloaded if its bullet count is 0.   Definition:  a gun is loaded if its bullet count is greater than 0.  After examining a loaded gun, say "It appears to contain [bullet count in words] bullets."
+A gun is a kind of thing.  A gun has a number called the bullet count.  Definition:  a gun is unloaded if its bullet count is 0.   Definition:  a gun is loaded if its bullet count is greater than 0.  After examining a loaded gun, say "It appears to contain [bullet count in words] bullets."  After examining an unloaded gun, say "It appears to be unloaded."
 
+Shooting is an action with past participle shot, applying to one visible thing.
 Shooting it with is an action with past participle shot, applying to two visible things.
+
+Understand "shoot [something]" as shooting.
 Understand "shoot [something] with [something]" as shooting it with. 
 
 Instead of shooting something:
@@ -66,15 +69,16 @@ Instead of shooting something:
 		try shooting the noun with the firearm;
 	otherwise say "You need some sort of firearm to do that."
 
-
 Check shooting it with:
 	if the second noun is not a gun, say "[The second noun] isn't much of a firearm." instead;
 	if the second noun is not loaded, say "[The second noun] isn't loaded." instead.
+
 Carry out shooting it with:
 	change the bullet count of the second noun to the bullet count of the second noun - 1.
-Report shooting it with:  say "BANG!"
 
-A pistol is a gun.  The player carries a pistol.  The bullet count of the pistol is 4.  The description of the pistol is "It's a mean-looking pistol."
+Report shooting it with:  say "BANG!  You shoot [the noun] with [the second noun]."
+
+A pistol is a gun.  The player carries a pistol.  Understand "gun" as the pistol.  The bullet count of the pistol is 4.  The description of the pistol is "It's a mean-looking pistol."
  
 
 
