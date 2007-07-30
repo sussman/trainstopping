@@ -71,7 +71,7 @@ Instead of shooting something:
 
 Check shooting it with:
 	if the second noun is not a gun, say "[The second noun] isn't much of a firearm." instead;
-	if the second noun is not loaded, say "[The second noun] isn't loaded." instead.
+	if the second noun is not loaded, say "[The second noun] has no ammunition." instead.
 
 Carry out shooting it with:
 	change the bullet count of the second noun to the bullet count of the second noun - 1.
@@ -87,25 +87,34 @@ Chapter 1 - The Robbery
 
 Section 1 - The Train
 
-The Train is a backdrop.  The description of the Train is "It's a hulking, steam-driven locomotive, pulling at least ten cars behind it.  [if it is before 10:32 AM] You can see it chugging along, getting closer by the second."
+The Train is a vehicle.  The description of the Train is "It's a hulking, steam-driven locomotive, pulling at least ten cars behind it.  [if it is before 10:32 AM] You can see it chugging along, getting closer by the second."
+
+After deciding the scope of the player while in the Bluff:
+	if the train is in the Hill Area, place the Train in scope.
 
 When play begins, remove the train from play.
-Every turn:  if the train is visible, say "There's a train moving down the track, getting closer.".
 
 At 10:29 AM: 
-	Move the train to the Hill Area.;
-	Say "A train appears in the distance, bellowing steam!"
+	Move the train to the Distant Track;
+	Say "A train whistles in the distance, bellowing steam!"
+At 10:30 AM:
+	If the player is in the Hill Area, say "The train is moving down the track, getting closer!".
 At 10:34 AM: 
-	Say "The train is now entering the tunnel.".
+	Move the train to the Track below;
+	If the player is in the Hill Area, say "The train is now entering the tunnel.".
 At 10:36 AM: 
-	Say "The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam."; 
+	If the player is in the Hill Area, say "The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.";
 	Remove the train from play.
 
 
 Section 2 - Hill Area
 
-The Hill Area is a region.  Bluff, Track are in the Hill Area.
+The Hill Area is a region.  Bluff, Track, Distant Track, Track Below are in the Hill Area.
 
 The Track is a backdrop.  Understand "track" and "train track" as The Track.  "The track extends off into the distance, then curves out of sight around a bend." 
+
+The Distant Track is a room.  The Distant Track is north of the Track Below.
+
+The Track Below is a room.  The Track Below is below the Bluff.
 
 The Bluff is a room.  "You're standing on a wide bluff fitfy feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain."  Instead of going down, say "You'd surely fall to your death."
