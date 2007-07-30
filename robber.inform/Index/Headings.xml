@@ -47,21 +47,21 @@
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>81</integer>
+        <key>Line</key><integer>85</integer>
         <key>Title</key><string>Chapter 1 - The Robbery</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>84</integer>
+        <key>Line</key><integer>88</integer>
         <key>Title</key><string>Section 1 - The Train</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>101</integer>
+        <key>Line</key><integer>110</integer>
         <key>Title</key><string>Section 2 - Hill Area</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>

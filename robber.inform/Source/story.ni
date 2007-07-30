@@ -25,7 +25,7 @@ Chapter 0 - World Modifications
 
 Use full-length room descriptions and the serial comma.
 When play begins, say the story description.
-When play begins, change the time of day to 10:27 AM.
+When play begins, change the time of day to 9:15 AM.
 
 
 
@@ -98,10 +98,10 @@ At 10:29 AM:
 	Move the train to the Distant Track;
 	Say "A train whistles in the distance, bellowing steam!"
 At 10:30 AM:
-	If the player is in the Hill Area, say "The train is moving down the track, getting closer!".
+	If the player is in the Hill Area, say "The train is moving down the track, getting closer.".
 At 10:34 AM: 
 	Move the train to the Track below;
-	If the player is in the Hill Area, say "The train is now entering the tunnel.".
+	If the player is in the Hill Area, say "The train is now entering the tunnel!".
 At 10:36 AM: 
 	If the player is in the Hill Area, say "The train disappears into the tunnel below you, echoing loudly, leaving behind a wisp of steam.";
 	Remove the train from play.
