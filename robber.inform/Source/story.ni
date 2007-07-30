@@ -117,4 +117,17 @@ The Distant Track is a room.  The Distant Track is north of the Track Below.
 
 The Track Below is a room.  The Track Below is below the Bluff.
 
-The Bluff is a room.  "You're standing on a wide bluff fitfy feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain."  Instead of going down, say "You'd surely fall to your death."
+The Bluff is a room.  "You're standing on a wide bluff fitfy feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain."  Instead of going down from the Bluff, say "You'd surely fall to your death."
+
+The Rock Circle is a room.  The Rock Circle is east of the Bluff and below the Summit.  "What an interesting circle of rocks!"
+
+The Grassy Plateau is a room.  The Grassy Plateau is southwest of the Bluff.  "Ooh, it's grassy here."
+
+The Summit is a room.  The Summit is east of the Grassy Plateau.  "We're very high up here."
+
+The Copse is a room.  The Copse is below the Grassy Plateau.  "Lots of trees."
+
+The Dirt Road is a room.  The Dirt Road is south of the Copse.  "This is a dusty road."
+
+The Cliff Edge is west of the Grassy Plateau.  "Ooh, scary cliff."
+
