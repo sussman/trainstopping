@@ -1,9 +1,9 @@
-! Blurb file created by NI build 4U67
+! Blurb file created by NI build 4U65
 variable [RELEASE] = "1"
-storyfile "/Users/sussman/projects/robber/robber.inform/Build/output.z5" include
-metadata "/Users/sussman/projects/robber/robber.inform/Metadata.iFiction" include
+storyfile "/home/sussman/homedir/projects/robber/robber.inform/Build/output.z5" include
+metadata "/home/sussman/homedir/projects/robber/robber.inform/Metadata.iFiction" include
 variable [YEAR] = "2007"
-variable [TITLE] = "Robber"
-variable [AUTHOR] = "Ben Collins-Sussman and David Anderson"
-variable [BLURB] = "Here is an introductory paragraph. Make it clear that we're in rural Wyoming in 1868... just one year before the first transcontinental railway was completed, and one year after the invention of dynamite. Dynamite is a new thing. Player is an anti-hero, attempting to rob a train."
+variable [TITLE] = "Basic Training"
+variable [AUTHOR] = "Ben Collins-Sussman"
+variable [BLURB] = "BAM! A mug of ale hits the table, splashing your shoes. Muddy Charlie slumps back in his chair, eyes you carefully, and starts to chuckle.<br/>'You know your problem? You don't think big enough.'<br/>His expression is familiar. Last time you saw that look, it was just before you two decided to steal a neighbor's sheep herd back in '66. That didn't work so well.<br/>'What now?' you ask. 'A new idea?'<br/>'Big plans.' He grins widely. 'That new cross-country railroad is almost finished. It's gonna change everything... bigger trains, more people... and bigger cargoes.'<br/>'A train holdup? We ain't no army!'<br/>'Relax. This time we got [italic type]technology[roman type] on our side... straight from Sweden. It's big, dangerous, and nobody knows about it.'<br/>'A new weapon?'<br/>'Dynamic, buddy. Dynamic Might.'"
 variable [IFID] = "8AA7291E-9709-4B6E-A228-FECE28AABCD5"

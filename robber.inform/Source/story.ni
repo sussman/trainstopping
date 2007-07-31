@@ -1,13 +1,30 @@
-"Robber" by Ben Collins-Sussman and David Anderson.
+"Basic Training" by Ben Collins-Sussman.
 
 The story headline is "An IntroComp 2007 game entry".
 
-The story description is "Here is an introductory paragraph.  Make it clear that we're in rural Wyoming in 1868... just one year before the first transcontinental railway was completed, and one year after the invention of dynamite.  Dynamite is a new thing.  Player is an anti-hero, attempting to rob a train.
+The story description is "BAM!  A mug of ale hits the table, splashing your shoes.  Muddy Charlie slumps back in his chair, eyes you carefully, and starts to chuckle.
+
+'You know your problem?  You don't think big enough.'
+
+His expression is familiar.  Last time you saw that look, it was just before you two decided to steal a neighbor's sheep herd back in '66.  That didn't work so well.
+
+'What now?' you ask.  'A new idea?'
+
+'Big plans.'  He grins widely.  'That new cross-country railroad is almost finished.  It's gonna change everything... bigger trains, more people... and bigger cargoes.'
+
+'A train holdup?  We ain't no army!'
+
+'Relax.  This time we got [italic type]technology[roman type] on our side... straight from Sweden.  It's big, dangerous, and nobody knows about it.'
+
+'A new weapon?'
+
+'Dynamic, buddy.  Dynamic Might.'
 "
+
 
 [ Background reading:
 
-http://en.wikipedia.org/wiki/Train_robbery	
+http://en.wikipedia.org/wiki/Train_robbery
 http://en.wikipedia.org/wiki/First_Transcontinental_Railroad
 http://en.wikipedia.org/wiki/Dynamite
 ...add more links here..
@@ -24,10 +41,10 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 Chapter 0 - World Modifications
 
 Use full-length room descriptions and the serial comma.
-When play begins, move the player to the Dirt Road, without printing a room description.
-When play begins, say the story description.
-When play begins, change the time of day to 10:15 AM.
-
+When play begins:
+        say the story description;
+        change the time of day to 10:15 AM.
+[        move the player to the Dirt Road, without printing a room description.]
 
 
 Section 1 - Inventory
@@ -66,7 +83,7 @@ Shooting is an action with past participle shot, applying to one visible thing.
 Shooting it with is an action with past participle shot, applying to two visible things.
 
 Understand "shoot [something]" as shooting.
-Understand "shoot [something] with [something]" as shooting it with. 
+Understand "shoot [something] with [something]" as shooting it with.
 
 Instead of shooting something:
 	if a gun (called the firearm) is held by the player,
@@ -82,11 +99,10 @@ Carry out shooting it with:
 	if the second noun is a person or animal, remove the second noun from play;
 	change the bullet count of the second noun to the bullet count of the second noun - 1.
 
-Report shooting it with:  
+Report shooting it with:
 	say "BANG!  You shoot [the noun] with [the second noun]. [if the noun is a person]  Murder can be... fun. [line break][otherwise] I hope you weren't expecting much."
 
 A pistol is a gun.  The player carries a pistol.  Understand "gun" as the pistol.  The bullet count of the pistol is 4.  The description of the pistol is "It's a mean-looking pistol."  The inventory listing of the pistol is "your trusty pistol".
- 
 
 
 Chapter 1 - The Robbery
@@ -103,7 +119,7 @@ When play begins, remove the train from play.
 
 Train Arrival is a scene.  Train Arrival begins when the time of day is 10:28 AM.  Train Arrival ends when the time since Train Arrival began is 7 minutes.
 
-When Train Arrival begins: 
+When Train Arrival begins:
 	Move the train to the Distant Track;
 	Say "A train whistles in the distance, bellowing steam!";
 	Train approaches in 1 minute from now.
@@ -157,8 +173,16 @@ The Grassy Plateau is southwest of the Bluff.  "Ooh, it's grassy here."
 
 The Summit is east of the Grassy Plateau.  "We're very high up here."
 
-The Copse is below the Grassy Plateau.  "Lots of trees."
-
-The Dirt Road is south of the Copse.  "This is a dusty road."
+The Copse is below the Grassy Plateau and north of the Dirt Road.  "Lots of trees."
 
 The Cliff Edge is west of the Grassy Plateau.  "Ooh, scary cliff."
+
+The Dirt Road is a room.  The Dirt Road contains the player.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  He said he'd meet you on the train, but that it was up to you to stop the train first.
+
+Hm.  Stopping a train.  How hard could that be?
+
+Now that your horse has inexplicably bolted, you're certainly in need of some luck.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The hot sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north, say "You shamble slowly toward the trees."
+
+The eastern road is east of the Dirt Road.
+
+The western road is west of the Dirt Road.
