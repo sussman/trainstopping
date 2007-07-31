@@ -24,9 +24,9 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 Chapter 0 - World Modifications
 
 Use full-length room descriptions and the serial comma.
+When play begins, move the player to the Dirt Road, without printing a room description.
 When play begins, say the story description.
 When play begins, change the time of day to 10:15 AM.
-When play begins, move the player to the Dirt Road.
 
 
 

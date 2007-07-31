@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x6c4c50" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x18f629a0" />
+  <activeNode nodeId="node-0x6c4c50" />
   <item nodeId="node-0x6c4c50">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 
-Here is an introductory paragraph.  Make it clear that we&apos;re in rural Wyoming in 1868... just one year before the first transcontinental railway was completed, and one year after the invention of dynamite.  Dynamite is a new thing.  Player is an anti-hero, attempting to rob a train. 
 Dirt Road
 This is a dusty road.
 
+Here is an introductory paragraph.  Make it clear that we&apos;re in rural Wyoming in 1868... just one year before the first transcontinental railway was completed, and one year after the invention of dynamite.  Dynamite is a new thing.  Player is an anti-hero, attempting to rob a train. 
 
 Robber
 An IntroComp 2007 game entry by Ben Collins-Sussman and David Anderson
-Release 1 / Serial number 070730 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
+Release 1 / Serial number 070731 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
 
 Dirt Road
 This is a dusty road.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="218">NO</temporary>
     <children>
       <child nodeId="node-0x6a0d10" />
@@ -885,18 +885,6 @@ This is a dusty road.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="16">YES</temporary>
-    <children>
-      <child nodeId="node-0x6b7400" />
-    </children>
-  </item>
-  <item nodeId="node-0x6b7400">
-    <command xml:space="preserve">time</command>
-    <result xml:space="preserve">Your pocketwatch reads 9:28 am.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="15">YES</temporary>
   </item>
   <item nodeId="node-0x6c4ca0">
     <command xml:space="preserve">z</command>
