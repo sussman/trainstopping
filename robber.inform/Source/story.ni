@@ -245,11 +245,23 @@ A person is either protected or unprotected.  A person is usually unprotected.
 After entering the circle of rocks: now the player is protected; continue the action.
 After exiting:  if the container exited from is the circle of rocks, now the player is unprotected; continue the action.
 
-The stick bundle is a thing.  Understand "sticks" and "bundle" as the stick bundle.  The description is "It looks like a bundle of small cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.
+The stick bundle is a portable transparent container.  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "It looks like a bundle of small cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.  After examining the bundle, say "It currently contains [contents of bundle].".
 
-The Bluff contains the stick bundle.
+[TODO:  define code here to 'explode' the dynamite.  This code can be shared by the 'shoot dynamite' block, as well as the sparker tool setting it off.]
+
+The sparker tool is a portable supporter.  Understand "sparker" and "tool" as the sparker tool.  The description is "You've seen something like this before;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks."
+
+Instead of pushing the sparker tool:
+        say "The sparker tool shoots a few sparks from one end.";
+        if the sparker is inside the bundle, say "BOOM".
+
+
+The Bluff contains the stick bundle and the sparker tool.
 After deciding the scope of the player while in the Rock Circle or Summit:
 	if the bundle is in the Bluff, place the bundle in scope.
+
+
+
 
 After shooting the bundle with a gun:
 	say "A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
@@ -280,15 +292,15 @@ The Distant Track is a room.  The Distant Track is north of the Track Below.
 
 The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff."
 
-The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush."  Instead of going down from the Bluff, say "You'd surely fall to your death!"  The circle of rocks is here.  Understand "rocks" and "circle" and "formation" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
+The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush."  Instead of going down from the Bluff, say "You'd surely fall to your death!"  The circle of rocks is here.  Understand "rocks" and "circle" and "formation" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
 
 The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain.   The grasses are nearly five feet high, full of life.  A nice place to take a nap, if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
-
-The Summit is east of the Grassy Plateau.  "We're very high up here."
 
 The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are pine cones littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."
 
 The Cliff Edge is west of the Grassy Plateau.  "Ooh, scary cliff."
+
+The Summit is east of the Grassy Plateau.  "We're very high up here."
 
 The Dirt Road is a room.  The Dirt Road contains the player.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
