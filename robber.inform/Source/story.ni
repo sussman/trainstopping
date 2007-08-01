@@ -1,4 +1,4 @@
-"Basic Training" by Ben Collins-Sussman.
+"Trainstopping" by Ben Collins-Sussman.
 
 The story headline is "An IntroComp 2007 game entry".
 
@@ -6,15 +6,15 @@ The story description is "BAM!  A mug of ale hits the table, splashing your shoe
 
 'You know your problem?  You don't think big enough.'
 
-His expression is familiar.  Last time you saw that look, it was just before you two decided to steal a neighbor's sheep herd back in '66.  That didn't work so well.
+His expression is familiar.  Last time you saw that look, it was just before you two decided to hijack the mayor's private herd back in 1866.  That didn't work so well.
 
 'What now?' you ask.  'A new idea?'
 
-'Big plans.'  He grins widely.  'That new cross-country railroad is almost finished.  It's gonna change everything... bigger trains, more people... and bigger cargoes.'
+'Big plans.'  He grins widely.  'That new cross-country railroad is almost finished.  It's gonna change everything... bigger trains, more people... and prize-winning cargo.'
 
-'A train holdup?  We ain't no army!'
+'A train holdup?  Are you kidding?'
 
-'Relax.  This time we got [italic type]technology[roman type] on our side... straight from Sweden.  It's big, dangerous, and nobody knows about it.'
+'Relax.  This time we got [italic type]technology[roman type] on our side.'  He leans close and whispers:  'Made in Sweden... or Germany.  It's big, dangerous, and nobody knows about it yet.'
 
 'A new weapon?'
 
@@ -44,8 +44,6 @@ Use full-length room descriptions and the serial comma.
 When play begins:
         say the story description;
         change the time of day to 10:15 AM.
-[        move the player to the Dirt Road, without printing a room description.]
-
 
 Section 1 - Inventory
 
@@ -63,13 +61,13 @@ Carry out time-checking:
 	if the player carries the pocketwatch, say "Your pocketwatch reads [time of day].";
 	otherwise say "You have no way of checking the time."
 
-The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoreing train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should speeding through this mountain around 10:30am.  Angry smeared handwriting screams 'mountain tzqchutunnel, zlcgggdyna-nite.  DON'T BELLATE.'".
+The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoreing train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should speeding through this mountain around 10:30am.  Angry smeared handwriting screams 'MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON'T BELLATE.'".
 
 
 Section 2 - Environmental Effects
 
 Every turn when a random chance of 1 in 20 succeeds:
-	Say "A distant wind blows, echoing over the valley."
+	Say "A distant wind blows, echoing over the hills."
 
 
 Section 3 - Inebriation
@@ -152,9 +150,22 @@ Every turn:
 		move the chipmunk to next space;
 		if the chipmunk is visible, say "A chipmunk scampers into the area.";
 	end if.
+	
+Section 3 - Dynamite
+
+The stick bundle is a thing.  Understand "sticks" and "bundle" as the stick bundle.  The description is "It looks like a bundle of small cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however."
+
+The Bluff contains the stick bundle.
+After deciding the scope of the player while in the Rock Circle or Summit:
+	if the bundle is in the Bluff, place the bundle in scope.
+
+After shooting the bundle with a gun:
+	remove the bundle from play;
+	say "BOOM, a big explosion ensues!";
+	continue the action.
 
 
-Section 3 - Hill Area
+Section 4 - Hill Area
 
 The Tunnel Area is a region.  Bluff, Track, Distant Track, Track Below are in the Tunnel Area.
 The Hill Area is a region.  Rock Circle, Grassy Plateau, Summit, Copse, Dirt Road, Cliff Edge are in the Hill Area.
@@ -165,7 +176,7 @@ The Distant Track is a room.  The Distant Track is north of the Track Below.
 
 The Track Below is below the Bluff.
 
-The Bluff is a room.  "You're standing on a wide bluff fitfy feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  Multiple paths lead further up the mountain."  Instead of going down from the Bluff, say "You'd surely fall to your death."
+The Bluff is a room.  "You're standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  To the east, you see a strange rock formation, and a path wanders southwest through the brush."  Instead of going down from the Bluff, say "You'd surely fall to your death."
 
 The Rock Circle is east of the Bluff and below the Summit.  "What an interesting circle of rocks!"
 
@@ -177,12 +188,8 @@ The Copse is below the Grassy Plateau and north of the Dirt Road.  "Lots of tree
 
 The Cliff Edge is west of the Grassy Plateau.  "Ooh, scary cliff."
 
-The Dirt Road is a room.  The Dirt Road contains the player.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  He said he'd meet you on the train, but that it was up to you to stop the train first.
+The Dirt Road is a room.  The Dirt Road contains the player.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north, say "You shamble slowly toward the trees."
 
-Hm.  Stopping a train.  How hard could that be?
+The eastern road is east of the Dirt Road. [not accessible]
 
-Now that your horse has inexplicably bolted, you're certainly in need of some luck.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The hot sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north, say "You shamble slowly toward the trees."
-
-The eastern road is east of the Dirt Road.
-
-The western road is west of the Dirt Road.
+The western road is west of the Dirt Road. [not accessible]
