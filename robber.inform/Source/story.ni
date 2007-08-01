@@ -168,9 +168,27 @@ When Train Arrival ends:
                 if the player is in the Mountainside, say "Seeing the collapsed tunnel, the train engineer yells and slams the brakes!  The giant machine shrieks;  steam and sparks pour from the engine, and the train comes to a stop just inches before the tunnel debris.  You can hear all sorts of panic and screams coming from the train.[paragraph break]In fact, that looks like Muddy himself leaning out of the train window!  He's wildly gesticulating at you.  Is that a a thumbs-up signal he's giving you?";
         end if;
 
-Section 2 - Animals
+Post-Train is a scene.  Post-Train begins when Train Arrival ends.
 
-The chipmunk is an animal.  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.
+When Post-Train begins:
+        denouement happens in 2 turns from now.
+
+[TODO: add some real end-game verbiage here]
+At the time when denouement happens:
+        if tunnel is closed
+        begin;
+                Say "Suddenly, three badged men arrest you, and carry you off to prison.  But hey, at least you executed the Plan!";
+                end the game in victory;
+        end if;
+        if tunnel is open
+        begin;
+                Say "You realize that the train is gone.  Muddy is gonna be real mad.";
+                end the game saying "You failed the mission.";
+        end if.
+
+
+
+Section 2 - Animals
 
 The vulture is an animal.  "A vulture circles omniously overhead."  The description is "Large and black, with a huge wingspan.   He seems to hang in the air, waiting for something to happen."  When play begins, move the vulture to the Summit.
 
@@ -185,13 +203,36 @@ Every turn:
 	end if.
 
 
+The acorn is an edible thing.  The acorn is in the Grassy Plateau.
+
+The chipmunk is an animal.  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.
+
+Table of Chipmunk Fear
+Effect
+"The chipmunk suddenly shoots you a look of utter fear."
+"The chipmunk notices something terrifying and freezes in place for a moment."
+"The chipmunk spins around, looks at you, then panics."
+"The chipmunk turns its gaze dramatically at you;  is that an orchestra playing?"
+
+Every turn:
+        if the chipmunk is in a room (called the current space) and the chipmunk can see a gun
+        begin;
+ 		let next space be a random room which is adjacent to the current space;
+		let way be the best route from the current space to the next space;
+                choose a random row in the Table of Chipmunk Fear;
+	        if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts, heading [way].";
+		move the chipmunk to next space;
+        end if;
+
+
+
 Section 3 - Dynamite
 
 A person is either protected or unprotected.  A person is usually unprotected.
 After entering the circle of rocks: now the player is protected; continue the action.
 After exiting:  if the container exited from is the circle of rocks, now the player is unprotected; continue the action.
 
-The stick bundle is a thing.  Understand "sticks" and "bundle" as the stick bundle.  The description is "It looks like a bundle of small cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however."
+The stick bundle is a thing.  Understand "sticks" and "bundle" as the stick bundle.  The description is "It looks like a bundle of small cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.
 
 The Bluff contains the stick bundle.
 After deciding the scope of the player while in the Rock Circle or Summit:
@@ -203,6 +244,7 @@ After shooting the bundle with a gun:
 	begin;
 		say "Unfortunately, being unprotected, you were engulfed in the flames.";
 		end the game saying "Ouch.";
+                stop the action;
 	end if;
         if the bundle is in the bluff
         begin;
@@ -243,23 +285,3 @@ The eastern road is east of the Dirt Road. [not accessible]
 The western road is west of the Dirt Road. [not accessible]
 
 
-Section 5 - Post-Train
-
-
-Post-Train is a scene.  Post-Train begins when Train Arrival ends.
-
-When Post-Train begins:
-        denouement happens in 2 turns from now.
-
-[TODO: add some real end-game verbiage here]
-At the time when denouement happens:
-        if tunnel is closed
-        begin;
-                Say "Suddenly, three badged men arrest you, and carry you off to prison.  But hey, at least you executed the Plan!";
-                end the game in victory;
-        end if;
-        if tunnel is open
-        begin;
-                Say "You realize that the train is gone.  Muddy is gonna be real mad.";
-                end the game saying "You failed the mission.";
-        end if.
