@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x6c6610" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x18e55e00" />
+  <activeNode nodeId="node-0x1a512ef0" />
   <item nodeId="node-0x6c6610">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -38,13 +38,23 @@ This is a dusty trail that wanders off east and west for miles.  The sun blasts 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="221">NO</temporary>
+    <temporary score="222">NO</temporary>
     <children>
       <child nodeId="node-0x160c0e50" />
       <child nodeId="node-0x18ef48e0" />
       <child nodeId="node-0x198a0a70" />
       <child nodeId="node-0x160bddd0" />
+      <child nodeId="node-0x1a512ef0" />
     </children>
+  </item>
+  <item nodeId="node-0x1a512ef0">
+    <command xml:space="preserve">x paper</command>
+    <result xml:space="preserve">The paper contains scribblings from the Little Snoreing train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner&apos;s calculations, it should speeding through this mountain around 10:30am.  Angry smeared handwriting screams &quot;MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON&apos;T BELLATE.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="221">YES</temporary>
   </item>
   <item nodeId="node-0x160bddd0">
     <command xml:space="preserve">time</command>
@@ -1492,9 +1502,8 @@ You can see a stick bundle here.
     <changed>NO</changed>
     <temporary score="158">YES</temporary>
     <children>
-      <child nodeId="node-0x18ea0ba0" />
       <child nodeId="node-0x174770f0" />
-      <child nodeId="node-0x17d121e0" />
+      <child nodeId="node-0x18ea0ba0" />
       <child nodeId="node-0x17478890" />
     </children>
   </item>
@@ -1801,49 +1810,6 @@ The train is moving down the track, getting closer.
     <changed>YES</changed>
     <temporary score="120">YES</temporary>
   </item>
-  <item nodeId="node-0x17d121e0">
-    <command xml:space="preserve">open rocks</command>
-    <result xml:space="preserve">That&apos;s not something you can open.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="96">YES</temporary>
-    <children>
-      <child nodeId="node-0x17d83f90" />
-    </children>
-  </item>
-  <item nodeId="node-0x17d83f90">
-    <command xml:space="preserve">close rocks</command>
-    <result xml:space="preserve">That&apos;s not something you can close.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="95">YES</temporary>
-  </item>
-  <item nodeId="node-0x174770f0">
-    <command xml:space="preserve">enter circle</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="101">YES</temporary>
-    <children>
-      <child nodeId="node-0x17d50f40" />
-    </children>
-  </item>
-  <item nodeId="node-0x17d50f40">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Bluff (in the circle of rocks)
-You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.
-
-You can see a stick bundle here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="100">YES</temporary>
-  </item>
   <item nodeId="node-0x18ea0ba0">
     <command xml:space="preserve">x rocks</command>
     <result xml:space="preserve">The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It&apos;s not clear if they fell into this formation, or were pushed.
@@ -1911,5 +1877,27 @@ You&apos;re standing on a wide bluff about fifty feet up a small mountain, overl
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="132">YES</temporary>
+  </item>
+  <item nodeId="node-0x174770f0">
+    <command xml:space="preserve">enter circle</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="101">YES</temporary>
+    <children>
+      <child nodeId="node-0x17d50f40" />
+    </children>
+  </item>
+  <item nodeId="node-0x17d50f40">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Bluff (in the circle of rocks)
+You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.
+
+You can see a stick bundle here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="100">YES</temporary>
   </item>
 </Skein>

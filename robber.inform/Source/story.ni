@@ -10,7 +10,7 @@ His expression is familiar.  Last time you saw that look, it was just before you
 
 'What now?' you ask.  'A new idea?'
 
-'Big plans.'  He grins widely.  'That new cross-country railroad is almost finished.  It's gonna change everything... bigger trains, more people... and prize-winning cargo.'
+'Big plans.'  He grins widely.  'That new cross-country railroad is almost finished.  It's gonna change everything... bigger trains, more people... and prize cargo.'
 
 'A train holdup?  Are you kidding?'
 
