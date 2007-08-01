@@ -52,7 +52,7 @@ Instead of examining the player, say "Big boots, pants, a tattered overcoat.  Yo
 The player wears a hat.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains."  The hat is a portable container.  The carrying capacity of the hat is 1.
 
 [Note that we can have a puzzle that involves concealing something from an NPC at some point: ]
-Rule for deciding the concealed possessions of player:
+Rule for deciding the concealed possessions of the player:
 	if the particular possession is inside the hat and the player wears the hat, yes;
 	otherwise no.
 
@@ -132,7 +132,7 @@ Chapter 1 - The Robbery
 
 Section 1 - The Train
 
-The Train is a vehicle.  The description of the Train is "It's a hulking, steam-driven locomotive, pulling at least ten cars behind it.  [if it is before 10:32 AM] You can see it chugging along, getting closer by the second."
+The Train is a vehicle.  The description of the Train is "It's a hulking, steam-driven locomotive, with at least ten cars behind it."
 
 After deciding the scope of the player while in the Mountainside:
         place the tunnel in scope;
@@ -203,7 +203,7 @@ Every turn:
 	end if.
 
 
-The acorn is an edible thing.  The acorn is in the Grassy Plateau.
+The acorn is an edible thing.  The acorn is in the Cliff Edge.
 
 The chipmunk is an animal.  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.
 
@@ -214,16 +214,29 @@ Effect
 "The chipmunk spins around, looks at you, then panics."
 "The chipmunk turns its gaze dramatically at you;  is that an orchestra playing?"
 
-Every turn:
-        if the chipmunk is in a room (called the current space) and the chipmunk can see a gun
+Every turn when the chipmunk is in a room (called the current space):
+        if the chipmunk can see a gun
         begin;
- 		let next space be a random room which is adjacent to the current space;
-		let way be the best route from the current space to the next space;
-                choose a random row in the Table of Chipmunk Fear;
-	        if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts, heading [way].";
-		move the chipmunk to next space;
+                if the acorn is visible
+                begin;
+                        if the chipmunk is visible, say "The chipmunk seems paralyzed in place, caught between fear and desire!";
+                otherwise;
+ 		        let next space be a random room which is adjacent to the current space;
+		        let way be the best route from the current space to the next space;
+                        choose a random row in the Table of Chipmunk Fear;
+	                if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts away, speeding [way].";
+		        move the chipmunk to next space;
+                end if;
+        otherwise;
+                if the acorn is visible
+                begin;
+                        try the chipmunk taking the acorn;
+                otherwise;
+                        if the chipmunk is visible, say "The chipmunk sniffs around, mostly ignoring you.";
+                end if;
         end if;
 
+[TODO:  why is the chipmunk still able to see the gun in the hat??]
 
 
 Section 3 - Dynamite
