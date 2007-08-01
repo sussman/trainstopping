@@ -94,17 +94,24 @@ Check shooting it with:
 
 Carry out shooting it with:
 	[TODO:  this doesn't work.  How do we actually *kill* a person or animal or self?]
-	if the second noun is the player
-	begin;
-		say "Suicide, eh?";
-		end the game saying "You shot yourself.";
-	end if;
-	if the second noun is a person or animal, remove the second noun from play;
 	change the bullet count of the second noun to the bullet count of the second noun - 1;
 	say "BANG!  You shoot [the noun] with [the second noun]. [if the noun is a person]  Murder can be... fun.[line break]";
 	continue the action.
+	
+After shooting something (called the victim) with a gun:
+	if the victim is the player
+	begin;
+		say "Suicide, eh?";
+		end the game in death;
+	end if;
+	if the victim is a person or animal
+	begin;
+		say "[The victim] collapses to the ground.";
+		remove the victim from play;
+	end if;
+	continue the action.
 
-[Report shooting it with:]
+[Report shooting it with: ??]
 
 A pistol is a gun.  The player carries a pistol.  Understand "gun" as the pistol.  The bullet count of the pistol is 4.  The description of the pistol is "It's a mean-looking pistol."  The inventory listing of the pistol is "your trusty pistol".
 
