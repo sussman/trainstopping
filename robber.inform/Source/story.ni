@@ -41,6 +41,7 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 Chapter 0 - World Modifications
 
 Use full-length room descriptions and the serial comma.
+Use no scoring.
 When play begins:
         say the story description;
         change the time of day to 10:15 AM.
@@ -208,7 +209,18 @@ Every turn:
 
 The acorn is an edible thing.  The acorn is in the Cliff Edge.  The description is "Um, it's a small, brown nut-like object."
 
-The chipmunk is an animal.  "A chipmunk scurries about."  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.
+The chipmunk is an animal.  "A chipmunk scurries about."  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.  
+
+An animal is either plotting or innocent.  An animal is usually innocent.
+Every turn when the chipmunk is plotting for more than 1 turn:
+	if an acorn is supported by the sparker and the sparker is inside the bundle
+	begin;
+		if the chipmunk is visible, say "The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!";
+		explode the bundle;
+	otherwise;
+		try the chipmunk taking the acorn;
+		now the chipmunk is innocent;
+	end if;
 
 Table of Chipmunk Fear
 Effect
@@ -235,13 +247,7 @@ Every turn when the chipmunk is in a room (called the current space):
         otherwise;
 	if an acorn is visible and the acorn is not carried by the player
             	begin;
-		if an acorn is supported by the sparker and the sparker is inside the bundle
-		begin;
-			if the chipmunk is visible, say "The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!";
-			explode the bundle;
-		otherwise;
-			try the chipmunk taking acorn;
-		end if;
+		now the chipmunk is plotting;
 	otherwise;
 		if the player carries an acorn
 		begin;
@@ -252,6 +258,7 @@ Every turn when the chipmunk is in a room (called the current space):
 	end if;
         end if;
 
+[Possible bug:  if chipmunk dies, this rule produces 'must supply a noun' on each turn?]
 Every turn:
 	if the location of the chipmunk is not the location of the player
 	begin;
