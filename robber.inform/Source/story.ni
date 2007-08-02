@@ -45,6 +45,7 @@ When play begins:
         say the story description;
         change the time of day to 10:15 AM.
 
+
 Section 1 - Player's Inventory
 
 Instead of examining the player, say "Big boots, pants, a tattered overcoat.  You're quite the desperado, ain't ya?".
@@ -207,7 +208,7 @@ Every turn:
 
 The acorn is an edible thing.  The acorn is in the Cliff Edge.  The description is "Um, it's a small, brown nut-like object."
 
-The chipmunk is an animal.  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.
+The chipmunk is an animal.  "A chipmunk scurries about."  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.
 
 Table of Chipmunk Fear
 Effect
@@ -219,24 +220,48 @@ Effect
 Every turn when the chipmunk is in a room (called the current space):
         if the chipmunk can see a gun
         begin;
-                if the acorn is visible
+                if an acorn is visible or the player carries an acorn
                 begin;
-                        if the chipmunk is visible, say "The chipmunk seems paralyzed in place, caught between fear and desire!";
+		if the chipmunk is visible, say "The chipmunk seems paralyzed in place, caught between fear and desire!";
+		if the chipmunk carries the acorn, try the chipmunk dropping the acorn;
                 otherwise;
- 		        let next space be a random room which is adjacent to the current space;
-		        let way be the best route from the current space to the next space;
-                        choose a random row in the Table of Chipmunk Fear;
-	                if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts away, speeding [way].";
-		        move the chipmunk to next space;
+		if the chipmunk carries the acorn, try the chipmunk dropping the acorn;
+		let next space be a random room which is adjacent to the current space;
+		let way be the best route from the current space to the next space;
+                        	choose a random row in the Table of Chipmunk Fear;
+		if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts away, speeding [way].";
+		move the chipmunk to next space;
                 end if;
         otherwise;
-                if the acorn is visible
-                begin;
-                        try the chipmunk taking the acorn;
-                otherwise;
-                        if the chipmunk is visible, say "The chipmunk sniffs around, mostly ignoring you.";
-                end if;
+	if an acorn is visible and the acorn is not carried by the player
+            	begin;
+		if an acorn is supported by the sparker and the sparker is inside the bundle
+		begin;
+			if the chipmunk is visible, say "The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!";
+			explode the bundle;
+		otherwise;
+			try the chipmunk taking acorn;
+		end if;
+	otherwise;
+		if the player carries an acorn
+		begin;
+			if the chipmunk is visible, say "The chipmunk looks at your possessions longingly.";
+		otherwise;
+		if the chipmunk is visible, say "The chipmunk sniffs around, mostly ignoring you.";
+		end if;
+	end if;
         end if;
+
+Every turn:
+	if the location of the chipmunk is not the location of the player
+	begin;
+		if the player carries an acorn
+		begin;
+			let the way be the best route from the location of the chipmunk to the location of the player;
+			try chipmunk going the way;
+		end if;
+	end if;
+	
 
 Section 3 - Dynamite
 
