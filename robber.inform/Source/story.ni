@@ -286,12 +286,13 @@ Instead of pushing the sparker tool:
         say "The sparker tool shoots a few sparks from one end.";
         if the sparker is inside the bundle, explode the bundle.
 
+Instead of shooting the bundle with a gun when the player is inside the rocks:
+	say "You can't aim correctly, the rocks are in your way."
+
 After shooting the bundle with a gun:
 	explode the bundle.	
 
 The Bluff contains the stick bundle and the sparker tool.
-After deciding the scope of the player while in the Rock Circle or Summit:
-	if the bundle is in the Bluff, place the bundle in scope.
 
 To explode the bundle:
 	[Step 1:  describe the explosion if we can see it.]
