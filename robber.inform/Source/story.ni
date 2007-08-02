@@ -45,15 +45,18 @@ When play begins:
         say the story description;
         change the time of day to 10:15 AM.
 
-Section 1 - Inventory
+Section 1 - Player's Inventory
 
 Instead of examining the player, say "Big boots, pants, a tattered overcoat.  You're quite the desperado, ain't ya?".
 
-The player wears a hat.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains."  The hat is a portable container.  The carrying capacity of the hat is 1.
+The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 1.
 
-[Note that we can have a puzzle that involves concealing something from an NPC at some point: ]
 Rule for deciding the concealed possessions of the player:
 	if the particular possession is inside the hat and the player wears the hat, yes;
+	otherwise no.
+	
+Rule for deciding the concealed possessions of the hat:
+	if the player wears the hat, yes;
 	otherwise no.
 
 The player carries a pocketwatch.  Understand "watch" as the pocketwatch. The description of the pocketwatch is "It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads [time of day]."
@@ -235,15 +238,13 @@ Every turn when the chipmunk is in a room (called the current space):
                 end if;
         end if;
 
-[TODO:  why is the chipmunk still able to see the gun in the hat??]
-
-
 Section 3 - Dynamite
 
 A person is either protected or unprotected.  A person is usually unprotected.
 After entering the circle of rocks:
 	if the player does not carry the bundle, now the player is protected; continue the action.
-After exiting:  if the container exited from is the circle of rocks, now the player is unprotected; continue the action.
+After exiting:  
+	if the container exited from is the circle of rocks, now the player is unprotected; continue the action.
 
 The stick bundle is a portable transparent container.  "You see a bundle of small brown sticks."  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.  After examining the bundle, say "It currently contains [contents of bundle].".
 
@@ -261,19 +262,33 @@ After deciding the scope of the player while in the Rock Circle or Summit:
 	if the bundle is in the Bluff, place the bundle in scope.
 
 To explode the bundle:
-	say "A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
-	if the player can see the bundle and the player is unprotected
+	[Step 1:  describe the explosion if we can see it.]
+	if the bundle is visible, say "A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
+	
+	[Step 2:  make the explosion kill other people if necessary]
+	if the bundle can be seen by the player and the player is unprotected
 	begin;
-		say "Unfortunately, being unprotected, you were engulfed in the flames.";
-		end the game saying "Ouch.";
-                stop the action;
+		Say "Unfortunately, being unprotected, you were engulfed by the flames.";
+		end the game saying "Ouch";
+		stop the action;
 	end if;
-        if the bundle or player is in the bluff
-        begin;
-                say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and entire front of the bluff violently collapses downward, filling the tunnel below!";
-                now the tunnel is closed;
-                now the bluff is destroyed;
-        end if;
+
+	if the bundle can be seen by someone (called the victim)
+	begin;
+		if the victim is unprotected
+		begin;
+			if the victim is visible, say "[The victim] screams and is torn apart by the exposion.";
+			remove the victim from play;
+		end if;
+	end if;
+		
+	[Step 3:  possibly destroy the bluff]
+        	if the bundle is in the bluff
+        	begin;
+                	if the bundle is visible, say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and entire front of the bluff violently collapses downward, filling the tunnel below!";
+                	now the tunnel is closed;
+                	now the bluff is destroyed;
+        	end if;
 	remove the bundle from play;
 	continue the action.
 
@@ -283,13 +298,13 @@ Section 4 - Hill Area
 The Mountainside is a region.  Bluff, Track, Distant Track, Track Below are in the Mountainside.
 The Hill Area is a region.  Rock Circle, Grassy Plateau, Summit, Copse, Dirt Road, Cliff Edge are in the Hill Area.
 
-The Track is a backdrop.  Understand "track" and "train track" as The Track.  "The track extends off into the distance, then curves out of sight around a far-off hill."
+The Track is a backdrop.  Understand "track" and "train track" as The Track.  "The track extends off into the distance, then curves out of sight around a far-off hill. [if Train Arrival is happening] You spy a long train on the track. [end if]"
 
 The Distant Track is a room.  The Distant Track is north of the Track Below.
 
 The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it."
 
-The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush."  Instead of going down from the Bluff, say "You'd surely fall to your death!"  The circle of rocks is here.  Understand "rocks" and "circle" and "formation" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
+The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  The circle of rocks is here.  Understand "rocks" and "circle" and "formation" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
 
 The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a napw if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
 

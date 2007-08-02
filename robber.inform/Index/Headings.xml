@@ -20,48 +20,48 @@
     <key>2</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
         <key>Line</key><integer>48</integer>
-        <key>Title</key><string>Section 1 - Inventory</string>
+        <key>Title</key><string>Section 1 - Player's Inventory</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>69</integer>
+        <key>Line</key><integer>72</integer>
         <key>Title</key><string>Section 2 - Environmental Effects</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>84</integer>
+        <key>Line</key><integer>87</integer>
         <key>Title</key><string>Section 3 - Inebriation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>87</integer>
+        <key>Line</key><integer>90</integer>
         <key>Title</key><string>Section 4 - Guns</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>130</integer>
+        <key>Line</key><integer>133</integer>
         <key>Title</key><string>Chapter 1 - The Robbery</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>133</integer>
+        <key>Line</key><integer>136</integer>
         <key>Title</key><string>Section 1 - The Train</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>191</integer>
+        <key>Line</key><integer>194</integer>
         <key>Title</key><string>Section 2 - Animals</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
@@ -75,7 +75,7 @@
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>281</integer>
+        <key>Line</key><integer>296</integer>
         <key>Title</key><string>Section 4 - Hill Area</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
