@@ -202,8 +202,7 @@ Every turn:
 		if the vulture is visible, say "High above, a vulture glides into the area.";
 	end if.
 
-
-The acorn is an edible thing.  The acorn is in the Cliff Edge.
+The acorn is an edible thing.  The acorn is in the Cliff Edge.  The description is "Um, it's a small, brown nut-like object."
 
 The chipmunk is an animal.  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.
 
@@ -242,36 +241,34 @@ Every turn when the chipmunk is in a room (called the current space):
 Section 3 - Dynamite
 
 A person is either protected or unprotected.  A person is usually unprotected.
-After entering the circle of rocks: now the player is protected; continue the action.
+After entering the circle of rocks:
+	if the player does not carry the bundle, now the player is protected; continue the action.
 After exiting:  if the container exited from is the circle of rocks, now the player is unprotected; continue the action.
 
-The stick bundle is a portable transparent container.  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "It looks like a bundle of small cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.  After examining the bundle, say "It currently contains [contents of bundle].".
-
-[TODO:  define code here to 'explode' the dynamite.  This code can be shared by the 'shoot dynamite' block, as well as the sparker tool setting it off.]
+The stick bundle is a portable transparent container.  "You see a bundle of small brown sticks."  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.  After examining the bundle, say "It currently contains [contents of bundle].".
 
 The sparker tool is a portable supporter.  Understand "sparker" and "tool" as the sparker tool.  The description is "You've seen something like this before;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks."
 
 Instead of pushing the sparker tool:
         say "The sparker tool shoots a few sparks from one end.";
-        if the sparker is inside the bundle, say "BOOM".
+        if the sparker is inside the bundle, explode the bundle.
 
+After shooting the bundle with a gun:
+	explode the bundle.	
 
 The Bluff contains the stick bundle and the sparker tool.
 After deciding the scope of the player while in the Rock Circle or Summit:
 	if the bundle is in the Bluff, place the bundle in scope.
 
-
-
-
-After shooting the bundle with a gun:
+To explode the bundle:
 	say "A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
-	if the location of the player contains the bundle and the player is unprotected
+	if the player can see the bundle and the player is unprotected
 	begin;
 		say "Unfortunately, being unprotected, you were engulfed in the flames.";
 		end the game saying "Ouch.";
                 stop the action;
 	end if;
-        if the bundle is in the bluff
+        if the bundle or player is in the bluff
         begin;
                 say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and entire front of the bluff violently collapses downward, filling the tunnel below!";
                 now the tunnel is closed;
@@ -290,13 +287,13 @@ The Track is a backdrop.  Understand "track" and "train track" as The Track.  "T
 
 The Distant Track is a room.  The Distant Track is north of the Track Below.
 
-The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff."
+The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it."
 
 The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush."  Instead of going down from the Bluff, say "You'd surely fall to your death!"  The circle of rocks is here.  Understand "rocks" and "circle" and "formation" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
 
-The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain.   The grasses are nearly five feet high, full of life.  A nice place to take a nap, if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
+The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a napw if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
 
-The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are pine cones littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."
+The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  The description of the pine cone is "Yep, it's a pine cone."  A tree is in the Copse.  The tree is scenery.  The description of the tree is "It's a particularly tall pine tree."  Instead of climbing the tree, say "You're too old for that.  No jewel-encrusted egg for you."
 
 The Cliff Edge is west of the Grassy Plateau.  "Ooh, scary cliff."
 
