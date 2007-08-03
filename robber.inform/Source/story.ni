@@ -138,13 +138,26 @@ A pistol is a gun.  The player carries a pistol.  Understand "gun" as the pistol
 
 Section 4 - Other Rules
 
-[TODO:  Is there a better way to do this?  :-) ]
 An openable container called the eyes are part of the player.  The eyes are open.  The carrying capacity of the eyes is 0.  The description of the eyes is "Your eyes are... er, some color.  You don't remember."
 [Instead of putting something in the eyes, say "Ouch, that would hurt!".]
 Instead of dropping the eyes, say "Is that a joke?"
 
 Instead of closing the eyes, now every room is dark.
 Instead of opening the eyes, now every room is not dark.
+
+[Taken from the documention example:]
+Waiting more is an action applying to one number.
+Understand "wait [number] minutes/turns" or "wait [number]" as waiting more.
+
+Carry out waiting more: 
+    let duration be the number understood - 1; 
+    repeat with X running from 1 to duration 
+    begin; 
+        follow the turn sequence rules; 
+    end repeat.
+
+Report waiting more: 
+    say "It is now [time of day + 1 minute]."
 
 
 Chapter 1 - The Robbery
@@ -197,13 +210,13 @@ When Post-Train begins:
 At the time when denouement happens:
         if tunnel is closed
         begin;
-                Say "Suddenly, three badged men arrest you, and carry you off to prison.  But hey, at least you executed the Plan!";
-                end the game in victory;
+	say "You feel a tap on your back, and you spin around.[paragraph break]Three guns are pointed in your face.[paragraph break]'We know all about your plan', one of Marshalls states coldly.  'We've been tracking you and Muddy for days.  Keep your hands in the air, and follow us.'[paragraph break]You can see that Muddy is here, also held at gunpoint and already handcuffed.  You pause for a moment, consider your options, then decide that death is perhaps worse than being locked in a cell with an angry Muddy.[paragraph break]'Don't worry', Muddy whispers.  [italic type]'I have a plan...'[roman type]";
+	end the game in victory;
         end if;
         if tunnel is open
         begin;
-                Say "You realize that the train is gone.  Muddy is gonna be real mad.";
-                end the game saying "You failed the mission.";
+	say "You pause in your tracks for a moment.[paragraph break]That was clearly the train	that just passed through the mountain, and you missed it.  Muddy is gonna kill you.  Perhaps you should have gotten better instructions from him.";
+	end the game saying "You failed the mission.";
         end if.
 
 
@@ -393,7 +406,7 @@ After shooting the acorn:
 		say "What luck!  You hit a tiny branch, and the acorn tumbles to the ground.";
 		move the acorn to the Lone Tree Bluff;
 	otherwise;
-		say "Yikes, that's a small target.  Your bullet sails right past it.";
+		say "Yikes, that's a small target.  Your bullet sails right past it.  I guess you could always try again.";
 	end if;
 	continue the action.
 	
