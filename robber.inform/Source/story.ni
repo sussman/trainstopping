@@ -85,6 +85,8 @@ Effect
 "A brief breeze flaps your clothing."
 "You hear some crickets chirp nearby."
 "The sun mercilessly continues to bake the land."
+"The smell of hyacinth wafts in the air."
+"A bird chirps somewhere near."
 
 Every turn when a random chance of 1 in 10 succeeds:
         choose a random row in the Table of Environmental Effects;
@@ -168,9 +170,8 @@ Section 1 - The Train
 The Train is a vehicle.  The description of the Train is "It's a hulking, steam-driven locomotive, with at least ten cars behind it."
 
 After deciding the scope of the player while in the Mountainside:
-        place the tunnel in scope;
-	if the train is in the Mountainside, place the Train in scope.
-
+	place the Track Below in scope.
+	
 When play begins, remove the train from play.
 
 Train Arrival is a scene.  Train Arrival begins when the time of day is 10:28 AM.  Train Arrival ends when the time since Train Arrival began is 7 minutes.
@@ -306,9 +307,9 @@ After entering the circle of rocks:
 After exiting:  
 	if the container exited from is the circle of rocks, now the player is unprotected; continue the action.
 
-The stick bundle is a portable transparent container.  "You see a bundle of small brown sticks."  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.  After examining the bundle, say "It currently contains [contents of bundle].".
+The stick bundle is a portable transparent container.  "You see a bundle of small brown sticks."  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "You've never seen anything like this before.  It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.  After examining the bundle, say "It currently contains [contents of bundle].".
 
-The sparker tool is a portable supporter.  Understand "sparker" and "tool" as the sparker tool.  The description is "You've seen something like this before;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks."
+The sparker tool is a portable supporter.  Understand "sparker" and "tool" as the sparker tool.  The description is "This thing seems familiar;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks.  It's good for starting campfires or lighting stoves."
 
 Instead of pushing the sparker tool:
         say "The sparker tool shoots a few sparks from one end.";
@@ -320,7 +321,7 @@ Instead of shooting the bundle with a gun when the player is inside the rocks:
 After shooting the bundle with a gun:
 	explode the bundle.	
 
-The shrub contains the stick bundle and the sparker tool.
+The box contains the stick bundle and the sparker tool.
 
 To explode the bundle:
 	[Step 1:  describe the explosion if we can see it.]
@@ -357,37 +358,47 @@ To explode the bundle:
 Section 4 - Hill Area
 
 The Mountainside is a region.  Bluff, Track, Distant Track, Track Below are in the Mountainside.
-The Hill Area is a region.  Rock Circle, Grassy Plateau, Summit, Copse, Dirt Road, Cliff Edge are in the Hill Area.
+The Hill Area is a region.  Rock Circle, Grassy Plateau, Summit, Copse, Dirt Road, Chasm are in the Hill Area.
+
+The sky is a backdrop.  The sky is everywhere.   "It's brightly lit, full of saturated blue, not a cloud in sight."
 
 The Track is a backdrop.  Understand "track" and "train track" as The Track.  "The track extends off into the distance, then curves out of sight around a far-off hill. [if Train Arrival is happening] You spy a long train on the track. [end if]"
 
 The Distant Track is a room.  The Distant Track is north of the Track Below.
 
-The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it."
+The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it, and some sort of stick is pushing through."  
 
-The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  The circle of rocks is here.  Understand "rocks" and "circle" and "formation" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
+The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  
 
+The circle of rocks is here.  Understand "rocks" and "circle" and "formation" and "rock formation" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
+
+The tunnel-arch is in the Bluff.  The tunnel-arch is scenery.  The tunnel-arch is a container.  The description of the tunnel-arch is "It's the top of the tunnel arch's stonework, just reachable from the bluff."
+
+A long stick is in the tunnel-arch.  Understand "stick" as the long stick.  The description of the long stick is "It's a thin stick, about two feet long."  
+	
 The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a napw if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
 
-The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  The description of the pine cone is "Yep, it's a pine cone."  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."
+The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  The description of the pine cone is "Yep, it's a pine cone." [red herring]  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."
 
-The Cliff Edge is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff."
+The Chasm is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff."
 
-Instead of going west from the Cliff Edge:
-	if the Cliff Edge is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
+Instead of going west from the Chasm:
+	if the Chasm is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
 	otherwise continue the action.
 
 Instead of going east from the Lone Tree Bluff:
-	if the Cliff Edge is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
+	if the Chasm is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
 	otherwise continue the action.
 
-The Rope Bridge is west of the Cliff Edge.  "You're in the middle of the rope bridge.  The space below makes you nauseous."  Instead of listening while in the Rope Bridge, say "You hear the gentle creaking of the bridge, and the wind whistling below your feet."  
+The Rope Bridge is west of the Chasm.  "You're in the middle of the rope bridge.  The space below makes you nauseous."  Instead of listening while in the Rope Bridge, say "You hear the gentle creaking of the bridge, and the wind whistling below your feet."  
 
 Instead of going to a room from the Rope Bridge:
 	if the Rope Bridge is not dark, say "You're paralyzed with fear.  The height is unbearable.";
 	otherwise continue the action.
 
-The Lone Tree Bluff is west of the Rope Bridge.  "This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it's an eruption of countless branches and thick bushy leaves."  
+The Lone Tree Bluff is west of the Rope Bridge.  "This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it's an eruption of countless branches and thick bushy leaves."
+
+A bucket is in the Lone Tree Bluff.  The bucket is a portable, transparent, open container.  "Looks like someone left a rusty old bucket here."  The description is "It's an old green bucket, well-used." [Red herring]  The carrying capacity of the bucket is 1.
 
 An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" as the branch.  The branch is a supporter.  The description of the branch is  "It appears that one very tall branch has an acorn hanging from it." The acorn is on the branch.
 
@@ -412,9 +423,30 @@ After shooting the acorn:
 	
 The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and slowly climb up the mountain.[paragraph break][end if]Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face."
 
-A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a transparent container.  The shrub is scenery.  The description of the shrub is "Why, it's just big enough to hide some illicit equipment![if the shrub contains things]  Buried within the shrub you see [a list of things in the shrub].[end if]"
+The cliff is in the Summit.  The cliff is scenery.  The description is "It's a stark drop at the eastern edge of the summit.  Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.  [if the string is in the shrub]There's a string tied to the box, leading up to a shrub.[end if]".
 
-The Dirt Road is a room.  [The Dirt Road contains the player.]  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."
+A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a container.  The shrub is scenery.  The description of the shrub is "It's an ordinary shrub.[If the shrub contains the string]  Or... wait, is that a piece of string tied to its base?[end if]"
+
+The string is inside the shrub.  The description of the string is "The string is tied to the base of the shrub, and seems to run along the ground behind the shrub.   It then dips down out of sight off a cliff at the eastern part the summit."
+
+Instead of taking the string:
+	say "As you untie the string from the shrub, you feel a gentle snap on the other end.  The string then slips from your grip and slides off the cliff.";
+	remove the string from play.
+
+Instead of taking the box:
+	if the player does not carry the stick
+	begin;
+		say "There's no way you can reach down to the box, it's at least a couple of feet out of reach.  Maybe if you had a stick?";
+	otherwise;
+		say "You lean down off the cliff and delicately balance the edge of the box on your stick, carefully bringing it up to you.";
+		continue the action;
+	end if.
+
+The outcropping is part of the cliff.  The outcropping is a supporter.  The description is "It's a small outcropping sticking out from the wall of the cliff, just hanging in space."
+
+The box is a closed, openable, portable container.  The box is on the outcropping.  The description is "It's a small wooden box, with the words 'Warning:  Handle Carefully' stamped on it."
+
+The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
 The eastern road is east of the Dirt Road. [not accessible]
 
@@ -426,8 +458,6 @@ The Dirt Road contains the player.
 
 [
 Master TODO list.
-
-* figure out a way to hide the dynamite and trigger, probably at the summit, probably in a hidden room.
 
 * add extra 'objects' to examine, mostly red herrings, to make the game seem richer than it is.
 
