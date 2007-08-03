@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x6d1890" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1fa40780" />
+  <activeNode nodeId="node-0x6d1890" />
   <item nodeId="node-0x6d1890">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -28,14 +28,12 @@ His expression is familiar.  Last time you saw that look, it was just before you
 
 Trainstopping
 An IntroComp 2007 game entry by Ben Collins-Sussman
-Release 1 / Serial number 070802 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
+Release 1 / Serial number 070803 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
 
-Summit
-You wander east, and slowly climb up the mountain.
+Dirt Road
+Muddy wasn&apos;t particularly clear in his instructions, but you&apos;re pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.
 
-Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face.
-
-A vulture circles omniously overhead.
+This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way.
 
 &gt;</result>
     <commentary xml:space="preserve">
@@ -74,37 +72,17 @@ A vulture circles omniously overhead.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="756">NO</temporary>
+    <temporary score="797">NO</temporary>
     <children>
       <child nodeId="node-0x2025b120" />
+      <child nodeId="node-0x1fa07a80" />
+      <child nodeId="node-0x1fae6e40" />
+      <child nodeId="node-0x20524dd0" />
+      <child nodeId="node-0x20a8d3d0" />
+      <child nodeId="node-0x202e3670" />
       <child nodeId="node-0x20242f90" />
       <child nodeId="node-0x1ed8f8a0" />
-      <child nodeId="node-0x1fa07a80" />
     </children>
-  </item>
-  <item nodeId="node-0x1fa07a80">
-    <command xml:space="preserve">shoot vulture</command>
-    <result xml:space="preserve">BANG!  You fire a bullet at the vulture with the pistol.   Murder can be... fun.
-
-The vulture collapses to the ground.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="647">YES</temporary>
-    <children>
-      <child nodeId="node-0x1ddf6fd0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1ddf6fd0">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Summit
-Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="647">YES</temporary>
   </item>
   <item nodeId="node-0x1ed8f8a0">
     <command xml:space="preserve">put gun in hat</command>
@@ -1635,7 +1613,7 @@ The chipmunk spins around, looks at you, then panics.  The chipmunk bolts away, 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x202c7470" />
     </children>
@@ -1651,7 +1629,7 @@ The edge of the plateau stops abruptly at a chasm that drops nearly one hundred 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x1edc0630" />
     </children>
@@ -1663,7 +1641,7 @@ The edge of the plateau stops abruptly at a chasm that drops nearly one hundred 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x1fa247d0" />
     </children>
@@ -1677,7 +1655,7 @@ It is pitch dark, and you can&apos;t see a thing.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x1672e7c0" />
     </children>
@@ -1691,7 +1669,7 @@ It is pitch dark, and you can&apos;t see a thing.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x1fae5c60" />
     </children>
@@ -1704,7 +1682,7 @@ This is a very small bluff, almost an island in a sea of open air.  A gigantic o
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x1fa94170" />
     </children>
@@ -1717,7 +1695,7 @@ Yikes, that&apos;s a small target.  Your bullet sails right past it.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x696de0" />
     </children>
@@ -1730,7 +1708,7 @@ What luck!  You hit a tiny branch, and the acorn tumbles to the ground.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="756">YES</temporary>
+    <temporary score="786">YES</temporary>
     <children>
       <child nodeId="node-0x1fa40780" />
     </children>
@@ -1744,7 +1722,618 @@ You hear some crickets chirp nearby.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="755">YES</temporary>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fad0c90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fad0c90">
+    <command xml:space="preserve">close eyes</command>
+    <result xml:space="preserve">It is now pitch dark in here!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fa55eb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fa55eb0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x2059d7f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2059d7f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+A brief breeze flaps your clothing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1edb9270" />
+    </children>
+  </item>
+  <item nodeId="node-0x1edb9270">
+    <command xml:space="preserve">open eyes</command>
+    <result xml:space="preserve">Cliff Edge
+The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there&apos;s a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.
+
+A vulture circles omniously overhead.
+
+A chipmunk scurries about.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x2024f0c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2024f0c0">
+    <command xml:space="preserve">x chipmunk</command>
+    <result xml:space="preserve">A slippery little varmint.  He appears to be searching for something.
+
+The chipmunk seems paralyzed in place, caught between fear and desire!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x205826c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x205826c0">
+    <command xml:space="preserve">put gun in hat</command>
+    <result xml:space="preserve">You put the pistol into the hat.
+
+The chipmunk looks at your possessions longingly.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x2056b650" />
+    </children>
+  </item>
+  <item nodeId="node-0x2056b650">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+The chipmunk looks at your possessions longingly.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1faa64f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1faa64f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+The chipmunk arrives from the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1faf1080" />
+    </children>
+  </item>
+  <item nodeId="node-0x1faf1080">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">
+Bluff
+You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+
+You see a bundle of small brown sticks.
+
+You can also see a sparker tool here.
+
+The chipmunk arrives from the southwest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1eddfaf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1eddfaf0">
+    <command xml:space="preserve">take tool</command>
+    <result xml:space="preserve">Taken.
+
+The chipmunk looks at your possessions longingly.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x2058dc40" />
+    </children>
+  </item>
+  <item nodeId="node-0x2058dc40">
+    <command xml:space="preserve">put tool in bundle</command>
+    <result xml:space="preserve">You put the sparker tool into the stick bundle.
+
+The chipmunk looks at your possessions longingly.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1edbd370" />
+    </children>
+  </item>
+  <item nodeId="node-0x1edbd370">
+    <command xml:space="preserve">put acorn on sparker</command>
+    <result xml:space="preserve">You put the acorn on the sparker tool.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x2058db40" />
+    </children>
+  </item>
+  <item nodeId="node-0x2058db40">
+    <command xml:space="preserve">enter rocks</command>
+    <result xml:space="preserve">You get into the circle of rocks.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fafd130" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fafd130">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+You hear some crickets chirp nearby.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.
+The chipmunk screams and is torn apart by the exposion.
+If that weren&apos;t enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and entire front of the bluff violently collapses downward, filling the tunnel below!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x202245c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x202245c0">
+    <command xml:space="preserve">stand</command>
+    <result xml:space="preserve">You get out of the circle of rocks.
+
+Bluff
+You&apos;re standing on the edge of a dangerous, collapsed bluff overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. (Of course, the tunnel is now completely full of rocks and dirt.)  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+
+You hear some crickets chirp nearby.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fa6f7c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fa6f7c0">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 9:39 am.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x20581890" />
+    </children>
+  </item>
+  <item nodeId="node-0x20581890">
+    <command xml:space="preserve">wait 45</command>
+    <result xml:space="preserve">High above, a vulture glides into the area.
+
+A brief breeze flaps your clothing.
+
+The sun mercilessly continues to bake the land.
+
+You hear some crickets chirp nearby.
+
+The vulture sails off, heading down.
+
+High above, a vulture glides into the area.
+
+A distant wind blows, echoing over the hills.
+
+A distant wind blows, echoing over the hills.
+
+The vulture sails off, heading down.
+
+High above, a vulture glides into the area.
+
+The vulture sails off, heading down.
+
+High above, a vulture glides into the area.
+
+The vulture sails off, heading southwest.
+
+It is now 10:25 am.
+
+High above, a vulture glides into the area.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1faafc50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1faafc50">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The vulture sails off, heading southwest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x20598ec0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20598ec0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fab9670" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fab9670">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+A train whistles in the distance, bellowing steam!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fae8d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fae8d40">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fa6e8f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fa6e8f0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The train is moving down the track, getting closer.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fae7cb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fae7cb0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1faa96d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1faa96d0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fa53ee0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fa53ee0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x20204a50" />
+    </children>
+  </item>
+  <item nodeId="node-0x20204a50">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The train is approaching the tunnel!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ada59d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ada59d0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+Seeing the collapsed tunnel, the train engineer yells and slams the brakes!  The giant machine shrieks;  steam and sparks pour from the engine, and the train comes to a stop just inches before the tunnel debris.  You can hear all sorts of panic and screams coming from the train.
+
+In fact, that looks like Muddy himself leaning out of the train window!  He&apos;s wildly gesticulating at you.  Is that a a thumbs-up signal he&apos;s giving you?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x202b1c50" />
+    </children>
+  </item>
+  <item nodeId="node-0x202b1c50">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x20205010" />
+    </children>
+  </item>
+  <item nodeId="node-0x20205010">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The sun mercilessly continues to bake the land.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="786">YES</temporary>
+    <children>
+      <child nodeId="node-0x202cd990" />
+    </children>
+  </item>
+  <item nodeId="node-0x202cd990">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+You feel a tap on your back, and you spin around.
+
+Three guns are pointed in your face.
+
+&quot;We know all about your plan&quot;, one of Marshalls states coldly.  &quot;We&apos;ve been tracking you and Muddy for days.  Keep your hands in the air, and follow us.&quot;
+
+You can see that Muddy is here, also held at gunpoint and already handcuffed.  You pause for a moment, consider your options, then decide that death is perhaps worse than being locked in a cell with an angry Muddy.
+
+&quot;Don&apos;t worry&quot;, Muddy whispers.  &quot;I have a plan...&quot;
+
+    *** You have won ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, or QUIT?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="785">YES</temporary>
+  </item>
+  <item nodeId="node-0x202e3670">
+    <command xml:space="preserve">x shrub</command>
+    <result xml:space="preserve">Why, it&apos;s just big enough to hide some illicit equipment!  Buried within the shrub you see a stick bundle and a sparker tool.
+
+A distant wind blows, echoing over the hills.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="797">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fa219d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fa219d0">
+    <command xml:space="preserve">take bundle</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="797">YES</temporary>
+    <children>
+      <child nodeId="node-0x205b5f60" />
+    </children>
+  </item>
+  <item nodeId="node-0x205b5f60">
+    <command xml:space="preserve">take tool</command>
+    <result xml:space="preserve">Taken.
+
+The vulture sails off, heading west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="797">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fa54390" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fa54390">
+    <command xml:space="preserve">x shrub</command>
+    <result xml:space="preserve">Why, it&apos;s just big enough to hide some illicit equipment!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="796">YES</temporary>
+  </item>
+  <item nodeId="node-0x20a8d3d0">
+    <command xml:space="preserve">x shrubbery</command>
+    <result xml:space="preserve">Why, it&apos;s just big enough to hide some illicit equipment!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="790">YES</temporary>
+  </item>
+  <item nodeId="node-0x20524dd0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="789">YES</temporary>
+  </item>
+  <item nodeId="node-0x1fae6e40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You shamble slowly toward the trees.
+
+Copse
+At last, some shade!
+
+You&apos;re in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road.
+
+You can see a pine cone here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="789">YES</temporary>
+    <children>
+      <child nodeId="node-0x2020e410" />
+    </children>
+  </item>
+  <item nodeId="node-0x2020e410">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Grassy Plateau
+The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a napw if you didn&apos;t already have better things to do.
+
+This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+A vulture circles omniously overhead.
+
+A chipmunk scurries about.
+
+The chipmunk spins around, looks at you, then panics.  The chipmunk bolts away, speeding down.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="789">YES</temporary>
+    <children>
+      <child nodeId="node-0x1fa0b760" />
+    </children>
+  </item>
+  <item nodeId="node-0x1fa0b760">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Summit
+You wander east, and slowly climb up the mountain.
+
+Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face.
+
+You see a bundle of small brown sticks.
+
+You can also see a sparker tool here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="788">YES</temporary>
+  </item>
+  <item nodeId="node-0x1fa07a80">
+    <command xml:space="preserve">shoot vulture</command>
+    <result xml:space="preserve">BANG!  You fire a bullet at the vulture with the pistol.   Murder can be... fun.
+
+The vulture collapses to the ground.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="647">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ddf6fd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ddf6fd0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Summit
+Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="647">YES</temporary>
   </item>
   <item nodeId="node-0x2025b120">
     <command xml:space="preserve">wait 30 mins</command>

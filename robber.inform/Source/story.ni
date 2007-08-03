@@ -320,7 +320,7 @@ Instead of shooting the bundle with a gun when the player is inside the rocks:
 After shooting the bundle with a gun:
 	explode the bundle.	
 
-The Bluff contains the stick bundle and the sparker tool.
+The shrub contains the stick bundle and the sparker tool.
 
 To explode the bundle:
 	[Step 1:  describe the explosion if we can see it.]
@@ -412,6 +412,8 @@ After shooting the acorn:
 	
 The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and slowly climb up the mountain.[paragraph break][end if]Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face."
 
+A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a transparent container.  The shrub is scenery.  The description of the shrub is "Why, it's just big enough to hide some illicit equipment![if the shrub contains things]  Buried within the shrub you see [a list of things in the shrub].[end if]"
+
 The Dirt Road is a room.  [The Dirt Road contains the player.]  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
 The eastern road is east of the Dirt Road. [not accessible]
@@ -419,7 +421,7 @@ The eastern road is east of the Dirt Road. [not accessible]
 The western road is west of the Dirt Road. [not accessible]
 
 [A starting point for the player;  useful to change this when debugging sections.]
-The Summit contains the player.
+The Dirt Road contains the player.
 
 
 [
@@ -428,8 +430,6 @@ Master TODO list.
 * figure out a way to hide the dynamite and trigger, probably at the summit, probably in a hidden room.
 
 * add extra 'objects' to examine, mostly red herrings, to make the game seem richer than it is.
-
-* fix up the end-game text.  yeesh.
 
 * add more sounds and smells to things, for depth.
 
