@@ -44,7 +44,7 @@ Use full-length room descriptions and the serial comma.
 Use no scoring.
 When play begins:
         say the story description;
-        change the time of day to 10:15 AM.
+        change the time of day to 9:15 AM.
 
 
 Section 1 - Player's Inventory
@@ -65,8 +65,13 @@ The player carries a pocketwatch.  Understand "watch" as the pocketwatch. The de
 
 Time-checking is an action applying to nothing.  Understand "time" as time-checking.
 Carry out time-checking:
-	if the player carries the pocketwatch, say "Your pocketwatch reads [time of day].";
-	otherwise say "You have no way of checking the time."
+	if the player carries the pocketwatch
+	begin;
+		if the location of the player is dark, say "It's too dark to see your watch.";
+		otherwise say "Your pocketwatch reads [time of day].";
+	otherwise;
+		say "You have no way of checking the time.";
+	end if.
 
 The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoreing train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should speeding through this mountain around 10:30am.  Angry smeared handwriting screams 'MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON'T BELLATE.'".
 
@@ -85,11 +90,7 @@ Every turn when a random chance of 1 in 10 succeeds:
         choose a random row in the Table of Environmental Effects;
 	Say "[Effect entry][paragraph break]".
 
-
-Section 3 - Inebriation
-
-
-Section 4 - Guns
+Section 3 - Guns
 
 A gun is a kind of thing.  A gun has a number called the bullet count.  Definition:  a gun is unloaded if its bullet count is 0.   Definition:  a gun is loaded if its bullet count is greater than 0.  After examining a loaded gun, say "It appears to contain [bullet count in words] bullets."  After examining an unloaded gun, say "It appears to be unloaded."
 
@@ -100,9 +101,13 @@ Understand "shoot [something]" as shooting.
 Understand "shoot [something] with [something]" as shooting it with.
 
 Instead of shooting something:
-	if a gun (called the firearm) is held by the player,
+	if a gun (called the firearm) is held by the player
+	begin;
 		try shooting the noun with the firearm;
-	otherwise say "You need some sort of firearm to do that."
+		continue the action;
+	otherwise;
+		say "You need some sort of firearm to do that.";
+	end if.
 
 Check shooting it with:
 	if the second noun is not a gun, say "[The second noun] isn't much of a firearm." instead;
@@ -111,9 +116,8 @@ Check shooting it with:
 Carry out shooting it with:
 	[TODO:  this doesn't work.  How do we actually *kill* a person or animal or self?]
 	change the bullet count of the second noun to the bullet count of the second noun - 1;
-	say "BANG!  You shoot [the noun] with [the second noun]. [if the noun is a person]  Murder can be... fun.[line break]";
-	continue the action.
-
+	say "BANG!  You fire a bullet at [the noun] with [the second noun]. [if the noun is a person]  Murder can be... fun.[line break]".
+	
 After shooting something (called the victim) with a gun:
 	if the victim is the player
 	begin;
@@ -130,6 +134,17 @@ After shooting something (called the victim) with a gun:
 [Report shooting it with: ??]
 
 A pistol is a gun.  The player carries a pistol.  Understand "gun" as the pistol.  The bullet count of the pistol is 4.  The description of the pistol is "It's a mean-looking pistol, good for... persuasion."  The inventory listing of the pistol is "your trusty pistol".  Instead of dropping the pistol, say "Are you nuts?  What kind of outlaw are you!?"
+
+
+Section 4 - Other Rules
+
+[TODO:  Is there a better way to do this?  :-) ]
+An openable container called the eyes are part of the player.  The eyes are open.  The carrying capacity of the eyes is 0.  The description of the eyes is "Your eyes are... er, some color.  You don't remember."
+[Instead of putting something in the eyes, say "Ouch, that would hurt!".]
+Instead of dropping the eyes, say "Is that a joke?"
+
+Instead of closing the eyes, now every room is dark.
+Instead of opening the eyes, now every room is not dark.
 
 
 Chapter 1 - The Robbery
@@ -207,7 +222,7 @@ Every turn:
 		if the vulture is visible, say "High above, a vulture glides into the area.";
 	end if.
 
-The acorn is an edible thing.  The acorn is in the Cliff Edge.  The description is "Um, it's a small, brown nut-like object."
+The acorn is an edible thing.  The description is "Um, it's a small, brown nut-like object."
 
 The chipmunk is an animal.  "A chipmunk scurries about."  The description is "A slippery little varmint.  He appears to be searching for something."  When play begins, move the chipmunk to the Grassy Plateau.  
 
@@ -341,17 +356,70 @@ The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is nor
 
 The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a napw if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
 
-The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  The description of the pine cone is "Yep, it's a pine cone."  A tree is in the Copse.  The tree is scenery.  The description of the tree is "It's a particularly tall pine tree."  Instead of climbing the tree, say "You're too old for that.  No jewel-encrusted egg for you."
+The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  The description of the pine cone is "Yep, it's a pine cone."  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."
 
-The Cliff Edge is west of the Grassy Plateau.  "Ooh, scary cliff."
+The Cliff Edge is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff."
 
-The Summit is east of the Grassy Plateau.  "We're very high up here."
+Instead of going west from the Cliff Edge:
+	if the Cliff Edge is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
+	otherwise continue the action.
 
-The Dirt Road is a room.  The Dirt Road contains the player.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."
+Instead of going east from the Lone Tree Bluff:
+	if the Cliff Edge is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
+	otherwise continue the action.
 
+The Rope Bridge is west of the Cliff Edge.  "You're in the middle of the rope bridge.  The space below makes you nauseous."  Instead of listening while in the Rope Bridge, say "You hear the gentle creaking of the bridge, and the wind whistling below your feet."  
+
+Instead of going to a room from the Rope Bridge:
+	if the Rope Bridge is not dark, say "You're paralyzed with fear.  The height is unbearable.";
+	otherwise continue the action.
+
+The Lone Tree Bluff is west of the Rope Bridge.  "This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it's an eruption of countless branches and thick bushy leaves."  
+
+An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" as the branch.  The branch is a supporter.  The description of the branch is  "It appears that one very tall branch has an acorn hanging from it." The acorn is on the branch.
+
+Instead of climbing the oak tree, say "You're too old for that.  Really."
+
+Instead of taking the acorn:
+	if the acorn is on the branch, say "The acorn is far too high to reach.";
+	otherwise continue the action.
+
+After shooting the branch:
+	say "Embedding a bullet in the huge branch isn't going to do much."
+
+After shooting the acorn:
+	if a random chance of 1 in 2 succeeds
+	begin;
+		say "What luck!  You hit a tiny branch, and the acorn tumbles to the ground.";
+		move the acorn to the Lone Tree Bluff;
+	otherwise;
+		say "Yikes, that's a small target.  Your bullet sails right past it.";
+	end if;
+	continue the action.
+	
+The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and slowly climb up the mountain.[paragraph break][end if]Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face."
+
+The Dirt Road is a room.  [The Dirt Road contains the player.]  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
 The eastern road is east of the Dirt Road. [not accessible]
 
 The western road is west of the Dirt Road. [not accessible]
 
+[A starting point for the player;  useful to change this when debugging sections.]
+The Summit contains the player.
 
+
+[
+Master TODO list.
+
+* figure out a way to hide the dynamite and trigger, probably at the summit, probably in a hidden room.
+
+* add extra 'objects' to examine, mostly red herrings, to make the game seem richer than it is.
+
+* fix up the end-game text.  yeesh.
+
+* add more sounds and smells to things, for depth.
+
+* try playing through the game, see if it's solveable;  write a 'testme' transcript to win the game.
+
+]
