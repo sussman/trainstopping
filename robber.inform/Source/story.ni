@@ -44,7 +44,7 @@ Use full-length room descriptions and the serial comma.
 Use no scoring.
 When play begins:
         say the story description;
-        change the time of day to 9:15 AM.
+        change the time of day to 8:15 AM.
 
 
 Section 1 - Player's Inventory
@@ -54,7 +54,7 @@ Instead of examining the player, say "Big boots, pants, a tattered overcoat.  Yo
 The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 1.
 
 Rule for deciding the concealed possessions of the player:
-	if the particular possession is inside the hat and the player wears the hat, yes;
+	if the particular possession is inside the hat or the bucket, yes;
 	otherwise no.
 	
 Rule for deciding the concealed possessions of the hat:
@@ -73,7 +73,7 @@ Carry out time-checking:
 		say "You have no way of checking the time.";
 	end if.
 
-The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoreing train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should speeding through this mountain around 10:30am.  Angry smeared handwriting screams 'MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON'T BELLATE.'".
+The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoring train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should be speeding by this area around 10:30am.  Angry smeared handwriting screams 'MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON'T BELLATE.'".
 
 
 Section 2 - Environmental Effects
@@ -94,7 +94,7 @@ Every turn when a random chance of 1 in 10 succeeds:
 
 Section 3 - Guns
 
-A gun is a kind of thing.  A gun has a number called the bullet count.  Definition:  a gun is unloaded if its bullet count is 0.   Definition:  a gun is loaded if its bullet count is greater than 0.  After examining a loaded gun, say "It appears to contain [bullet count in words] bullets."  After examining an unloaded gun, say "It appears to be unloaded."
+A gun is a kind of thing.  A gun has a number called the bullet count.  Definition:  a gun is unloaded if its bullet count is 0.   Definition:  a gun is loaded if its bullet count is greater than 0.  After examining a loaded gun, say "It appears to contain [bullet count in words] bullet[s]."  After examining an unloaded gun, say "It appears to be unloaded."
 
 Shooting is an action with past participle shot, applying to one visible thing.
 Shooting it with is an action with past participle shot, applying to two visible things.
@@ -112,33 +112,53 @@ Instead of shooting something:
 	end if.
 
 Check shooting it with:
+	if the noun is a gun, say "Try 'shoot something with gun'." instead;
 	if the second noun is not a gun, say "[The second noun] isn't much of a firearm." instead;
 	if the second noun is not loaded, say "[The second noun] has no ammunition." instead.
 
 Carry out shooting it with:
-	[TODO:  this doesn't work.  How do we actually *kill* a person or animal or self?]
 	change the bullet count of the second noun to the bullet count of the second noun - 1;
 	say "BANG!  You fire a bullet at [the noun] with [the second noun]. [if the noun is a person]  Murder can be... fun.[line break]".
 	
-After shooting something (called the victim) with a gun:
+After shooting something (called the victim) with a gun (called the weapon):
 	if the victim is the player
 	begin;
 		say "Suicide, eh?";
 		end the game in death;
 	end if;
-	if the victim is a person or animal
+	if the victim is the chipmunk
 	begin;
-		say "[The victim] collapses to the ground.";
-		remove the victim from play;
+		say "The chipmunk collapses as you blow a hole through him.";
+		remove the chipmunk from play;
+		move the chipmunk corpse to the location of the player;
+	end if;
+	if the victim is the vulture
+	begin;
+		say "Feathers fly in all directions, and the vulture spins to the earth, crashing at your feet.  Nice shot.";
+		remove the vulture from play;
+		move the vulture corpse to the location of the player;
 	end if;
 	continue the action.
+	if the victim is a person
+	begin;
+		say "Aren't you in enough trouble already?";
+		stop the action;
+	end if.
 
 [Report shooting it with: ??]
 
-A pistol is a gun.  The player carries a pistol.  Understand "gun" as the pistol.  The bullet count of the pistol is 4.  The description of the pistol is "It's a mean-looking pistol, good for... persuasion."  The inventory listing of the pistol is "your trusty pistol".  Instead of dropping the pistol, say "Are you nuts?  What kind of outlaw are you!?"
+A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 4.  The description of the revolver is "It's a mean-looking revolver, good for... persuasion."  The inventory listing of the revolver is "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
 
 
 Section 4 - Other Rules
+
+Understand "look [thing]" as examining.
+
+Understand "exit [thing]" as specifically exiting.
+Specifically exiting is an action applying to one thing.
+Check specifically exiting: try exiting.
+
+Rule for deciding whether all includes scenery: it does not.
 
 An openable container called the eyes are part of the player.  The eyes are open.  The carrying capacity of the eyes is 0.  The description of the eyes is "Your eyes are... er, some color.  You don't remember."
 [Instead of putting something in the eyes, say "Ouch, that would hurt!".]
@@ -146,6 +166,10 @@ Instead of dropping the eyes, say "Is that a joke?"
 
 Instead of closing the eyes, now every room is dark.
 Instead of opening the eyes, now every room is not dark.
+
+Understand "xyzzy" as xyzzy. 
+xyzzy is an action applying to nothing.
+Carry out xyzzy:  say "Nuh-uh.  Not in this game."
 
 [Taken from the documention example:]
 Waiting more is an action applying to one number.
@@ -253,9 +277,9 @@ Every turn when the chipmunk is plotting for more than 1 turn:
 
 Table of Chipmunk Fear
 Effect
-"The chipmunk suddenly shoots you a look of utter fear."
-"The chipmunk notices something terrifying and freezes in place for a moment."
-"The chipmunk spins around, looks at you, then panics."
+"The chipmunk suddenly shoots you a look of utter fear.  There's something about you that horrifies him."
+"The chipmunk looks at your possessions and freezes in place for a moment."
+"The chipmunk spins around, looks at something you're carrying, then panics."
 "The chipmunk turns its gaze dramatically at you;  is that an orchestra playing?"
 
 Every turn when the chipmunk is in a room (called the current space):
@@ -263,15 +287,18 @@ Every turn when the chipmunk is in a room (called the current space):
         begin;
                 if an acorn is visible or the player carries an acorn
                 begin;
-		if the chipmunk is visible, say "The chipmunk seems paralyzed in place, caught between fear and desire!";
+		if the chipmunk is visible, say "The chipmunk seems paralyzed in place, caught between fear and desire!  He clearly wants something nearby, but is scared of something too.";
 		if the chipmunk carries the acorn, try the chipmunk dropping the acorn;
                 otherwise;
 		if the chipmunk carries the acorn, try the chipmunk dropping the acorn;
 		let next space be a random room which is adjacent to the current space;
 		let way be the best route from the current space to the next space;
-                        	choose a random row in the Table of Chipmunk Fear;
-		if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts away, speeding [way].";
-		move the chipmunk to next space;
+		if the next space is not the Track Below
+		begin;
+	                        	choose a random row in the Table of Chipmunk Fear;
+			if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts away, speeding [way].";
+			move the chipmunk to next space;
+		end if;
                 end if;
         otherwise;
 	if an acorn is visible and the acorn is not carried by the player
@@ -298,6 +325,13 @@ Every turn:
 		end if;
 	end if;
 	
+Instead of giving an acorn to the chipmunk:  say "The chipmunk is too scared to take it directly from your hand."
+	
+
+
+The chipmunk corpse is a thing.  The description is "Some would call it cute and furry.  You would call it 'hat'."  When play begins, remove the chipmunk corpse from play.
+The vulture corpse is a thing.  The description is "It's a big, ugly, dead bird."  When play begins, remove the vulture corpse from play.
+
 
 Section 3 - Dynamite
 
@@ -366,7 +400,7 @@ The Track is a backdrop.  Understand "track" and "train track" as The Track.  "T
 
 The Distant Track is a room.  The Distant Track is north of the Track Below.
 
-The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it, and some sort of stick is pushing through."  
+The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  [if the tunnel is open]It looks a bit unstable as well, with bits of dirt crumbling into it.[otherwise]The tunnel entrance is now completely collapsed, full of rocks and other debris.[end if]"  
 
 The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  
 
@@ -376,11 +410,14 @@ The tunnel-arch is in the Bluff.  The tunnel-arch is scenery.  The tunnel-arch i
 
 A long stick is in the tunnel-arch.  Understand "stick" as the long stick.  The description of the long stick is "It's a thin stick, about two feet long."  
 	
-The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a napw if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
+The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a nap if you didn't already have better things to do.[paragraph break][end if]This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
 
-The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  The description of the pine cone is "Yep, it's a pine cone." [red herring]  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."
+The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  Understand "cone" and "pinecone" as the pine cone. The description of the pine cone is "Yep, it's a pine cone." [red herring]  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."
 
-The Chasm is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff."
+Instead of going north in the Copse, try going up.
+Instead of going south in the Grassy Plateau, try going down.
+
+The Chasm is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff." 
 
 Instead of going west from the Chasm:
 	if the Chasm is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
@@ -390,7 +427,7 @@ Instead of going east from the Lone Tree Bluff:
 	if the Chasm is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
 	otherwise continue the action.
 
-The Rope Bridge is west of the Chasm.  "You're in the middle of the rope bridge.  The space below makes you nauseous."  Instead of listening while in the Rope Bridge, say "You hear the gentle creaking of the bridge, and the wind whistling below your feet."  
+The Rope Bridge is west of the Chasm.  Understand "bridge" as Rope Bridge.  "You're in the middle of the rope bridge.  The space below makes you nauseous."  Instead of listening while in the Rope Bridge, say "You hear the gentle creaking of the bridge, and the wind whistling below your feet."  
 
 Instead of going to a room from the Rope Bridge:
 	if the Rope Bridge is not dark, say "You're paralyzed with fear.  The height is unbearable.";
@@ -400,24 +437,26 @@ The Lone Tree Bluff is west of the Rope Bridge.  "This is a very small bluff, al
 
 A bucket is in the Lone Tree Bluff.  The bucket is a portable, transparent, open container.  "Looks like someone left a rusty old bucket here."  The description is "It's an old green bucket, well-used." [Red herring]  The carrying capacity of the bucket is 1.
 
-An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" as the branch.  The branch is a supporter.  The description of the branch is  "It appears that one very tall branch has an acorn hanging from it." The acorn is on the branch.
+An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" as the branch.  The branch is a supporter.  The description of the branch is  "It's a large branch, fairly high-up.[if the branch supports something]  You see [a list of things supported by the branch] up there.[end if]".  The acorn is on the branch.
 
 Instead of climbing the oak tree, say "You're too old for that.  Really."
 
-Instead of taking the acorn:
-	if the acorn is on the branch, say "The acorn is far too high to reach.";
-	otherwise continue the action.
+Instead of taking something on the branch, say "The branch is far too high to reach."
+Instead of putting something on the branch, say "The branch is far too high to reach."
 
 After shooting the branch:
 	say "Embedding a bullet in the huge branch isn't going to do much."
 
 After shooting the acorn:
-	if a random chance of 1 in 2 succeeds
+	if the acorn is on the branch
 	begin;
-		say "What luck!  You hit a tiny branch, and the acorn tumbles to the ground.";
-		move the acorn to the Lone Tree Bluff;
-	otherwise;
-		say "Yikes, that's a small target.  Your bullet sails right past it.  I guess you could always try again.";
+		if a random chance of 1 in 2 succeeds
+		begin;
+			say "What luck!  You hit a tiny branch, and the acorn tumbles to the ground.";
+			move the acorn to the Lone Tree Bluff;
+		otherwise;
+			say "Yikes, that's a small target.  Your bullet sails right past it.  I guess you could always try again.";
+		end if;
 	end if;
 	continue the action.
 	
@@ -446,7 +485,7 @@ The outcropping is part of the cliff.  The outcropping is a supporter.  The desc
 
 The box is a closed, openable, portable container.  The box is on the outcropping.  The description is "It's a small wooden box, with the words 'Warning:  Handle Carefully' stamped on it."
 
-The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."
+The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way."  Instead of going east from the Dirt Road, say "You can't chicken out now... Muddy would kill you!"  Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."  Before going north from the Dirt Road, say "You shamble slowly toward the trees."  Instead of smelling the Dirt Road, say "Definitely pine trees.  Up yonder."
 
 The eastern road is east of the Dirt Road. [not accessible]
 
