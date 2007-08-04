@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x6e5860" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1c1550b0" />
+  <activeNode nodeId="node-0x6e5860" />
   <item nodeId="node-0x6e5860">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -31,8 +31,10 @@ An IntroComp 2007 game entry by Ben Collins-Sussman
 Release 4 / Serial number 070804 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
 (Type HELP if you&apos;re new to interactive fiction.)
 
-Bluff
-You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+Lone Tree Bluff
+This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
+
+Looks like someone left a rusty old bucket here.
 
 &gt;</result>
     <commentary xml:space="preserve">
@@ -71,16 +73,15 @@ A vulture circles omniously overhead.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="138">NO</temporary>
+    <temporary score="216">NO</temporary>
     <children>
       <child nodeId="node-0x15fd4ae0" />
       <child nodeId="node-0x15fd42e0" />
-      <child nodeId="node-0x1c1550b0" />
       <child nodeId="node-0x15fd3f60" />
+      <child nodeId="node-0x1ed35ea0" />
       <child nodeId="node-0x15fd3e60" />
       <child nodeId="node-0x15fd3d60" />
       <child nodeId="node-0x15fd3960" />
-      <child nodeId="node-0x199f7be0" />
       <child nodeId="node-0x15fd3660" />
       <child nodeId="node-0x15fd3360" />
       <child nodeId="node-0x15fd3160" />
@@ -1790,309 +1791,6 @@ The vulture sails off, heading west.
     <changed>YES</changed>
     <temporary score="941">YES</temporary>
   </item>
-  <item nodeId="node-0x199f7be0">
-    <command xml:space="preserve">help</command>
-    <result xml:space="preserve"> &gt; Introduction to Trainstopping
-   Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x6e5d00" />
-    </children>
-  </item>
-  <item nodeId="node-0x6e5d00">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">
-This is a simple demonstration Western game.
-
-
-
-Please press SPACE to continue.
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c12ddc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c12ddc0">
-    <command xml:space="preserve"> </command>
-    <result xml:space="preserve"> &gt; Introduction to Trainstopping
-   Instructions for Play
-   Contacting the author
- &gt; Introduction to Trainstopping
-   Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c12d670" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c12d670">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c12de20" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c12de20">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1a469580" />
-    </children>
-  </item>
-  <item nodeId="node-0x1a469580">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">
-If you have any difficulties with Trainstopping, please contact me at sussman@red-bean.com.
-
-
-
-Please press SPACE to continue.
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x16127df0" />
-    </children>
-  </item>
-  <item nodeId="node-0x16127df0">
-    <command xml:space="preserve"> </command>
-    <result xml:space="preserve">   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b70cc60" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b70cc60">
-    <command xml:space="preserve">p</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1a4604e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1a4604e0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1a40ba30" />
-    </children>
-  </item>
-  <item nodeId="node-0x1a40ba30">
-    <command xml:space="preserve">p</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c12daa0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c12daa0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-   Introduction to Trainstopping
-   Instructions for Play
- &gt; Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b724d30" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b724d30">
-    <command xml:space="preserve">p</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c128b60" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c128b60">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">
- &gt; About Interactive Fiction
-   What to do with &gt;
-   Getting Started
-   Rooms and Travel
-   Objects
-   Controlling the Game
-   How the World is Assembled
-   If You Get Stuck
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b7930b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b7930b0">
-    <command xml:space="preserve">q</command>
-    <result xml:space="preserve">
-   Introduction to Trainstopping
- &gt; Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b78d540" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b78d540">
-    <command xml:space="preserve">q</command>
-    <result xml:space="preserve">
-Bluff
-You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
-
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b7c2260" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b7c2260">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Bluff
-You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b7d8a00" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b7d8a00">
-    <command xml:space="preserve">help</command>
-    <result xml:space="preserve"> &gt; Introduction to Trainstopping
-   Instructions for Play
-   Contacting the author
-</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b7bfc30" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b7bfc30">
-    <command xml:space="preserve">q</command>
-    <result xml:space="preserve">
-Bluff
-You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
-
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b7b72b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b7b72b0">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">Are you sure you want to restart? </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
-    <children>
-      <child nodeId="node-0x1c163030" />
-    </children>
-  </item>
-  <item nodeId="node-0x1c163030">
-    <command xml:space="preserve">yes</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="136">YES</temporary>
-  </item>
   <item nodeId="node-0x15fd3960">
     <command xml:space="preserve">x cliff</command>
     <result xml:space="preserve">It&apos;s a stark drop at the southern edge of the summit.  Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.  There&apos;s a string tied to the box, leading up to a shrub.
@@ -2234,6 +1932,99 @@ The vulture sails off, heading west.
     <changed>YES</changed>
     <temporary score="899">YES</temporary>
   </item>
+  <item nodeId="node-0x1ed35ea0">
+    <command xml:space="preserve">shoot acorn</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="216">YES</temporary>
+    <children>
+      <child nodeId="node-0x1df6f440" />
+    </children>
+  </item>
+  <item nodeId="node-0x1df6f440">
+    <command xml:space="preserve">x branch</command>
+    <result xml:space="preserve">You see a particularly long branch, fairly high-up.  You see an acorn up there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="216">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ed720c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ed720c0">
+    <command xml:space="preserve">shoot acorn</command>
+    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
+Yikes, that&apos;s a small target.  Your bullet sails right past it.  I guess you could always try again.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="216">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f4235c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f4235c0">
+    <command xml:space="preserve">shoot acorn</command>
+    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
+What luck!  You hit a tiny branch, and the acorn tumbles to the ground.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="216">YES</temporary>
+    <children>
+      <child nodeId="node-0x200812e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x200812e0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Lone Tree Bluff
+This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
+
+Looks like someone left a rusty old bucket here.
+
+You can also see an acorn here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="216">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d5afd40" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d5afd40">
+    <command xml:space="preserve">x branch</command>
+    <result xml:space="preserve">You see a particularly long branch, fairly high-up.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="216">YES</temporary>
+    <children>
+      <child nodeId="node-0x1dfe1b20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1dfe1b20">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Lone Tree Bluff
+This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
+
+Looks like someone left a rusty old bucket here.
+
+You can also see an acorn here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="215">YES</temporary>
+  </item>
   <item nodeId="node-0x15fd3f60">
     <command xml:space="preserve">take box</command>
     <result xml:space="preserve">There&apos;s no way you can reach down to the box, it&apos;s at least a couple of feet out of reach.
@@ -2322,15 +2113,6 @@ The vulture sails off, heading west.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="929">YES</temporary>
-  </item>
-  <item nodeId="node-0x1c1550b0">
-    <command xml:space="preserve">smell</command>
-    <result xml:space="preserve">You smell nothing unexpected.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="137">YES</temporary>
   </item>
   <item nodeId="node-0x15fd42e0">
     <command xml:space="preserve">w</command>

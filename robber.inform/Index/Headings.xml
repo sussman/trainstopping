@@ -47,35 +47,35 @@
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>204</integer>
+        <key>Line</key><integer>205</integer>
         <key>Title</key><string>Chapter 1 - The Robbery</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>207</integer>
+        <key>Line</key><integer>208</integer>
         <key>Title</key><string>Section 1 - The Train</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>264</integer>
+        <key>Line</key><integer>265</integer>
         <key>Title</key><string>Section 2 - Animals</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>353</integer>
+        <key>Line</key><integer>354</integer>
         <key>Title</key><string>Section 3 - Dynamite</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>415</integer>
+        <key>Line</key><integer>416</integer>
         <key>Title</key><string>Section 4 - Hill Area</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>

@@ -60,7 +60,7 @@ title   	 subtable   	 description
 
 Section 1 - Player's Inventory
 
-Instead of examining the player, say "Big boots, pants, a tattered overcoat.  You're quite the desperado, ain't ya?".
+Instead of examining the player, say "Big boots, pants, plains hat and a tattered overcoat.  You're quite the desperado, ain't ya?".
 
 The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 1.  Instead of eating the hat, say "If you don't complete this mission, you sure will!"
 
@@ -166,6 +166,7 @@ Section 4 - Other Rules
 Understand "look [thing]" as examining.
 
 Understand "exit [thing]" as specifically exiting.
+Understand "leave [thing]" as specifically exiting.
 Specifically exiting is an action applying to one thing.
 Check specifically exiting: try exiting.
 
@@ -209,7 +210,7 @@ Section 1 - The Train
 The train is a vehicle.  Understand "locomotive" as the train.  The description of the train is "It's a hulking, steam-driven locomotive, with at least ten cars behind it."
 
 After deciding the scope of the player while in the Mountainside:
-	place the Track Below in scope.
+	place the track below in scope.
 	
 When play begins, remove the train from play.
 
@@ -226,7 +227,7 @@ At the time when the train approaches:
 	Train passes in 4 minutes from now.
 
 At the time when the train passes:
-	Move the train to the Track below;
+	Move the train to the track below;
 	if the player is in the Mountainside, say "The train is approaching the tunnel!";
 	if the player is in the Hill Area, say "The Mountain shakes as a train rumbles ever closer!".
 
@@ -346,8 +347,8 @@ Instead of showing an acorn to the chipmunk:  say "The chipmunk hops up and down
 Instead of taking the chipmunk:  say "Ain't no way you're gonna outrun that varmint!"
 Instead of taking the vulture:  say "What, you can fly now?"
 
-The chipmunk corpse is a thing.  The description is "Some would call it cute and furry.  You would call it 'hat'."  When play begins, remove the chipmunk corpse from play.
-The vulture corpse is a thing.  The description is "It's a big, ugly, dead bird."  When play begins, remove the vulture corpse from play.
+The chipmunk corpse is a wearable thing.  The description is "Some would call it cute and furry.  You would call it 'hat'."  When play begins, remove the chipmunk corpse from play.
+The vulture corpse is a wearable thing.  The description is "It's a big, ugly, dead bird."  When play begins, remove the vulture corpse from play.
 
 
 Section 3 - Dynamite
@@ -404,7 +405,7 @@ To explode the bundle:
 	[Step 3:  possibly destroy the bluff]
         	if the bundle is in the bluff
         	begin;
-                	if the bundle is visible, say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and entire front of the bluff violently collapses downward, filling the tunnel below!";
+                	if the bundle is visible, say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and the entire front of the bluff violently collapses downward, filling the tunnel below!";
                 	now the tunnel is closed;
                 	now the bluff is destroyed;
         	end if;
@@ -414,25 +415,32 @@ To explode the bundle:
 
 Section 4 - Hill Area
 
-The Mountainside is a region.  Bluff, Track, Distant Track, Track Below are in the Mountainside.
+The Mountainside is a region.  Bluff, track, distant track, track below are in the Mountainside.
 The Hill Area is a region.  Rock Circle, Grassy Plateau, Summit, Copse, Dirt Road are in the Hill Area.
 The bridge area is a region.  Chasm, Rope Bridge, and Lone Tree Bluff are in the bridge area.
 
 The sky is a backdrop.  The sky is everywhere.   "It's brightly lit, full of saturated blue, not a cloud in sight."
 
-The Track is a backdrop.  Understand "track" and "train track" as The Track.  "The track extends off into the distance, then curves out of sight around a far-off hill. [if Train Arrival is happening] You spy a long train on the track. [end if]"
+The track is a backdrop.  Understand "train track" as the track.  "The track extends off into the distance, then curves out of sight around a far-off hill. [if Train Arrival is happening] You spy a long train on the track. [end if]"
 
-The Distant Track is a room.  The Distant Track is north of the Track Below.
+The distant track is a room.  The distant track is north of the track below.
 
-The Track Below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent enterable container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  [if the tunnel is open]It looks a bit unstable as well, with bits of dirt crumbling into it.[otherwise]The tunnel entrance is now completely collapsed, full of rocks and other debris.[end if]"  
+The track below is below the Bluff.  The tunnel is here.  The tunnel is scenery.  The tunnel is a transparent container.  The tunnel is open.  The description is "The tunnel runs straight through the mountain, directly below the bluff.  [if the tunnel is open]It looks a bit unstable as well, with bits of dirt crumbling into it.[otherwise]The tunnel entrance is now completely collapsed, full of rocks and other debris.[end if][If the tunnel contains the stick]  You see a long stick hanging out of the top of the tunnel's arch, probably some remnant of a broken branch.[end if]"  
+
+A long stick is in the tunnel.  When play begins, remove the stick from play.  Understand "stick" as the long stick.  The description of the long stick is "It's a thin stick, about two feet long."  
+
+Before examining the tunnel for the first time:  move the stick to the tunnel;  continue the action.
+
+A rule for reaching inside the track below:  allow access.
+
+Instead of taking the stick:
+	say "You carefully reach over the edge of the bluff and pluck the stick from the tunnel's arch.";
+	move the stick to the player.
+	
 
 The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  
 
 The circle of rocks is here.  Understand "rocks" and "circle" and "formation" and "rock formation" and "stones" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
-
-The tunnel-arch is in the Bluff.  The tunnel-arch is scenery.  The tunnel-arch is a container.  The description of the tunnel-arch is "It's the top of the tunnel arch's stonework, just reachable from the bluff."
-
-A long stick is in the tunnel-arch.  Understand "stick" as the long stick.  The description of the long stick is "It's a thin stick, about two feet long."  
 	
 The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  [paragraph break][end if]This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
 
@@ -474,7 +482,7 @@ A bucket is in the Lone Tree Bluff.  The bucket is a portable, transparent, open
 An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" and "leaves" as the branch.  The branch is a supporter.  The description of the branch is  "You see a particularly long branch, fairly high-up.[if the branch supports something]  You see [a list of things supported by the branch] up there.[end if]".  
 
 When play begins, remove acorn from play.
-Before examining the branch: move the acorn to the branch; continue the action.
+Before examining the branch for the first time: move the acorn to the branch; continue the action.
 
 Instead of climbing the oak tree, say "You're too old for that.  Really."
 
@@ -501,9 +509,9 @@ The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and s
 
 The cliff is in the Summit.  The cliff is scenery.  The description is "It's a stark drop at the eastern edge of the summit.  [if the box is on the outcropping]Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.[end if]  [if the string is in the shrub]There's a string tied to the box, leading up to a shrub.[end if]".
 
-Before examining the cliff: move the box to the outcropping; continue the action.
+Before examining the cliff for the first time: move the box to the outcropping; continue the action.
 
-A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a container.  The shrub is scenery.  The description of the shrub is "It's an ordinary shrub.[if the string is in the shrub]  Or... wait, is that a piece of string tied to its base?[end if]".  Before examining the shrub: move the string to the shrub; continue the action.
+A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a container.  The shrub is scenery.  The description of the shrub is "It's an ordinary shrub.[if the string is in the shrub]  Or... wait, is that a piece of string tied to its base?[end if]".  Before examining the shrub for the first time: move the string to the shrub; continue the action.
 
 The string is a thing.  When play begins, remove the string from play.  The description of the string is "The string is tied to the base of the shrub, and seems to run along the ground behind the shrub.   It then dips down out of sight off a cliff at the eastern part the summit."
 
@@ -537,16 +545,5 @@ The eastern road is east of the Dirt Road. [not accessible]
 The western road is west of the Dirt Road. [not accessible]
 
 [A starting point for the player;  useful to change this when debugging sections.]
-The [Dirt Road] Bluff contains the player.
+The [Dirt Road] Bluff [Lone Tree Bluff] contains the player.
 
-
-[
-Master TODO list.
-
-* add extra 'objects' to examine, mostly red herrings, to make the game seem richer than it is.
-
-* add more sounds and smells to things, for depth.
-
-* try playing through the game, see if it's solveable;  write a 'testme' transcript to win the game.
-
-]
