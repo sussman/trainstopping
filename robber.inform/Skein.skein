@@ -28,13 +28,13 @@ His expression is familiar.  Last time you saw that look, it was just before you
 
 Trainstopping
 An IntroComp 2007 game entry by Ben Collins-Sussman
-Release 4 / Serial number 070804 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
+Release 5 / Serial number 070804 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) SD
 (Type HELP if you&apos;re new to interactive fiction.)
 
-Lone Tree Bluff
-This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
+Dirt Road
+Muddy wasn&apos;t particularly clear in his instructions, but you&apos;re pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.
 
-Looks like someone left a rusty old bucket here.
+This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way.
 
 &gt;</result>
     <commentary xml:space="preserve">
@@ -72,19 +72,20 @@ A vulture circles omniously overhead.
 
 &gt;</commentary>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="216">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="309">NO</temporary>
     <children>
       <child nodeId="node-0x15fd4ae0" />
       <child nodeId="node-0x15fd42e0" />
+      <child nodeId="node-0x21555490" />
       <child nodeId="node-0x15fd3f60" />
-      <child nodeId="node-0x1ed35ea0" />
       <child nodeId="node-0x15fd3e60" />
       <child nodeId="node-0x15fd3d60" />
       <child nodeId="node-0x15fd3960" />
       <child nodeId="node-0x15fd3660" />
       <child nodeId="node-0x15fd3360" />
       <child nodeId="node-0x15fd3160" />
+      <child nodeId="node-0x2007a780" />
       <child nodeId="node-0x6e5150" />
     </children>
   </item>
@@ -1607,6 +1608,1240 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <changed>YES</changed>
     <temporary score="729">NO</temporary>
   </item>
+  <item nodeId="node-0x2007a780">
+    <command xml:space="preserve">take stick</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1caa9b70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1caa9b70">
+    <command xml:space="preserve">x tunnel</command>
+    <result xml:space="preserve">The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it.  You see a long stick hanging out of the top of the tunnel&apos;s arch, probably some remnant of a broken branch.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20aea9a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20aea9a0">
+    <command xml:space="preserve">take stick</command>
+    <result xml:space="preserve">You carefully reach over the edge of the bluff and pluck the stick from the tunnel&apos;s arch.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x16178850" />
+    </children>
+  </item>
+  <item nodeId="node-0x16178850">
+    <command xml:space="preserve">sw</command>
+    <result xml:space="preserve">
+Grassy Plateau
+The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  
+
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+A chipmunk scurries about.
+
+The chipmunk suddenly shoots you a look of utter fear.  There&apos;s something about you that horrifies him.  It bolts away, speeding northeast.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a9f7e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a9f7e0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Chasm
+You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.
+
+The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there&apos;s a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1edea740" />
+    </children>
+  </item>
+  <item nodeId="node-0x1edea740">
+    <command xml:space="preserve">cross bridge</command>
+    <result xml:space="preserve">You grab hold of the bridge, but your vertigo gets the best of you.  You&apos;re unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1caaf870" />
+    </children>
+  </item>
+  <item nodeId="node-0x1caaf870">
+    <command xml:space="preserve">x bridge</command>
+    <result xml:space="preserve">The bridge looks cobbled together by old hemp rope and scrap lumber.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x199d6750" />
+    </children>
+  </item>
+  <item nodeId="node-0x199d6750">
+    <command xml:space="preserve">close eyes</command>
+    <result xml:space="preserve">It is now pitch dark in here!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200a2720" />
+    </children>
+  </item>
+  <item nodeId="node-0x200a2720">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1df41d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1df41d60">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20058840" />
+    </children>
+  </item>
+  <item nodeId="node-0x20058840">
+    <command xml:space="preserve">open eyes</command>
+    <result xml:space="preserve">Lone Tree Bluff
+This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
+
+Looks like someone left a rusty old bucket here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ed42e90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ed42e90">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">bucket: Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1edcaf20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1edcaf20">
+    <command xml:space="preserve">x branch</command>
+    <result xml:space="preserve">You see a particularly long branch, fairly high-up.  You see an acorn up there.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200307e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x200307e0">
+    <command xml:space="preserve">take acorn</command>
+    <result xml:space="preserve">The branch is far too high to reach.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1df342c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1df342c0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Lone Tree Bluff
+This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20016130" />
+    </children>
+  </item>
+  <item nodeId="node-0x20016130">
+    <command xml:space="preserve">shoot acorn</command>
+    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
+Yikes, that&apos;s a small target.  Your bullet sails right past it.  I guess you could always try again.
+
+The smell of hyacinth wafts in the air.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200984a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x200984a0">
+    <command xml:space="preserve">shoot acorn</command>
+    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
+What luck!  You hit a tiny branch, and the acorn tumbles to the ground.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20abcf60" />
+    </children>
+  </item>
+  <item nodeId="node-0x20abcf60">
+    <command xml:space="preserve">take acorn</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20059cb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20059cb0">
+    <command xml:space="preserve">x branch</command>
+    <result xml:space="preserve">You see a particularly long branch, fairly high-up.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ed93960" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ed93960">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You grab hold of the bridge, but your vertigo gets the best of you.  You&apos;re unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a96030" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a96030">
+    <command xml:space="preserve">close eyes</command>
+    <result xml:space="preserve">The chipmunk arrives from the east.
+
+It is now pitch dark in here!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f421f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f421f70">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20aafdb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20aafdb0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Darkness
+It is pitch dark, and you can&apos;t see a thing.
+
+The smell of hyacinth wafts in the air.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a4c6e30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a4c6e30">
+    <command xml:space="preserve">open eyes</command>
+    <result xml:space="preserve">Chasm
+The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there&apos;s a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.
+
+A chipmunk scurries about.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2004d000" />
+    </children>
+  </item>
+  <item nodeId="node-0x2004d000">
+    <command xml:space="preserve">x chipmunk</command>
+    <result xml:space="preserve">A slippery little varmint.  He appears to be searching for something.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1dff6f80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1dff6f80">
+    <command xml:space="preserve">show acon to chipmunk</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20ad4b00" />
+    </children>
+  </item>
+  <item nodeId="node-0x20ad4b00">
+    <command xml:space="preserve">show acorn to chipmunk</command>
+    <result xml:space="preserve">The chipmunk hops up and down with excitement!
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cac38f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cac38f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+High above, a vulture glides into the area.
+
+The chipmunk arrives from the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a31460" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a31460">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">chipmunk: Ain&apos;t no way you&apos;re gonna outrun that varmint!
+vulture: What, you can fly now?
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+The vulture sails off, heading west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20aa5880" />
+    </children>
+  </item>
+  <item nodeId="node-0x20aa5880">
+    <command xml:space="preserve">x bush</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a6a030" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a6a030">
+    <command xml:space="preserve">x shrub</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a75420" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a75420">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Summit
+You wander east, and slowly climb up the mountain.
+
+Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face.
+
+The chipmunk arrives from the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200abb30" />
+    </children>
+  </item>
+  <item nodeId="node-0x200abb30">
+    <command xml:space="preserve">x bush</command>
+    <result xml:space="preserve">It&apos;s an ordinary shrub.  Or... wait, is that a piece of string tied to its base?
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200bbb50" />
+    </children>
+  </item>
+  <item nodeId="node-0x200bbb50">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">chipmunk: Ain&apos;t no way you&apos;re gonna outrun that varmint!
+string: As you untie the string from the shrub, you feel a gentle snap on the other end.  The string then slips from your grip and slides off the cliff.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a313a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a313a0">
+    <command xml:space="preserve">take string</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a0d8e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a0d8e0">
+    <command xml:space="preserve">x cliff</command>
+    <result xml:space="preserve">It&apos;s a stark drop at the eastern edge of the summit.  Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.  
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200e9790" />
+    </children>
+  </item>
+  <item nodeId="node-0x200e9790">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">You lean down off the cliff and delicately balance the edge of the box on your stick, carefully bringing it up to you.
+
+Taken.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20061690" />
+    </children>
+  </item>
+  <item nodeId="node-0x20061690">
+    <command xml:space="preserve">open box</command>
+    <result xml:space="preserve">You open the box, revealing a stick bundle and a sparker tool.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1edc43c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1edc43c0">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">chipmunk: Ain&apos;t no way you&apos;re gonna outrun that varmint!
+stick bundle: Taken.
+sparker tool: Taken.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a56ca0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a56ca0">
+    <command xml:space="preserve">put sparker in bundle</command>
+    <result xml:space="preserve">You put the sparker tool into the stick bundle.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20049f50" />
+    </children>
+  </item>
+  <item nodeId="node-0x20049f50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+A vulture circles omniously overhead.
+
+The chipmunk arrives from the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200f32f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x200f32f0">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">
+Bluff
+You&apos;re standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+
+The chipmunk arrives from the southwest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a6ad10" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a6ad10">
+    <command xml:space="preserve">x bundle</command>
+    <result xml:space="preserve">You&apos;ve never seen anything like this before.  It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads &quot;Nobel&apos;s Blasting Powder, U.S. Patent 78317.&quot;   You don&apos;t see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into.
+
+It currently contains a sparker tool.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200967d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x200967d0">
+    <command xml:space="preserve">x sparker</command>
+    <result xml:space="preserve">This thing seems familiar;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks.  It&apos;s good for starting campfires or lighting stoves.
+
+A bird chirps somewhere near.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20097ab0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20097ab0">
+    <command xml:space="preserve">drop bundle</command>
+    <result xml:space="preserve">You... gingerly... put the bundle on the ground, and step away.
+
+Dropped.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a7ebe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a7ebe0">
+    <command xml:space="preserve">save</command>
+    <result xml:space="preserve">
+Please supply a filename for save
+Ok.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a48e70" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a48e70">
+    <command xml:space="preserve">put acorn on bundle</command>
+    <result xml:space="preserve">Putting things on the stick bundle would achieve nothing.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a482e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a482e0">
+    <command xml:space="preserve">put acorn on sparker</command>
+    <result xml:space="preserve">You put the acorn on the sparker tool.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a6a420" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a6a420">
+    <command xml:space="preserve">enter rocks</command>
+    <result xml:space="preserve">You get into the circle of rocks.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20ac39a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20ac39a0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f4218b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f4218b0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20ab0ed0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20ab0ed0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200b5890" />
+    </children>
+  </item>
+  <item nodeId="node-0x200b5890">
+    <command xml:space="preserve">put gun in hat</command>
+    <result xml:space="preserve">You put the revolver into the hat.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20a7c280" />
+    </children>
+  </item>
+  <item nodeId="node-0x20a7c280">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f43c060" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f43c060">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.
+The chipmunk screams and is torn apart by the exposion.
+If that weren&apos;t enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and the entire front of the bluff violently collapses downward, filling the tunnel below!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x20afad00" />
+    </children>
+  </item>
+  <item nodeId="node-0x20afad00">
+    <command xml:space="preserve">restore</command>
+    <result xml:space="preserve">
+Please supply a filename for restore
+Ok.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21507660" />
+    </children>
+  </item>
+  <item nodeId="node-0x21507660">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+A brief breeze flaps your clothing.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2004cea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2004cea0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+Some sort of insect buzzes by.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2153ed20" />
+    </children>
+  </item>
+  <item nodeId="node-0x2153ed20">
+    <command xml:space="preserve">put acorn on sparker</command>
+    <result xml:space="preserve">You put the acorn on the sparker tool.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1f42b300" />
+    </children>
+  </item>
+  <item nodeId="node-0x1f42b300">
+    <command xml:space="preserve">enter rocks</command>
+    <result xml:space="preserve">You get into the circle of rocks.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21550f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x21550f70">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21557050" />
+    </children>
+  </item>
+  <item nodeId="node-0x21557050">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21553d40" />
+    </children>
+  </item>
+  <item nodeId="node-0x21553d40">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+A brief breeze flaps your clothing.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2155ab00" />
+    </children>
+  </item>
+  <item nodeId="node-0x2155ab00">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2150f0e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2150f0e0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x200b7f60" />
+    </children>
+  </item>
+  <item nodeId="node-0x200b7f60">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21526f20" />
+    </children>
+  </item>
+  <item nodeId="node-0x21526f20">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x215484a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x215484a0">
+    <command xml:space="preserve">showme vulture</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ed2d790" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ed2d790">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Bluff - room
+    stick bundle - transparent open container
+        sparker tool - supporter
+            acorn
+    chipmunk - animal
+    sky - backdrop
+    track - backdrop
+    circle of rocks - transparent open container
+        yourself - player-character
+            eyes (part of yourself) - open container
+            box - open container
+            bucket - transparent open container
+            long stick
+            hat (worn) - open container
+            pocketwatch
+            scrap of paper
+            revolver - gun
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21572ac0" />
+    </children>
+  </item>
+  <item nodeId="node-0x21572ac0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+Some sort of insect buzzes by.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x215691e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x215691e0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2155f030" />
+    </children>
+  </item>
+  <item nodeId="node-0x2155f030">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21554450" />
+    </children>
+  </item>
+  <item nodeId="node-0x21554450">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 9:09 am.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+High above, a vulture glides into the area.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2157c380" />
+    </children>
+  </item>
+  <item nodeId="node-0x2157c380">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21566bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x21566bb0">
+    <command xml:space="preserve">put gun in hat</command>
+    <result xml:space="preserve">You put the revolver into the hat.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2157d2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2157d2f0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x215488b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x215488b0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.
+The vulture screams and is torn apart by the exposion.
+If that weren&apos;t enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and the entire front of the bluff violently collapses downward, filling the tunnel below!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x215892f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x215892f0">
+    <command xml:space="preserve">time</command>
+    <result xml:space="preserve">Your pocketwatch reads 9:14 am.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ca54ba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ca54ba0">
+    <command xml:space="preserve">wait until 9:30</command>
+    <result xml:space="preserve">I didn&apos;t understand that number.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2158a7d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2158a7d0">
+    <command xml:space="preserve">wait until 9:30am</command>
+    <result xml:space="preserve">I didn&apos;t understand that number.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x21555960" />
+    </children>
+  </item>
+  <item nodeId="node-0x21555960">
+    <command xml:space="preserve">wait 15 minutes</command>
+    <result xml:space="preserve">The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The sun mercilessly continues to bake the land.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+Some sort of insect buzzes by.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+A distant wind blows, echoing over the hills.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+It is now 9:30 am.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+
+The chipmunk sniffs around, mostly ignoring you.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
+    <children>
+      <child nodeId="node-0x2157ad90" />
+    </children>
+  </item>
+  <item nodeId="node-0x2157ad90">
+    <command xml:space="preserve">hide stick</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="307">YES</temporary>
+  </item>
   <item nodeId="node-0x15fd3160">
     <command xml:space="preserve">x box</command>
     <result xml:space="preserve">It&apos;s a small wooden box, with the words &quot;Warning:  Handle Carefully&quot; stamped on it.
@@ -1932,99 +3167,6 @@ The vulture sails off, heading west.
     <changed>YES</changed>
     <temporary score="899">YES</temporary>
   </item>
-  <item nodeId="node-0x1ed35ea0">
-    <command xml:space="preserve">shoot acorn</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="216">YES</temporary>
-    <children>
-      <child nodeId="node-0x1df6f440" />
-    </children>
-  </item>
-  <item nodeId="node-0x1df6f440">
-    <command xml:space="preserve">x branch</command>
-    <result xml:space="preserve">You see a particularly long branch, fairly high-up.  You see an acorn up there.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="216">YES</temporary>
-    <children>
-      <child nodeId="node-0x1ed720c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1ed720c0">
-    <command xml:space="preserve">shoot acorn</command>
-    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
-Yikes, that&apos;s a small target.  Your bullet sails right past it.  I guess you could always try again.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="216">YES</temporary>
-    <children>
-      <child nodeId="node-0x1f4235c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1f4235c0">
-    <command xml:space="preserve">shoot acorn</command>
-    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
-What luck!  You hit a tiny branch, and the acorn tumbles to the ground.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="216">YES</temporary>
-    <children>
-      <child nodeId="node-0x200812e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x200812e0">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Lone Tree Bluff
-This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
-
-Looks like someone left a rusty old bucket here.
-
-You can also see an acorn here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="216">YES</temporary>
-    <children>
-      <child nodeId="node-0x1d5afd40" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d5afd40">
-    <command xml:space="preserve">x branch</command>
-    <result xml:space="preserve">You see a particularly long branch, fairly high-up.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="216">YES</temporary>
-    <children>
-      <child nodeId="node-0x1dfe1b20" />
-    </children>
-  </item>
-  <item nodeId="node-0x1dfe1b20">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Lone Tree Bluff
-This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
-
-Looks like someone left a rusty old bucket here.
-
-You can also see an acorn here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="215">YES</temporary>
-  </item>
   <item nodeId="node-0x15fd3f60">
     <command xml:space="preserve">take box</command>
     <result xml:space="preserve">There&apos;s no way you can reach down to the box, it&apos;s at least a couple of feet out of reach.
@@ -2113,6 +3255,15 @@ The vulture sails off, heading west.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="929">YES</temporary>
+  </item>
+  <item nodeId="node-0x21555490">
+    <command xml:space="preserve">hide gun</command>
+    <result xml:space="preserve">You&apos;ll have to figure out how to hide things yourself.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="308">YES</temporary>
   </item>
   <item nodeId="node-0x15fd42e0">
     <command xml:space="preserve">w</command>

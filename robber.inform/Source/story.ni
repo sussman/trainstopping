@@ -40,7 +40,7 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 
 Chapter 0 - World Modifications
 
-The release number is 4.
+The release number is 5.
 The story genre is "Western".
 
 Use full-length room descriptions and the serial comma.
@@ -201,6 +201,10 @@ Understand "credits" as listing credits.
 Listing credits is an action applying to nothing.
 Carry out listing credits:
 	say "Huge thanks to the following beta-testers:  Jim Blandy, Malcolm Rowe, Beth and Mitri Vaneechitheront, John Lodder."
+
+Understand "hide [thing]" as hiding.
+Hiding is an action applying to one thing.
+Check hiding:  say "You'll have to figure out how to hide things yourself."
 
 Chapter 1 - The Robbery
 
@@ -545,5 +549,5 @@ The eastern road is east of the Dirt Road. [not accessible]
 The western road is west of the Dirt Road. [not accessible]
 
 [A starting point for the player;  useful to change this when debugging sections.]
-The [Dirt Road] Bluff [Lone Tree Bluff] contains the player.
+The Dirt Road [Bluff] [Lone Tree Bluff] contains the player.
 
