@@ -480,11 +480,13 @@ After shooting the acorn:
 	
 The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and slowly climb up the mountain.[paragraph break][end if]Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face."
 
-The cliff is in the Summit.  The cliff is scenery.  The description is "It's a stark drop at the eastern edge of the summit.  Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.  [if the string is in the shrub]There's a string tied to the box, leading up to a shrub.[end if]".
+The cliff is in the Summit.  The cliff is scenery.  The description is "It's a stark drop at the eastern edge of the summit.  [if the box is on the outcropping]Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.[end if]  [if the string is in the shrub]There's a string tied to the box, leading up to a shrub.[end if]".
 
-A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a container.  The shrub is scenery.  The description of the shrub is "It's an ordinary shrub.[if the string is in the shrub]  Or... wait, is that a piece of string tied to its base?[end if]".  After examining the shrub, move the string to the shrub.
+After examining the cliff, move the box to the outcropping.
 
-The string is a thing.  When play begins, remove the string from play.  The description of the string is "The string is tied to the base of the shrub, and seems to run along the ground behind the shrub.   It then dips down out of sight off a cliff at the eastern part the summit."  
+A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a container.  The shrub is scenery.  The description of the shrub is "It's an ordinary shrub.[if the string is in the shrub]  Or... wait, is that a piece of string tied to its base?[end if]".  Before examining the shrub: move the string to the shrub; continue the action.
+
+The string is a thing.  When play begins, remove the string from play.  The description of the string is "The string is tied to the base of the shrub, and seems to run along the ground behind the shrub.   It then dips down out of sight off a cliff at the eastern part the summit."
 
 Instead of taking the string:
 	say "As you untie the string from the shrub, you feel a gentle snap on the other end.  The string then slips from your grip and slides off the cliff.";
@@ -501,7 +503,7 @@ Instead of taking the box:
 
 The outcropping is part of the cliff.  The outcropping is a supporter.  The description is "It's a small outcropping sticking out from the wall of the cliff, just hanging in space."
 
-The box is a closed, openable, portable container.  The box is on the outcropping.  The description is "It's a small wooden box, with the words 'Warning:  Handle Carefully' stamped on it."
+The box is a closed, openable, portable container.  When play begins, remove the box from play.  The description is "It's a small wooden box, with the words 'Warning:  Handle Carefully' stamped on it."
 
 The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way." 
 
