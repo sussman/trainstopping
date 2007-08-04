@@ -40,7 +40,7 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 
 Chapter 0 - World Modifications
 
-The release number is 5.
+The release number is 6.
 The story genre is "Western".
 
 Use full-length room descriptions and the serial comma.
@@ -62,7 +62,7 @@ Section 1 - Player's Inventory
 
 Instead of examining the player, say "Big boots, pants, plains hat and a tattered overcoat.  You're quite the desperado, ain't ya?".
 
-The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 1.  Instead of eating the hat, say "If you don't complete this mission, you sure will!"
+The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 1.  The inventory listing of the hat is "a wide-brimmed hat".  Instead of eating the hat, say "If you don't complete this mission, you sure will!"
 
 Rule for deciding the concealed possessions of the player:
 	if the particular possession is inside the hat or the bucket, yes;
@@ -112,6 +112,7 @@ Shooting it with is an action with past participle shot, applying to two visible
 
 Understand "shoot [something]" as shooting.
 Understand "shoot [something] with [something]" as shooting it with.
+Understand "fire gun" as shooting.
 
 Instead of shooting something:
 	if a gun (called the firearm) is held by the player
@@ -184,18 +185,25 @@ xyzzy is an action applying to nothing.
 Carry out xyzzy:  say "Nuh-uh.  Not in this game."
 
 [Taken from the documention example:]
-Waiting more is an action applying to one number.
 Understand "wait [number] minutes/turns" or "wait [number]" as waiting more.
-
+Waiting more is an action applying to one number.
 Carry out waiting more: 
     let duration be the number understood - 1; 
     repeat with X running from 1 to duration 
     begin; 
         follow the turn sequence rules; 
     end repeat.
-
 Report waiting more: 
     say "It is now [time of day + 1 minute]."
+
+[Understand "wait until [time]" as waiting for clock.
+Waiting for clock is an action applying to a time.
+Carry out waiting for clock:
+	let duration be the time understood minus the current time;
+	try waiting duration.
+Report waiting for clock:
+	say "It is now [time of day + 1 minute]."]
+
 
 Understand "credits" as listing credits.
 Listing credits is an action applying to nothing.
@@ -233,7 +241,7 @@ At the time when the train approaches:
 At the time when the train passes:
 	Move the train to the track below;
 	if the player is in the Mountainside, say "The train is approaching the tunnel!";
-	if the player is in the Hill Area, say "The Mountain shakes as a train rumbles ever closer!".
+	if the player is in the Hill Area, say "The mountain shakes as a train rumbles ever closer!".
 
 When Train Arrival ends:
         if the tunnel is open
@@ -286,7 +294,7 @@ The chipmunk is an animal.  "A chipmunk scurries about."  The description is "A 
 
 An animal is either plotting or innocent.  An animal is usually innocent.
 Every turn when the chipmunk is plotting for more than 1 turn:
-	if an acorn is supported by the sparker and the sparker is inside the bundle
+	if the chipmunk can see an acorn and an acorn is supported by the sparker and the sparker is inside the bundle
 	begin;
 		if the chipmunk is visible, say "The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!";
 		explode the bundle;
@@ -321,7 +329,7 @@ Every turn when the chipmunk is in a room (called the current space):
 		end if;
                 end if;
         otherwise;
-	if an acorn is visible and the acorn is not carried by the player
+	if the acorn is visible and the acorn is not carried by the player
             	begin;
 		now the chipmunk is plotting;
 	otherwise;
@@ -336,7 +344,7 @@ Every turn when the chipmunk is in a room (called the current space):
 
 [Possible bug:  if chipmunk dies, this rule produces 'must supply a noun' on each turn?]
 Every turn:
-	if the location of the chipmunk is not the location of the player
+	if the chipmunk is in a room and the location of the chipmunk is not the location of the player
 	begin;
 		if the player carries an acorn
 		begin;
@@ -369,10 +377,15 @@ After exiting:
 A rule for reaching outside the circle of rocks:  say "You can't reach anything while inside the rock circle.";  deny access.
 
 
-The stick bundle is a portable transparent container.  "You see a bundle of small brown sticks."  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "You've never seen anything like this before.  It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."  Instead of dropping the bundle:  say "You... gingerly... put the bundle on the ground, and step away."; continue the action.  After examining the bundle, say "It currently contains [contents of bundle].".
+The stick bundle is a portable transparent container.  "You see a bundle of small brown sticks."  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "You've never seen anything like this before.  It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."   After examining the bundle, say "It currently contains [contents of bundle].".
 
-The sparker tool is a portable supporter.  Understand "sparker" and "tool" as the sparker tool.  The description is "This thing seems familiar;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks.  It's good for starting campfires or lighting stoves."
+The sparker tool is a portable supporter.  Understand "sparker" and "tool" as the sparker tool.  The description is "This thing seems familiar;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks.  It's good for starting campfires or lighting stoves.[paragraph break]You suppose putting stuff on top of the sparker can make it spark too, provided it's heavy enough.  Hm..."
 
+Instead of putting something on the sparker tool:
+	say "That would be hard to balance.  Try dropping the sparker tool first.";
+	continue the action.
+
+Instead of squeezing the sparker tool, try pushing instead.
 Instead of pushing the sparker tool:
         say "The sparker tool shoots a few sparks from one end.";
         if the sparker is inside the bundle, explode the bundle.
@@ -526,7 +539,7 @@ Instead of taking the string:
 Instead of taking the box:
 	if the player does not carry the stick
 	begin;
-		say "There's no way you can reach down to the box, it's at least a couple of feet out of reach.  Maybe if you had a stick?";
+		say "There's no way you can reach down to the box, it's at least a couple of feet out of reach.  Maybe if you had some way to reach it?";
 	otherwise;
 		say "You lean down off the cliff and delicately balance the edge of the box on your stick, carefully bringing it up to you.";
 		continue the action;
