@@ -19,63 +19,63 @@
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>53</integer>
+        <key>Line</key><integer>61</integer>
         <key>Title</key><string>Section 1 - Player's Inventory</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>82</integer>
+        <key>Line</key><integer>90</integer>
         <key>Title</key><string>Section 2 - Environmental Effects</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>98</integer>
+        <key>Line</key><integer>106</integer>
         <key>Title</key><string>Section 3 - Guns</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>156</integer>
+        <key>Line</key><integer>164</integer>
         <key>Title</key><string>Section 4 - Other Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>196</integer>
+        <key>Line</key><integer>204</integer>
         <key>Title</key><string>Chapter 1 - The Robbery</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>199</integer>
+        <key>Line</key><integer>207</integer>
         <key>Title</key><string>Section 1 - The Train</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>256</integer>
+        <key>Line</key><integer>264</integer>
         <key>Title</key><string>Section 2 - Animals</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>344</integer>
+        <key>Line</key><integer>353</integer>
         <key>Title</key><string>Section 3 - Dynamite</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/sussman/projects/robber/robber.inform/Source/story.ni</string>
-        <key>Line</key><integer>406</integer>
+        <key>Line</key><integer>415</integer>
         <key>Title</key><string>Section 4 - Hill Area</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
@@ -492,6 +492,55 @@
         <key>Title</key><string>Part SR5 - Bibliographic data - unindexed</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>-1</integer>
+    </dict>
+    <key>70</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/emily short/basic help menu</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>--</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>71</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/emily short/menus</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>--</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>72</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/emily short/menus</string>
+        <key>Line</key><integer>7</integer>
+        <key>Title</key><string>Section 1</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>73</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/emily short/menus</string>
+        <key>Line</key><integer>206</integer>
+        <key>Title</key><string>Section 2 (for Glulx only)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>74</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/emily short/basic screen effects</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>--</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>75</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/emily short/basic screen effects</string>
+        <key>Line</key><integer>7</integer>
+        <key>Title</key><string>Section 1 - Spacing and Pausing</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>76</key><dict>
+        <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/emily short/basic screen effects</string>
+        <key>Line</key><integer>188</integer>
+        <key>Title</key><string>Section 2 - Colors (for Z-machine only)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
     </dict>
 </dict>
 </plist>

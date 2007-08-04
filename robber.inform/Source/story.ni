@@ -40,14 +40,22 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 
 Chapter 0 - World Modifications
 
+The release number is 4.
+The story genre is "Western".
+
 Use full-length room descriptions and the serial comma.
 Use no scoring.
-
-[Include Basic Screen Effects by Emily Short.  Include Menus by Emily Short.  Include Basic Help Menu by Emily Short.]
+After printing the banner text, say "(Type HELP if you're new to interactive fiction.)"
 
 When play begins:
         say the story description;
         change the time of day to 8:15 AM.
+
+Include Basic Help Menu by Emily Short.
+
+Table of Basic Help Options (continued)
+title   	 subtable   	 description
+"Contacting the author"   	 --   	 "If you have any difficulties with [story title], please contact me at sussman@red-bean.com."
 
 
 Section 1 - Player's Inventory
@@ -82,7 +90,7 @@ The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedu
 Section 2 - Environmental Effects
 
 Table of Environmental Effects
-Effect
+Event
 "A distant wind blows, echoing over the hills."
 "Some sort of insect buzzes by."
 "A brief breeze flaps your clothing."
@@ -93,7 +101,7 @@ Effect
 
 Every turn when a random chance of 1 in 10 succeeds:
         choose a random row in the Table of Environmental Effects;
-	Say "[Effect entry][paragraph break]".
+	Say "[Event entry][paragraph break]".
 
 Section 3 - Guns
 
@@ -283,7 +291,7 @@ Every turn when the chipmunk is plotting for more than 1 turn:
 	end if;
 
 Table of Chipmunk Fear
-Effect
+Fear-response
 "The chipmunk suddenly shoots you a look of utter fear.  There's something about you that horrifies him."
 "The chipmunk looks at your possessions and freezes in place for a moment."
 "The chipmunk spins around, looks at something you're carrying, then panics."
@@ -303,7 +311,7 @@ Every turn when the chipmunk is in a room (called the current space):
 		if the next space is not the Track Below
 		begin;
 	                        	choose a random row in the Table of Chipmunk Fear;
-			if the chipmunk is visible, say "[Effect entry]  The chipmunk bolts away, speeding [way].";
+			if the chipmunk is visible, say "[Fear-response entry]  It bolts away, speeding [way].";
 			move the chipmunk to next space;
 		end if;
                 end if;
@@ -333,7 +341,8 @@ Every turn:
 	end if;
 	
 Instead of giving an acorn to the chipmunk:  say "The chipmunk is too scared to take it directly from your hand."
-	
+Instead of showing an acorn to the chipmunk:  say "The chipmunk hops up and down with excitement!"	
+
 Instead of taking the chipmunk:  say "Ain't no way you're gonna outrun that varmint!"
 Instead of taking the vulture:  say "What, you can fly now?"
 
@@ -435,6 +444,13 @@ The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisite
 Instead of going north in the Copse, try going up.
 Instead of going south in the Grassy Plateau, try going down.
 
+The flimsy bridge is a backdrop.  Understand "bridge" as the flimsy bridge.  The flimsy bridge is in the bridge area.  The description of the flimsy bridge is "The bridge looks cobbled together by old hemp rope and scrap lumber."
+
+Instead of entering the flimsy bridge:
+	if the player is in the Chasm, try going west;
+	if the player is in the Lone Tree bluff, try going east;
+	if the player is in the Rope Bridge, say "You're already on the bridge.  Yikes."
+
 The Chasm is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff."   Instead of going down in the Chasm, say "Not unless you can fly.".
 
 Instead of going west from the Chasm:
@@ -455,7 +471,10 @@ The Lone Tree Bluff is west of the Rope Bridge.  "This is a very small bluff, al
 
 A bucket is in the Lone Tree Bluff.  The bucket is a portable, transparent, open container.  "Looks like someone left a rusty old bucket here."  The description is "It's an old green bucket, well-used." [Red herring]  The carrying capacity of the bucket is 1.
 
-An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" as the branch.  The branch is a supporter.  The description of the branch is  "It's a large branch, fairly high-up.[if the branch supports something]  You see [a list of things supported by the branch] up there.[end if]".  The acorn is on the branch.
+An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" and "leaves" as the branch.  The branch is a supporter.  The description of the branch is  "You see a particularly long branch, fairly high-up.[if the branch supports something]  You see [a list of things supported by the branch] up there.[end if]".  
+
+When play begins, remove acorn from play.
+Before examining the branch: move the acorn to the branch; continue the action.
 
 Instead of climbing the oak tree, say "You're too old for that.  Really."
 
@@ -482,7 +501,7 @@ The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and s
 
 The cliff is in the Summit.  The cliff is scenery.  The description is "It's a stark drop at the eastern edge of the summit.  [if the box is on the outcropping]Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.[end if]  [if the string is in the shrub]There's a string tied to the box, leading up to a shrub.[end if]".
 
-After examining the cliff, move the box to the outcropping.
+Before examining the cliff: move the box to the outcropping; continue the action.
 
 A shrub is in the Summit.  Understand "shrubbery" and "bush" as the shrub.  The shrub is a container.  The shrub is scenery.  The description of the shrub is "It's an ordinary shrub.[if the string is in the shrub]  Or... wait, is that a piece of string tied to its base?[end if]".  Before examining the shrub: move the string to the shrub; continue the action.
 
@@ -511,14 +530,14 @@ Instead of going east from the Dirt Road, say "You can't see anything interestin
 Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."
 Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
-Instead of smelling the Dirt Road, say "Definitely pine trees.  Up yonder."
+Instead of smelling in the Dirt Road, say "Definitely pine trees.  Up yonder."
 
 The eastern road is east of the Dirt Road. [not accessible]
 
 The western road is west of the Dirt Road. [not accessible]
 
 [A starting point for the player;  useful to change this when debugging sections.]
-The Dirt Road contains the player.
+The [Dirt Road] Bluff contains the player.
 
 
 [

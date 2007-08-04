@@ -9,7 +9,7 @@
             <title>Trainstopping</title>
             <author>Ben Collins-Sussman</author>
             <headline>An IntroComp 2007 game entry</headline>
-            <genre>Fiction</genre>
+            <genre>Western</genre>
             <firstpublished>2007</firstpublished>
             <description>BAM! A mug of ale hits the table, splashing your shoes. Muddy Charlie slumps back in his chair, eyes you carefully, and starts to chuckle.<br/>'You know your problem? You don't think big enough.'<br/>His expression is familiar. Last time you saw that look, it was just before you two decided to hijack the mayor's private herd back in 1866. That didn't work so well.<br/>'What now?' you ask. 'A new idea?'<br/>'Big plans.' He grins widely. 'That new cross-country railroad is almost finished. It's gonna change everything... bigger trains, more people... and prize cargo.'<br/>'A train holdup? Are you kidding?'<br/>'Relax. This time we got [italic type]technology[roman type] on our side.' He leans close and whispers: 'Made in Sweden... or Germany. It's big, dangerous, and nobody knows about it yet.'<br/>'A new weapon?'<br/>'Dynamic, buddy. Dynamic Might.'</description>
             <language>en</language>
@@ -19,7 +19,7 @@
             <attached>
                 <release>
                     <releasedate>2007-08-04</releasedate>
-                    <version>1</version>
+                    <version>4</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>4U67</compilerversion>
                 </release>
@@ -32,7 +32,7 @@
         </colophon>
         <zcode>
             <serial>070804</serial>
-            <release>1</release>
+            <release>4</release>
             <compiler>Inform 7 build 4U67</compiler>
         </zcode>
     </story>
