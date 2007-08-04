@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x6d9870" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x19065430" />
+  <activeNode nodeId="node-0x6d9870" />
   <item nodeId="node-0x6d9870">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -72,10 +72,11 @@ A vulture circles omniously overhead.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="399">NO</temporary>
+    <temporary score="498">NO</temporary>
     <children>
       <child nodeId="node-0x14cc9a10" />
       <child nodeId="node-0x14cc9210" />
+      <child nodeId="node-0x1974a0b0" />
       <child nodeId="node-0x14cc8e90" />
       <child nodeId="node-0x14cc8d90" />
       <child nodeId="node-0x14cc8c90" />
@@ -83,7 +84,7 @@ A vulture circles omniously overhead.
       <child nodeId="node-0x14cc8590" />
       <child nodeId="node-0x14cc8290" />
       <child nodeId="node-0x14cc8090" />
-      <child nodeId="node-0x18a52150" />
+      <child nodeId="node-0x197ee9e0" />
       <child nodeId="node-0x6d9160" />
     </children>
   </item>
@@ -96,8 +97,8 @@ A vulture circles omniously overhead.
 
 &gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="314">NO</temporary>
+    <changed>NO</changed>
+    <temporary score="413">NO</temporary>
     <children>
       <child nodeId="node-0x6d91e0" />
     </children>
@@ -120,8 +121,8 @@ The vulture sails off, heading west.
 
 &gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="314">NO</temporary>
+    <changed>NO</changed>
+    <temporary score="413">NO</temporary>
     <children>
       <child nodeId="node-0x6d9260" />
     </children>
@@ -1606,7 +1607,7 @@ Would you like to RESTART, RESTORE a saved game, or QUIT?
     <changed>YES</changed>
     <temporary score="729">NO</temporary>
   </item>
-  <item nodeId="node-0x18a52150">
+  <item nodeId="node-0x197ee9e0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You shamble slowly toward the trees.
 
@@ -1619,35 +1620,35 @@ You can see a pine cone here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="399">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="497">YES</temporary>
     <children>
-      <child nodeId="node-0x19052780" />
+      <child nodeId="node-0x190e38a0" />
     </children>
   </item>
-  <item nodeId="node-0x19052780">
+  <item nodeId="node-0x190e38a0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Grassy Plateau
-The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  A nice place to take a nap if you didn&apos;t already have better things to do.
+The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  
 
-This is a wide field of untamed prairie.  To the east, a the mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
-
-A vulture circles omniously overhead.
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
 
 A chipmunk scurries about.
 
-The chipmunk spins around, looks at something you&apos;re carrying, then panics.  The chipmunk bolts away, speeding west.
+The chipmunk spins around, looks at something you&apos;re carrying, then panics.  The chipmunk bolts away, speeding east.
+
+High above, a vulture glides into the area.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="399">YES</temporary>
+    <temporary score="497">YES</temporary>
     <children>
-      <child nodeId="node-0x181f4160" />
+      <child nodeId="node-0x1a138d20" />
     </children>
   </item>
-  <item nodeId="node-0x181f4160">
+  <item nodeId="node-0x1a138d20">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Chasm
@@ -1655,199 +1656,22 @@ You press through the grasses, squinting at the bright sky, then suddenly lose y
 
 The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there&apos;s a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.
 
-A chipmunk scurries about.
-
-The smell of hyacinth wafts in the air.
-
-The chipmunk suddenly shoots you a look of utter fear.  There&apos;s something about you that horrifies him.  The chipmunk bolts away, speeding east.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="497">YES</temporary>
+    <children>
+      <child nodeId="node-0x17326210" />
+    </children>
+  </item>
+  <item nodeId="node-0x17326210">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">Not unless you can fly.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x1908fe20" />
-    </children>
-  </item>
-  <item nodeId="node-0x1908fe20">
-    <command xml:space="preserve">close eyes</command>
-    <result xml:space="preserve">It is now pitch dark in here!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x6ba120" />
-    </children>
-  </item>
-  <item nodeId="node-0x6ba120">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-The sun mercilessly continues to bake the land.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x181e8e20" />
-    </children>
-  </item>
-  <item nodeId="node-0x181e8e20">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Darkness
-It is pitch dark, and you can&apos;t see a thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x18a9ad00" />
-    </children>
-  </item>
-  <item nodeId="node-0x18a9ad00">
-    <command xml:space="preserve">open eyes</command>
-    <result xml:space="preserve">Lone Tree Bluff
-This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
-
-Looks like someone left a rusty old bucket here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x18ab7130" />
-      <child nodeId="node-0x18a03eb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18a03eb0">
-    <command xml:space="preserve">x branch</command>
-    <result xml:space="preserve">It&apos;s a large branch, fairly high-up.  You see an acorn up there.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x18abad20" />
-    </children>
-  </item>
-  <item nodeId="node-0x18abad20">
-    <command xml:space="preserve">take acorn</command>
-    <result xml:space="preserve">The branch is far too high to reach.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x18a2b2f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18a2b2f0">
-    <command xml:space="preserve">put hat on branch</command>
-    <result xml:space="preserve">The branch is far too high to reach.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x18aa7bf0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18aa7bf0">
-    <command xml:space="preserve">shoot acorn</command>
-    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
-Yikes, that&apos;s a small target.  Your bullet sails right past it.  I guess you could always try again.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x18129830" />
-    </children>
-  </item>
-  <item nodeId="node-0x18129830">
-    <command xml:space="preserve">shoot acorn</command>
-    <result xml:space="preserve">BANG!  You fire a bullet at the acorn with the revolver. 
-What luck!  You hit a tiny branch, and the acorn tumbles to the ground.
-
-Some sort of insect buzzes by.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="399">YES</temporary>
-    <children>
-      <child nodeId="node-0x19065430" />
-    </children>
-  </item>
-  <item nodeId="node-0x19065430">
-    <command xml:space="preserve">take acorn</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="398">YES</temporary>
-  </item>
-  <item nodeId="node-0x18ab7130">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Lone Tree Bluff
-This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it&apos;s an eruption of countless branches and thick bushy leaves.
-
-Looks like someone left a rusty old bucket here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="386">YES</temporary>
-    <children>
-      <child nodeId="node-0x18162980" />
-    </children>
-  </item>
-  <item nodeId="node-0x18162980">
-    <command xml:space="preserve">x branches</command>
-    <result xml:space="preserve">It&apos;s a large branch, fairly high-up.  You see an acorn up theree
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="386">YES</temporary>
-    <children>
-      <child nodeId="node-0x18a84ef0" />
-    </children>
-  </item>
-  <item nodeId="node-0x18a84ef0">
-    <command xml:space="preserve">put hat on branch</command>
-    <result xml:space="preserve">(first taking it off)
-You put the hat on the branch.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="386">YES</temporary>
-    <children>
-      <child nodeId="node-0x1905c9c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1905c9c0">
-    <command xml:space="preserve">take hat</command>
-    <result xml:space="preserve">The branch is far too high to reach.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="385">YES</temporary>
+    <temporary score="496">YES</temporary>
   </item>
   <item nodeId="node-0x14cc8090">
     <command xml:space="preserve">x box</command>
@@ -2262,6 +2086,15 @@ The vulture sails off, heading west.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="929">YES</temporary>
+  </item>
+  <item nodeId="node-0x1974a0b0">
+    <command xml:space="preserve">eat hat</command>
+    <result xml:space="preserve">If you don&apos;t complete this mission, you sure will!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="497">YES</temporary>
   </item>
   <item nodeId="node-0x14cc9210">
     <command xml:space="preserve">w</command>
