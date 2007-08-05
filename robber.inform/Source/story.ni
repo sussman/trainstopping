@@ -6,7 +6,7 @@ The story description is "BAM!  A mug of ale hits the table, splashing your shoe
 
 'You know your problem?  You don't think big enough.'
 
-His expression is familiar.  Last time you saw that look, it was just before you two decided to hijack the mayor's private herd back in 1866.  That didn't work so well.
+His expression is familiar.  Last time you saw that look, it was just before you two decided to rustle the mayor's private herd back in 1866.  That didn't work so well.
 
 'What now?' you ask.  'A new idea?'
 

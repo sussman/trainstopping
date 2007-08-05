@@ -12,7 +12,7 @@ BAM!  A mug of ale hits the table, splashing your shoes.  Muddy Charlie slumps b
 
 &quot;You know your problem?  You don&apos;t think big enough.&quot;
 
-His expression is familiar.  Last time you saw that look, it was just before you two decided to hijack the mayor&apos;s private herd back in 1866.  That didn&apos;t work so well.
+His expression is familiar.  Last time you saw that look, it was just before you two decided to rustle the mayor&apos;s private herd back in 1866.  That didn&apos;t work so well.
 
 &quot;What now?&quot; you ask.  &quot;A new idea?&quot;
 
@@ -71,7 +71,7 @@ This is a dusty trail that wanders off east and west for miles.  The sun blasts 
 
 &gt;</commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="676">NO</temporary>
     <children>
       <child nodeId="node-0x7179cf0" />
