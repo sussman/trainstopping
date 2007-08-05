@@ -40,7 +40,7 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 
 Chapter 0 - World Modifications
 
-The release number is 7.
+The release number is 8.
 The story genre is "Western".
 
 Use full-length room descriptions and the serial comma.
@@ -209,7 +209,7 @@ Report waiting for clock:
 Understand "credits" as listing credits.
 Listing credits is an action applying to nothing.
 Carry out listing credits:
-	say "Huge thanks to the following beta-testers:  Malcolm Rowe, Beth and Mitri Vaneechitheront, Jim Blandy, John Lodder, and Frances Collins-Sussman."
+	say "Huge thanks to the following beta-testers:  Malcolm Rowe, Beth and Mitri Vaneechitheront, Jim Blandy, John Lodder, Atul Varma and Frances Collins-Sussman."
 
 Understand "hide [thing]" as hiding.
 Hiding is an action applying to one thing.
