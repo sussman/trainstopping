@@ -49,7 +49,8 @@ After printing the banner text, say "(Type HELP if you're new to interactive fic
 
 When play begins:
         say the story description;
-        change the time of day to 8:15 AM.
+        change the time of day to 8:15 AM;
+        change right hand status line to "[time of day]".
 
 Include Basic Help Menu by Emily Short.
 
@@ -72,17 +73,20 @@ Rule for deciding the concealed possessions of the hat:
 	if the player wears the hat, yes;
 	otherwise no.
 
-The player carries a pocketwatch.  Understand "watch" and "timepiece" and "pocket watch" as the pocketwatch. The description of the pocketwatch is "It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads [time of day]."
+The player carries a pocketwatch.  Understand "watch" and "timepiece" and "pocket watch" as the pocketwatch. The description of the pocketwatch is "It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads [time of day + 1 minute]."
 
 Time-checking is an action applying to nothing.  Understand "time" as time-checking.
 Carry out time-checking:
 	if the player carries the pocketwatch
 	begin;
 		if the location of the player is dark, say "It's too dark to see your watch.";
-		otherwise say "Your pocketwatch reads [time of day].";
+		otherwise say "Your pocketwatch reads [time of day + 1 minute].";
 	otherwise;
 		say "You have no way of checking the time.";
 	end if.
+
+After dropping the pocketwatch, change the right hand status line to "?".
+After taking the pocketwatch, change the right hand status line to "[time of day]".
 
 The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoring train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should be speeding by this area around 10:30am.  Angry smeared handwriting screams 'MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON'T BELLATE.'".
 
