@@ -1,5 +1,5 @@
 ! Blurb file created by NI build 4U67
-variable [RELEASE] = "6"
+variable [RELEASE] = "7"
 storyfile "/Users/sussman/projects/robber/robber.inform/Build/output.z5" include
 metadata "/Users/sussman/projects/robber/robber.inform/Metadata.iFiction" include
 variable [YEAR] = "2007"

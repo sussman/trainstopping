@@ -40,7 +40,7 @@ IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the
 
 Chapter 0 - World Modifications
 
-The release number is 6.
+The release number is 7.
 The story genre is "Western".
 
 Use full-length room descriptions and the serial comma.
@@ -72,7 +72,7 @@ Rule for deciding the concealed possessions of the hat:
 	if the player wears the hat, yes;
 	otherwise no.
 
-The player carries a pocketwatch.  Understand "watch" as the pocketwatch. The description of the pocketwatch is "It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads [time of day]."
+The player carries a pocketwatch.  Understand "watch" and "timepiece" and "pocket watch" as the pocketwatch. The description of the pocketwatch is "It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads [time of day]."
 
 Time-checking is an action applying to nothing.  Understand "time" as time-checking.
 Carry out time-checking:
@@ -159,12 +159,13 @@ After shooting something (called the victim) with a gun (called the weapon):
 
 [Report shooting it with: ??]
 
-A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 4.  The description of the revolver is "It's a mean-looking revolver, good for... persuasion."  The inventory listing of the revolver is "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
+A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 6.  The description of the revolver is "It's a mean-looking revolver, good for... persuasion."  The inventory listing of the revolver is "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
 
 
 Section 4 - Other Rules
 
 Understand "look [thing]" as examining.
+Understand "look over [thing]" as examining.
 
 Understand "exit [thing]" as specifically exiting.
 Understand "leave [thing]" as specifically exiting.
@@ -189,7 +190,7 @@ Understand "wait [number] minutes/turns" or "wait [number]" as waiting more.
 Waiting more is an action applying to one number.
 Carry out waiting more: 
     let duration be the number understood - 1; 
-    repeat with X running from 1 to duration 
+    repeat with X running from 1 to duration
     begin; 
         follow the turn sequence rules; 
     end repeat.
@@ -208,11 +209,15 @@ Report waiting for clock:
 Understand "credits" as listing credits.
 Listing credits is an action applying to nothing.
 Carry out listing credits:
-	say "Huge thanks to the following beta-testers:  Jim Blandy, Malcolm Rowe, Beth and Mitri Vaneechitheront, John Lodder."
+	say "Huge thanks to the following beta-testers:  Malcolm Rowe, Beth and Mitri Vaneechitheront, Jim Blandy, John Lodder, and Frances Collins-Sussman."
 
 Understand "hide [thing]" as hiding.
 Hiding is an action applying to one thing.
 Check hiding:  say "You'll have to figure out how to hide things yourself."
+
+Rule for printing a parser error when parser error is can only do that to something animate:
+	say "Eh?  Either the recipient isn't here, or the recipient isn't something animate." instead.
+
 
 Chapter 1 - The Robbery
 
@@ -329,7 +334,7 @@ Every turn when the chipmunk is in a room (called the current space):
 		end if;
                 end if;
         otherwise;
-	if the acorn is visible and the acorn is not carried by the player
+	if the chipmunk can see the acorn and the acorn is not carried by the player
             	begin;
 		now the chipmunk is plotting;
 	otherwise;
@@ -376,14 +381,13 @@ After exiting:
 	
 A rule for reaching outside the circle of rocks:  say "You can't reach anything while inside the rock circle.";  deny access.
 
-
 The stick bundle is a portable transparent container.  "You see a bundle of small brown sticks."  Understand "sticks" and "bundle" as the stick bundle.  The carrying capacity of the bundle is 1.  The description is "You've never seen anything like this before.  It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads 'Nobel's Blasting Powder, U.S. Patent 78317.'   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into."   After examining the bundle, say "It currently contains [contents of bundle].".
 
 The sparker tool is a portable supporter.  Understand "sparker" and "tool" as the sparker tool.  The description is "This thing seems familiar;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks.  It's good for starting campfires or lighting stoves.[paragraph break]You suppose putting stuff on top of the sparker can make it spark too, provided it's heavy enough.  Hm..."
 
 Instead of putting something on the sparker tool:
-	say "That would be hard to balance.  Try dropping the sparker tool first.";
-	continue the action.
+	if the sparker tool is in the bundle and the bundle is held, say "That would be hard to balance.  Try dropping the bundle first.";
+	otherwise continue the action.
 
 Instead of squeezing the sparker tool, try pushing instead.
 Instead of pushing the sparker tool:
@@ -400,7 +404,12 @@ The box contains the stick bundle and the sparker tool.
 
 To explode the bundle:
 	[Step 1:  describe the explosion if we can see it.]
-	if the bundle is visible, say "A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
+	if the bundle is visible
+	begin;
+		say "A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
+	otherwise;
+		say "You hear a tremendous explosion nearby, and the mountain shakes!";
+	end if;
 	
 	[Step 2:  make the explosion kill other people if necessary]
 	if the bundle can be seen by the player and the player is unprotected
@@ -454,7 +463,6 @@ Instead of taking the stick:
 	say "You carefully reach over the edge of the bluff and pluck the stick from the tunnel's arch.";
 	move the stick to the player.
 	
-
 The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  
 
 The circle of rocks is here.  Understand "rocks" and "circle" and "formation" and "rock formation" and "stones" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
@@ -476,7 +484,7 @@ Instead of entering the flimsy bridge:
 	if the player is in the Lone Tree bluff, try going east;
 	if the player is in the Rope Bridge, say "You're already on the bridge.  Yikes."
 
-The Chasm is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff."   Instead of going down in the Chasm, say "Not unless you can fly.".
+The Chasm is west of the Grassy Plateau.  "[if unvisited]You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.[paragraph break][end if]The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.  To the east, the grasses look more inviting."   Instead of going down in the Chasm, say "Not unless you can fly.".
 
 Instead of going west from the Chasm:
 	if the Chasm is not dark, say "You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.";
@@ -506,23 +514,23 @@ Instead of climbing the oak tree, say "You're too old for that.  Really."
 Instead of taking something on the branch, say "The branch is far too high to reach."
 Instead of putting something on the branch, say "The branch is far too high to reach."
 
-After shooting the branch:
-	say "Embedding a bullet in the huge branch isn't going to do much."
+Instead of shooting the acorn:
+	say "You hesitate instead, not really wanting to destroy the acorn itself."
 
-After shooting the acorn:
+After shooting the branch:
 	if the acorn is on the branch
 	begin;
 		if a random chance of 1 in 2 succeeds
 		begin;
-			say "What luck!  You hit a tiny branch, and the acorn tumbles to the ground.";
+			say "What luck!  You hit a tiny part of the branch, and the acorn tumbles to the ground.";
 			move the acorn to the Lone Tree Bluff;
 		otherwise;
-			say "Yikes, that's a small target.  Your bullet sails right past it.  I guess you could always try again.";
+			say "Yikes, the branch is a small target.  Your bullet sails right past it.  I guess you could always try again.";
 		end if;
 	end if;
 	continue the action.
 	
-The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and slowly climb up the mountain.[paragraph break][end if]Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, and a small bluff is visible further down the north face."
+The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and slowly climb up the mountain.[paragraph break][end if]Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, running away from this mountain."
 
 The cliff is in the Summit.  The cliff is scenery.  The description is "It's a stark drop at the eastern edge of the summit.  [if the box is on the outcropping]Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.[end if]  [if the string is in the shrub]There's a string tied to the box, leading up to a shrub.[end if]".
 
@@ -551,8 +559,8 @@ The box is a closed, openable, portable container.  When play begins, remove the
 
 The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way." 
 
-Instead of going east from the Dirt Road, say "You can't see anything interesting in that direction." 
-Instead of going west from the Dirt Road, say "In this heat, you wouldn't make it very far."
+Instead of going west from the Dirt Road, say "You came from that direction, no point in turning back now." 
+Instead of going east from the Dirt Road, say "In this heat, you wouldn't make it much farther."
 Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
 Instead of smelling in the Dirt Road, say "Definitely pine trees.  Up yonder."
@@ -563,4 +571,7 @@ The western road is west of the Dirt Road. [not accessible]
 
 [A starting point for the player;  useful to change this when debugging sections.]
 The Dirt Road [Bluff] [Lone Tree Bluff] contains the player.
+
+
+[test walkthrough with "north / up / west / close eyes / west / west / open eyes / x branch / shoot acorn / shoot acorn / shoot acorn / shoot acorn / take acorn / close eyes / east / east / open eyes / put gun in hat / east / northeast / x tunnel / take stick / southwest / east "]
 
