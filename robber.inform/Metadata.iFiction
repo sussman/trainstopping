@@ -18,22 +18,22 @@
         <releases>
             <attached>
                 <release>
-                    <releasedate>2007-08-05</releasedate>
+                    <releasedate>2007-08-07</releasedate>
                     <version>8</version>
                     <compiler>Inform 7</compiler>
-                    <compilerversion>4U67</compilerversion>
+                    <compilerversion>4W37</compilerversion>
                 </release>
             </attached>
         </releases>
         <colophon>
             <generator>Inform 7</generator>
-            <generatorversion>4U67</generatorversion>
-            <originated>2007-08-05</originated>
+            <generatorversion>4W37</generatorversion>
+            <originated>2007-08-07</originated>
         </colophon>
         <zcode>
-            <serial>070805</serial>
+            <serial>070807</serial>
             <release>8</release>
-            <compiler>Inform 7 build 4U67</compiler>
+            <compiler>Inform 7 build 4W37</compiler>
         </zcode>
     </story>
 </ifindex>

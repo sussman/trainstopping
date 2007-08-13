@@ -61,7 +61,7 @@ title   	 subtable   	 description
 
 Section 1 - Player's Inventory
 
-Instead of examining the player, say "Big boots, pants, plains hat and a tattered overcoat.  You're quite the desperado, ain't ya?".
+Instead of examining the player, say "Big boots, pants, plains hat and a tattered overcoat.  Almost... isquiesque.  You're quite the desperado, ain't ya?".
 
 The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 1.  The inventory listing of the hat is "a wide-brimmed hat".  Instead of eating the hat, say "If you don't complete this mission, you sure will!"
 

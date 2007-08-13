@@ -1,4 +1,4 @@
-! Blurb file created by NI build 4U67
+! Blurb file created by NI build 4W37
 variable [RELEASE] = "8"
 storyfile "/Users/sussman/projects/robber/robber.inform/Build/output.z5" include
 metadata "/Users/sussman/projects/robber/robber.inform/Metadata.iFiction" include
