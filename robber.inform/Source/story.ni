@@ -561,6 +561,14 @@ The outcropping is part of the cliff.  The outcropping is a supporter.  The desc
 
 The box is a closed, openable, portable container.  When play begins, remove the box from play.  The description is "It's a small wooden box, with the words 'Warning:  Handle Carefully' stamped on it."
 
+Instead of opening the box:
+	if the player does not carry the box
+	begin;
+		say "You need to hold the box to do that.";
+	otherwise;
+		continue the action;
+	end if.
+
 The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way." 
 
 Instead of going west from the Dirt Road, say "You came from that direction, no point in turning back now." 
