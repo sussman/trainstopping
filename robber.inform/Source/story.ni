@@ -476,7 +476,7 @@ The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up 
 Instead of going up in the Grassy Plateau, try going east.
 Instead of going down in the Summit, try going west.
 
-The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  Understand "cone" and "pinecone" as the pine cone. The description of the pine cone is "Yep, it's a pine cone." [red herring]  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."
+The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  Understand "cone" and "pinecone" as the pine cone. The description of the pine cone is "Yep, it's a pine cone." [red herring]  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."  Instead of smelling in the Copse, say "Ah, pine.  Just like home."
 
 Instead of going north in the Copse, try going up.
 Instead of going south in the Grassy Plateau, try going down.
@@ -572,7 +572,7 @@ Instead of opening the box:
 The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way." 
 
 Instead of going west from the Dirt Road, say "You came from that direction, no point in turning back now." 
-Instead of going east from the Dirt Road, say "In this heat, you wouldn't make it much farther."
+Instead of going east from the Dirt Road, say "There be dragons."
 Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
 Instead of smelling in the Dirt Road, say "Definitely pine trees.  Up yonder."
