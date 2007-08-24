@@ -548,18 +548,18 @@ Instead of taking the string:
 	say "As you untie the string from the shrub, you feel a gentle snap on the other end.  The string then slips from your grip and slides off the cliff.";
 	remove the string from play.
 
-Instead of taking the box:
+Instead of taking the box for the first time:
 	if the player does not carry the stick
 	begin;
-		say "There's no way you can reach down to the box, it's at least a couple of feet out of reach.  Maybe if you had some way to reach it?";
+		say "You lean over the cliff, but the box is at least a couple of feet out of reach.  Maybe if you had some way of grabbing it by its looped handle?";
 	otherwise;
-		say "You lean down off the cliff and delicately balance the edge of the box on your stick, carefully bringing it up to you.";
+		say "You lean over the cliff and slowly hook the box's looped handle on the end of your stick, carefully bringing it up to you.";
 		continue the action;
 	end if.
 
 The outcropping is part of the cliff.  The outcropping is a supporter.  The description is "It's a small outcropping sticking out from the wall of the cliff, just hanging in space."
 
-The box is a closed, openable, portable container.  When play begins, remove the box from play.  The description is "It's a small wooden box, with the words 'Warning:  Handle Carefully' stamped on it."
+The box is a closed, openable, portable container.  When play begins, remove the box from play.  The description is "It's a small wooden box, with the words 'Warning:  Handle Carefully' stamped on it.  It seems to have a looped handle on top."
 
 Instead of opening the box:
 	if the player does not carry the box
