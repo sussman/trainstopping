@@ -1,0 +1,895 @@
+BAM!  A mug of ale hits the table, splashing your shoes.  Muddy Charlie slumps back in his chair, eyes you carefully, and starts to chuckle.
+
+"You know your problem?  You don't think big enough."
+
+His expression is familiar.  Last time you saw that look, it was just before you two decided to rustle the mayor's private herd back in 1866.  That didn't work so well.
+
+"What now?" you ask.  "A new idea?"
+
+"Big plans."  He grins widely.  "That new cross-country railroad is almost finished.  It's gonna change everything... bigger trains, more people... and prize cargo."
+
+"A train holdup?  Are you kidding?"
+
+"Relax.  This time we got technology on our side."  He leans close and whispers:  "Made in Sweden... or Germany.  It's big, dangerous, and nobody knows about it yet."
+
+"A new weapon?"
+
+"Dynamic, buddy.  Dynamic Might." 
+
+Trainstopping
+An IntroComp 2007 game entry by Ben Collins-Sussman
+Release 7 / Serial number 070804 / Inform 7 build 4U67 (I6/v6.31 lib 6/11N) 
+(Type HELP if you're new to interactive fiction.)
+
+Dirt Road
+Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.
+
+This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way.
+
+>[Nice prologue.]
+That's not a verb I recognise.
+
+>n
+You shamble slowly toward the trees.
+
+Copse
+At last, some shade!
+
+You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road.
+
+You can see a pine cone here.
+
+>take all
+pine cone: Taken.
+
+>s
+
+Dirt Road
+This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way.
+
+>take all
+There are none at all available!
+
+>n
+You shamble slowly toward the trees.
+
+Copse
+You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road.
+
+Some sort of insect buzzes by.
+
+>x birds
+You can't see any such thing.
+
+>[As a general rule, I think you should implement anything you mention in a description.]
+You seem to want to talk to someone, but I can't see whom.
+
+>u
+
+Grassy Plateau
+The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  
+
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+A vulture circles omniously overhead.
+
+A chipmunk scurries about.
+
+The chipmunk looks at your possessions and freezes in place for a moment.  It bolts away, speeding west.
+
+>ne
+
+Bluff
+You're standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+
+>x track
+The track extends off into the distance, then curves out of sight around a far-off hill. 
+
+>x tunnel
+The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it.  You see a long stick hanging out of the top of the tunnel's arch, probably some remnant of a broken branch.
+
+>x stick
+It's a thin stick, about two feet long.
+
+>sw
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+>w
+
+Chasm
+You press through the grasses, squinting at the bright sky, then suddenly lose your footing.  You scramble to regain your balance and realize you nearly walked off a cliff.
+
+The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.  To the east, the grasses look more inviting.
+
+A vulture circles omniously overhead.
+
+A chipmunk scurries about.
+
+The chipmunk spins around, looks at something you're carrying, then panics.  It bolts away, speeding west.
+
+>w
+You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.
+
+The vulture sails off, heading east.
+
+>w
+You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.
+
+High above, a vulture glides into the area.
+
+>close eye
+You can't see any such thing.
+
+>close eyes
+The vulture sails off, heading west.
+
+It is now pitch dark in here!
+
+>w
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>w
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>open eyes
+Lone Tree Bluff
+This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it's an eruption of countless branches and thick bushy leaves.
+
+A vulture circles omniously overhead.
+
+Looks like someone left a rusty old bucket here.
+
+>x bucket
+It's an old green bucket, well-used.
+
+The vulture sails off, heading east.
+
+>take bucket
+Taken.
+
+>u
+You can't go that way.
+
+>climb tree
+You're too old for that.  Really.
+
+>e
+You grab hold of the bridge, but your vertigo gets the best of you.  You're unable to avoid looking down, and you feel yourself start to spin.  The sight is just too much.
+
+>close eyes
+It is now pitch dark in here!
+
+>e
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>e
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>close eyes
+>[oops - need a response and a hard return after that]
+That's not a verb I recognise.
+
+>open eyes
+Chasm
+The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.  To the east, the grasses look more inviting.
+
+A vulture circles omniously overhead.
+
+>[Nice, simple puzzle.]
+You seem to want to talk to someone, but I can't see whom.
+
+>e
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+>e
+
+Summit
+You wander east, and slowly climb up the mountain.
+
+Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, running away from this mountain.
+
+>w
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+>s
+
+Copse
+You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road.
+
+>u
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+>d
+
+Copse
+You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road.
+
+>d
+You can't go that way.
+
+>s
+
+Dirt Road
+This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way.
+
+>take all
+There are none at all available!
+
+>n
+You shamble slowly toward the trees.
+
+Copse
+You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road.
+
+>take all
+There are none at all available!
+
+>u
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+>take all
+There are none at all available!
+
+>e
+
+Summit
+Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, running away from this mountain.
+
+>x shrubs
+You can't see any such thing.
+
+>x shrubbery
+It's an ordinary shrub.  Or... wait, is that a piece of string tied to its base?
+
+>take string
+As you untie the string from the shrub, you feel a gentle snap on the other end.  The string then slips from your grip and slides off the cliff.
+
+>undo
+Summit
+[Previous turn undone.]
+
+>x string
+The string is tied to the base of the shrub, and seems to run along the ground behind the shrub.   It then dips down out of sight off a cliff at the eastern part the summit.
+
+>pull string
+Nothing obvious happens.
+
+>e
+You can't go that way.
+
+>e
+You can't go that way.
+
+>x cliff
+It's a stark drop at the eastern edge of the summit.  Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.  There's a string tied to the box, leading up to a shrub.
+
+>[See, that was a wild guess.  I sort of wish that >X STRING made you find that box.]
+You seem to want to talk to someone, but I can't see whom.
+
+>get box
+There's no way you can reach down to the box, it's at least a couple of feet out of reach.  Maybe if you had some way to reach it?
+
+>pull string
+Nothing obvious happens.
+
+>[And that seems like a fairly obvious way to bring the box up... but maybe that's just me.]
+That's not a verb I recognise.
+
+>i
+You are carrying:
+  a bucket (empty)
+  a pine cone
+  a wide-brimmed hat
+  a pocketwatch
+  a scrap of paper
+  your trusty revolver
+
+>read watch
+It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads 9:02 am.
+
+>read paper
+The paper contains scribblings from the Little Snoring train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should be speeding by this area around 10:30am.  Angry smeared handwriting screams "MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON'T BELLATE."
+
+>w
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+A vulture circles omniously overhead.
+
+>ne
+
+Bluff
+You're standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+
+>x tunnel
+The tunnel runs straight through the mountain, directly below the bluff.  It looks a bit unstable as well, with bits of dirt crumbling into it.  You see a long stick hanging out of the top of the tunnel's arch, probably some remnant of a broken branch.
+
+>take stick
+You carefully reach over the edge of the bluff and pluck the stick from the tunnel's arch.
+
+>[Huh.  See, I got the impression from your description that the stick would actually be out of reach...]
+You seem to want to talk to someone, but I can't see whom.
+
+>sw
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+A vulture circles omniously overhead.
+
+>e
+
+Summit
+Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, running away from this mountain.
+
+>x cliff
+It's a stark drop at the eastern edge of the summit.  Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.  There's a string tied to the box, leading up to a shrub.
+
+>take box with stick
+I only understood you as far as wanting to take the box.
+
+>take box
+You lean down off the cliff and delicately balance the edge of the box on your stick, carefully bringing it up to you.
+
+Taken.
+
+>[Hm.  Take box with stick, if that's in fact what I end up doing, should work.]
+You seem to want to talk to someone, but I can't see whom.
+
+>x box
+It's a small wooden box, with the words "Warning:  Handle Carefully" stamped on it.
+
+>open box
+You open the box, revealing a stick bundle and a sparker tool.
+
+>[oh my]
+That's not a verb I recognise.
+
+>x tool
+This thing seems familiar;  it looks like a spring-loaded pair of scissors with a small plate at one end.  If you apply a pound or two of pressure to the plate, the device slowly clamps together into a long stick.  When you push the plate quickly, rapid friction on the opposite tip can produce sparks.  It's good for starting campfires or lighting stoves.
+
+You suppose putting stuff on top of the sparker can make it spark too, provided it's heavy enough.  Hm...
+
+The smell of hyacinth wafts in the air.
+
+>x hyacinth
+You can't see any such thing.
+
+>smell hyacinth
+You can't see any such thing.
+
+>listen
+You hear nothing unexpected.
+
+>smell
+You smell nothing unexpected.
+
+>x bundle
+You've never seen anything like this before.  It looks like a collection of cylinders, each wrapped in plain brown paper.  The side of each stick reads "Nobel's Blasting Powder, U.S. Patent 78317."   You don't see any sort of obvious fuse coming out of the sticks, however... just an empty space at the top of each cylinder, big enough to put your finger into.
+
+It currently contains nothing.
+
+A brief breeze flaps your clothing.
+
+>w
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+>w
+
+Chasm
+The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.  To the east, the grasses look more inviting.
+
+>close eyes
+It is now pitch dark in here!
+
+>w
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>w
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>open eyes
+Lone Tree Bluff
+This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it's an eruption of countless branches and thick bushy leaves.
+
+>x tree
+The tree is huge and leafy, but you don't see any fruit.  Just some strong branches.
+
+>x branches
+You see a particularly long branch, fairly high-up.  You see an acorn up there.
+
+>i
+You are carrying:
+  a box (open)
+    a stick bundle (empty)
+    a sparker tool
+  a long stick
+  a bucket (empty)
+  a pine cone
+  a wide-brimmed hat
+  a pocketwatch
+  a scrap of paper
+  your trusty revolver
+
+>hit acorn with stick
+I only understood you as far as wanting to hit the acorn.
+
+>get acorn
+The branch is far too high to reach.
+
+>get acorn with stick
+I only understood you as far as wanting to get the acorn.
+
+>shoot acorn
+You hesitate instead, not really wanting to destroy the acorn itself.
+
+>shoot branch
+BANG!  You fire a bullet at the branch with the revolver. 
+Yikes, the branch is a small target.  Your bullet sails right past it.  I guess you could always try again.
+
+>g
+BANG!  You fire a bullet at the branch with the revolver. 
+Yikes, the branch is a small target.  Your bullet sails right past it.  I guess you could always try again.
+
+>undo
+Lone Tree Bluff
+[Previous turn undone.]
+
+>undo
+Lone Tree Bluff
+[Previous turn undone.]
+
+>x gun
+It's a mean-looking revolver, good for... persuasion.
+
+It appears to contain six bullets.
+
+>shoot branch
+BANG!  You fire a bullet at the branch with the revolver. 
+What luck!  You hit a tiny part of the branch, and the acorn tumbles to the ground.
+
+>take acorn
+Taken.
+
+The chipmunk arrives from the east.
+
+>i
+You are carrying:
+  an acorn
+  a box (open)
+    a stick bundle (empty)
+    a sparker tool
+  a long stick
+  a bucket (empty)
+  a pine cone
+  a wide-brimmed hat
+  a pocketwatch
+  a scrap of paper
+  your trusty revolver
+
+A brief breeze flaps your clothing.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>take bundle and tool out of box
+I only understood you as far as wanting to take those things.
+
+>take bundle
+Taken.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>take box
+You lean down off the cliff and delicately balance the edge of the box on your stick, carefully bringing it up to you.
+
+You already have that.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>i
+You are carrying:
+  a stick bundle (empty)
+  an acorn
+  a box (open)
+    a sparker tool
+  a long stick
+  a bucket (empty)
+  a pine cone
+  a wide-brimmed hat
+  a pocketwatch
+  a scrap of paper
+  your trusty revolver
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>take tool
+Taken.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>drop box
+Dropped.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>take box
+You lean down off the cliff and delicately balance the edge of the box on your stick, carefully bringing it up to you.
+
+Taken.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>close eyes
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+It is now pitch dark in here!
+
+>e
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>e
+
+Darkness
+It is pitch dark, and you can't see a thing.
+
+>close eyes
+>[er...]
+That's not a verb I recognise.
+
+>open eyes
+Chasm
+The edge of the plateau stops abruptly at a chasm that drops nearly one hundred feet.  Luckily, there's a flimsy-looking rope bridge that spans the gap.  It stretches westward to another isolated bluff.  To the east, the grasses look more inviting.
+
+A chipmunk scurries about.
+
+>e
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+The chipmunk arrives from the west.
+
+>e
+
+Summit
+Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, running away from this mountain.
+
+The chipmunk arrives from the west.
+
+>take string
+As you untie the string from the shrub, you feel a gentle snap on the other end.  The string then slips from your grip and slides off the cliff.
+
+Some sort of insect buzzes by.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>undo
+Summit
+[Previous turn undone.]
+
+>x cliff
+It's a stark drop at the eastern edge of the summit.    There's a string tied to the box, leading up to a shrub.
+
+You hear some crickets chirp nearby.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>i
+You are carrying:
+  a box (open but empty)
+  a sparker tool
+  a stick bundle (empty)
+  an acorn
+  a long stick
+  a bucket (empty)
+  a pine cone
+  a wide-brimmed hat
+  a pocketwatch
+  a scrap of paper
+  your trusty revolver
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>[Hm - that appears to be a bug.  I already *took* that box.  Now I want the string...]
+That's not a verb I recognise.
+
+>x watch
+It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads 9:48 am.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>save
+Ok.
+
+>[I must admit that I am very, very amused by the chipmunk now that I have the acorn.]
+You seem to want to talk to someone, but I can't see whom.
+
+>w
+
+Grassy Plateau
+This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush.
+
+The chipmunk arrives from the east.
+
+>ne
+
+Bluff
+You're standing on a wide bluff about fifty feet up a small mountain, overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill.  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+
+The chipmunk arrives from the southwest.
+
+>put striker in bundle
+You can't see any such thing.
+
+>put tool in bundle
+You put the sparker tool into the stick bundle.
+
+A bird chirps somewhere near.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>drop bundle over cliff
+I only understood you as far as wanting to drop the stick bundle.
+
+>drop bundle on track
+Futile.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>[Hm - seems that if the train ran over the bundle with the sparker in it, that'd work...]
+That's not a verb I recognise.
+
+>[Perhaps that's an alternate solution when you complete the game...]
+That's not a verb I recognise.
+
+>drop bundle
+Dropped.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>put acorn on striker
+You can't see any such thing.
+
+>i
+You are carrying:
+  a box (open but empty)
+  an acorn
+  a long stick
+  a bucket (empty)
+  a pine cone
+  a wide-brimmed hat
+  a pocketwatch
+  a scrap of paper
+  your trusty revolver
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>put acorn on sparker
+You put the acorn on the sparker tool.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>x circle
+The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>get in circle
+You get into the circle of rocks.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>put gun in box
+You put the revolver into the box.
+
+The chipmunk seems paralyzed in place, caught between fear and desire.
+
+>close box
+You close the box.
+
+Some sort of insect buzzes by.
+
+>z
+Time passes.
+
+A distant wind blows, echoing over the hills.
+
+>z
+Time passes.
+
+The chipmunk enthusiastically jumps up onto the sparker to grab the acorn!
+A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.
+The chipmunk screams and is torn apart by the exposion.
+If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and the entire front of the bluff violently collapses downward, filling the tunnel below!
+
+>[See, that's quite satisfying, but I don't think that's the only solution you should implement -
+You seem to want to talk to someone, but I can't see whom.
+
+>[ - though maybe I'm missing something.]
+That's not a verb I recognise.
+
+>x watch
+It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads 10:02 am.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>[Also, if nothing else is supposed to happen until the train arrives...
+You seem to want to talk to someone, but I can't see whom.
+
+>[...you might not make the player wait manually.]
+That's not a verb I recognise.
+
+>x tunnel
+The tunnel runs straight through the mountain, directly below the bluff.  The tunnel entrance is now completely collapsed, full of rocks and other debris.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+A bird chirps somewhere near.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>x watch
+It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads 10:17 am.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+Some sort of insect buzzes by.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+The sun mercilessly continues to bake the land.
+
+>z
+Time passes.
+
+A train whistles in the distance!
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+High above, a vulture glides into the area.
+
+The train is moving down the track, getting closer.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+>z
+Time passes.
+
+The vulture sails off, heading southwest.
+
+>z
+Time passes.
+
+The train is approaching the tunnel!
+
+>z
+Time passes.
+
+You hear some crickets chirp nearby.
+
+Seeing the collapsed tunnel, the train engineer yells and slams the brakes!  The giant machine shrieks;  steam and sparks pour from the engine, and the train comes to a stop just inches before the tunnel debris.  You can hear all sorts of panic and screams coming from the train.
+
+In fact, that looks like Muddy himself leaning out of the train window!  He's wildly gesticulating at you.  Is that a a thumbs-up signal he's giving you?
+
+>x muddy
+You can't see any such thing.
+
+>x gesture
+You can't see any such thing.
+
+>l
+Bluff (in the circle of rocks)
+You're standing on the edge of a dangerous, collapsed bluff overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. (Of course, the tunnel is now completely full of rocks and dirt.)  On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  
+
+>d
+You'd surely fall to your death!
+
+>sw
+You'll have to get out of the circle of rocks first.
+
+You feel a tap on your back, and you spin around.
+
+Three guns are pointed in your face.
+
+"We know all about your plan", one of Marshalls states coldly.  "We've been tracking you and Muddy for days.  Keep your hands in the air, and follow us."
+
+You can see that Muddy is here, also held at gunpoint and already handcuffed.  You pause for a moment, consider your options, then decide that death is perhaps worse than being locked in a cell with an angry Muddy.
+
+"Don't worry", Muddy whispers.  "I have a plan..."
+
+    *** You have won ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, or QUIT?
