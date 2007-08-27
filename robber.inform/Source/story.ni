@@ -571,21 +571,19 @@ Instead of opening the box:
 		continue the action;
 	end if.
 
-The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off east and west for miles.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of a small mountain that way." 
+The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off to the west for miles, and ends here near the base of a mountain.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of the mountain that way." 
 
-Instead of going west from the Dirt Road, say "You came from that direction, no point in turning back now." 
-Instead of going east from the Dirt Road, say "There be dragons."
+Instead of going west from the Dirt Road, say "You came from that direction.  There's no reason to turn back now." 
+Instead of going east from the Dirt Road, say "That ways leads to a bottom of a sheer mountain wall, which is a non-starter for you."
+Instead of going south from the Dirt Road, say "There's nothing that way but empty plains."
 Before going north from the Dirt Road, say "You shamble slowly toward the trees."
+
+[###TODO:  this is silly.  It seems we have to define these 'phantom' rooms just to get the lines above to function.  Can we fix this?]
+The eastern road is east of the Dirt Road. [not accessible]
+The western road is west of the Dirt Road. [not accessible]
+The southern plains is south of the Dirt Road.  [not accessible]
 
 Instead of smelling in the Dirt Road, say "Definitely pine trees.  Up yonder."
 
-The eastern road is east of the Dirt Road. [not accessible]
-
-The western road is west of the Dirt Road. [not accessible]
-
 [A starting point for the player;  useful to change this when debugging sections.]
 The Dirt Road [Bluff] [Lone Tree Bluff] contains the player.
-
-
-[test walkthrough with "north / up / west / close eyes / west / west / open eyes / x branch / shoot acorn / shoot acorn / shoot acorn / shoot acorn / take acorn / close eyes / east / east / open eyes / put gun in hat / east / northeast / x tunnel / take stick / southwest / east "]
-
