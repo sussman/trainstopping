@@ -574,7 +574,7 @@ Instead of opening the box:
 The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off to the west for miles, and ends here near the base of a mountain.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of the mountain that way." 
 
 Instead of going west from the Dirt Road, say "You came from that direction.  There's no reason to turn back now." 
-Instead of going east from the Dirt Road, say "That ways leads to a bottom of a sheer mountain wall, which is a non-starter for you."
+Instead of going east from the Dirt Road, say "That way leads to the bottom of a sheer mountain wall, which is a non-starter for you."
 Instead of going south from the Dirt Road, say "There's nothing that way but empty plains."
 Before going north from the Dirt Road, say "You shamble slowly toward the trees."
 
