@@ -73,6 +73,8 @@ Rule for deciding the concealed possessions of the hat:
 	if the player wears the hat, yes;
 	otherwise no.
 
+[### TODO:  many many people put gun in hat, think things are conceealed, yet they're not until you 'wear hat'.   We should either scratch this rule, or make it plainly obvious that the hat must be worn to conceal things.]
+
 The player carries a pocketwatch.  Understand "watch" and "timepiece" and "pocket watch" as the pocketwatch. The description of the pocketwatch is "It's a rusty wind-up timepiece, handed down from your uncle.  It currently reads [time of day + 1 minute]."
 
 Time-checking is an action applying to nothing.  Understand "time" as time-checking.
@@ -88,7 +90,7 @@ Carry out time-checking:
 After dropping the pocketwatch, change the right hand status line to "?".
 After taking the pocketwatch, change the right hand status line to "[time of day]".
 
-The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoring train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should be speeding by this area around 10:30am.  Angry smeared handwriting screams 'MOUNTAIN, DYNAMIC MIGHT ETHZF... TRAIN TUNNEL ^$*@ DON'T BELLATE.'".
+The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoring train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should be speeding by this area around 10:30am.  Angry smeared handwriting screams '1. GET DYNAMICMIGHT FROM MTNSIDE, 2. INSERT SPARKER, 3. BLOW UP TUNNEL, 4. PROFIT!'".
 
 
 Section 2 - Environmental Effects
@@ -410,7 +412,7 @@ To explode the bundle:
 	[Step 1:  describe the explosion if we can see it.]
 	if the bundle is visible
 	begin;
-		say "A fiery flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
+		say "A fiery, actinic flash and earth-shattering boom rocks you!  The shock wave literally knocks you off your feet, as debris explodes in all directions.";
 	otherwise;
 		say "You hear a tremendous explosion nearby, and the mountain shakes!";
 	end if;
@@ -469,7 +471,7 @@ Instead of taking the stick:
 	
 The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  
 
-The circle of rocks is here.  Understand "rocks" and "circle" and "formation" and "rock formation" and "stones" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed."
+The circle of rocks is here.  Understand "rocks" and "circle" and "formation" and "rock formation" and "stones" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed.  Either way, they make some good cover from an explosion."
 	
 The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up into a large green space here, partway up the mountain. The grasses are nearly five feet high, full of life.  [paragraph break][end if]This is a wide field of untamed prairie.  To the east, a mountain rises up towards its summit, while another hill is faintly visible to the west.  You also can make out a faint trail leading northeast through the brush."
 

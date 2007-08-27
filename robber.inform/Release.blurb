@@ -1,7 +1,7 @@
 ! Blurb file created by NI build 4W37
 variable [RELEASE] = "8"
-storyfile "/Users/john/Documents/Writing/Inform/robber/robber.inform/Build/output.z5" include
-metadata "/Users/john/Documents/Writing/Inform/robber/robber.inform/Metadata.iFiction" include
+storyfile "/Users/sussman/projects/robber/robber.inform/Build/output.z5" include
+metadata "/Users/sussman/projects/robber/robber.inform/Metadata.iFiction" include
 variable [YEAR] = "2007"
 variable [TITLE] = "Trainstopping"
 variable [AUTHOR] = "Ben Collins-Sussman"
