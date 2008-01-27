@@ -1,6 +1,6 @@
 "Trainstopping" by Ben Collins-Sussman.
 
-The story headline is "An IntroComp 2007 game entry".
+The story headline is "A wild west debacle".
 
 The story description is "BAM!  A mug of ale hits the table, splashing your shoes.  Muddy Charlie slumps back in his chair, eyes you carefully, and starts to chuckle.
 
@@ -101,7 +101,7 @@ Event
 "Some sort of insect buzzes by."
 "A brief breeze flaps your clothing."
 "You hear some crickets chirp nearby."
-"The sun mercilessly continues to bake the land."
+"The sun mercilessly bakes the land."
 "The smell of hyacinth wafts in the air."
 "A bird chirps somewhere near."
 
@@ -165,7 +165,7 @@ After shooting something (called the victim) with a gun (called the weapon):
 
 [Report shooting it with: ??]
 
-A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 6.  The description of the revolver is "It's a mean-looking revolver, good for... persuasion."  The inventory listing of the revolver is "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
+A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 6.  The description of the revolver is "It's a mean-looking revolver.  Somebody tried to take it from you once.  Once."  The inventory listing of the revolver is "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
 
 
 Section 4 - Other Rules
@@ -571,17 +571,21 @@ Instead of opening the box:
 		continue the action;
 	end if.
 
-The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off to the west for miles, and ends here near the base of a mountain.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy the lower slopes of the mountain that way." 
+The Dirt Road is a room.  "[if unvisited]Muddy wasn't particularly clear in his instructions, but you're pretty sure this is the trail he wanted you to follow this morning.  Now that your horse has inexplicably bolted, you can use all the luck you can get.[paragraph break][end if]This is a dusty trail that wanders off to the west for miles, and ends here near the base of an unscalable mountain just to your east.  It's hot out here;  really hot.  The sun blasts down on the back of your neck, but you can smell the cool tang of some pine trees off to the north.  You also spy some inviting lower slopes that way." 
 
-Instead of going west from the Dirt Road, say "You came from that direction.  There's no reason to turn back now." 
-Instead of going east from the Dirt Road, say "That way leads to the bottom of a sheer mountain wall, which is a non-starter for you."
-Instead of going south from the Dirt Road, say "There's nothing that way but empty plains."
+Instead of going west from the Dirt Road, say "You just came from that direction.  Turning back would ruin the whole plan!" 
+Instead of going east from the Dirt Road, say "That way leads to the bottom of a sheer mountain wall."
+Instead of going south from the Dirt Road, say "There's nothing that way but empty plains and certain dehydration."
 Before going north from the Dirt Road, say "You shamble slowly toward the trees."
+Instead of going up from the Dirt Road, say "The mountain face is too steep to climb, plain and simple."
+
+The mountain wall is scenery in the Dirt Road.  The description is "The sheer face of the mountain is covered with unclimbable gravel and vegetation.  But wait!  You can make out faint words on an obfuscated plaque.. 'Speak Friend and Enter'.[paragraph break]Just kidding.  Wrong story."
 
 [###TODO:  this is silly.  It seems we have to define these 'phantom' rooms just to get the lines above to function.  Can we fix this?]
 The eastern road is east of the Dirt Road. [not accessible]
 The western road is west of the Dirt Road. [not accessible]
 The southern plains is south of the Dirt Road.  [not accessible]
+The unscalable wall is above the Dirt Road. [not accessible]
 
 Instead of smelling in the Dirt Road, say "Definitely pine trees.  Up yonder."
 
