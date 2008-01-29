@@ -34,36 +34,32 @@ IDEA:  run into a 21-year old Jesse James, make an impression on him?  (Jesse's 
 IDEA:  remember to describe multiple senses.
 
 REMEMBER:  write tests via 'test me with "command / command / command" '.
-
-IDEA:  define levels of inebriaton.  The more inebriated you are, the higher the chance that your command results in a  no-op (tripping, stumbling, spacing out..).  Allow inebriation to naturally decrease over time, or increase when the player drinks from the flask.  When not inebriated, player can go N turns before a craving kicks in.  The craving increases over time.  The higher the craving, the more likely each command results in a no-op (staring at the flask, caressing the flask, pausing to consider the flask.)  The net result is that the two extremes are equally debilitating;  one wants to keep the protagonist constantly drunk, but only mildly so.  This strategy presents the least disruption to play.  (Will this irritate players too much?  It's sort of a puzzle onto itself, no?)
 ]
+
 
 Chapter 0 - World Modifications
 
-The release number is 8.
+The release number is 9.
 The story genre is "Western".
 
 Use full-length room descriptions and the serial comma.
-Use no scoring.
 After printing the banner text, say "(Type HELP if you're new to interactive fiction.)"
+
+The maximum score is 20.
 
 When play begins:
         say the story description;
         change the time of day to 8:15 AM;
+        change the left hand status line to "[the player's surroundings] | Score: [score]/[maximum score]";
         change right hand status line to "[time of day]".
 
-Include Basic Help Menu by Emily Short.
-
-Table of Basic Help Options (continued)
-title   	 subtable   	 description
-"Contacting the author"   	 --   	 "If you have any difficulties with [story title], please contact me at sussman@red-bean.com."
 
 
 Section 1 - Player's Inventory
 
 Instead of examining the player, say "Big boots, pants, plains hat and a tattered overcoat.  Almost... isquiesque.  You're quite the desperado, ain't ya?".
 
-The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 1.  The inventory listing of the hat is "a wide-brimmed hat".  Instead of eating the hat, say "If you don't complete this mission, you sure will!"
+The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 2.  The inventory listing of the hat is "a wide-brimmed hat [if the hat is worn by the player](being worn)[otherwise](being carried)[end if]".  Instead of eating the hat, say "If you don't complete this mission, you sure will!"
 
 Rule for deciding the concealed possessions of the player:
 	if the particular possession is inside the hat or the bucket, yes;
@@ -72,6 +68,20 @@ Rule for deciding the concealed possessions of the player:
 Rule for deciding the concealed possessions of the hat:
 	if the player wears the hat, yes;
 	otherwise no.
+	
+Before putting a thing into the hat:
+	if the hat is worn, say "You'll have to remove the hat first.";
+	otherwise continue the action.
+
+After wearing the hat:  
+	say "Yeehaw!";
+	repeat with item running through things in the hat begin;
+	say "[The item] is now concealed from view.";
+	[if the item is the revolver, award 1 point; only the first time!!]
+	end repeat;
+	[loop over concealed possessions of hat, say they're concealed, award a point]
+
+
 
 [### TODO:  many many people put gun in hat, think things are conceealed, yet they're not until you 'wear hat'.   We should either scratch this rule, or make it plainly obvious that the hat must be worn to conceal things.]
 
@@ -79,7 +89,7 @@ The player carries a pocketwatch.  Understand "watch" and "timepiece" and "pocke
 
 Time-checking is an action applying to nothing.  Understand "time" as time-checking.
 Carry out time-checking:
-	if the player carries the pocketwatch
+	if the player carries the pocketwatch and the pocketwatch is not concealed
 	begin;
 		if the location of the player is dark, say "It's too dark to see your watch.";
 		otherwise say "Your pocketwatch reads [time of day + 1 minute].";
@@ -90,7 +100,7 @@ Carry out time-checking:
 After dropping the pocketwatch, change the right hand status line to "?".
 After taking the pocketwatch, change the right hand status line to "[time of day]".
 
-The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoring train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should be speeding by this area around 10:30am.  Angry smeared handwriting screams '1. GET DYNAMICMIGHT FROM MTNSIDE, 2. INSERT SPARKER, 3. BLOW UP TUNNEL, 4. PROFIT!'".
+The player carries a scrap of paper.  Understand "paper" and "scrap" and "schedule" as the scrap of paper. The description of the paper is "The paper contains scribblings from the Little Snoring train station, about twenty miles down the trail.  The train only comes through town once per day, and by your partner's calculations, it should be speeding by this area around 10:30am.  Angry smeared handwriting screams '1. GET DYNAMICMITE FROM MTNSIDE, 2. INSERT SPARKER, 3. BLOW UP TUNEL, 4. WAIT FOR ME'".
 
 
 Section 2 - Environmental Effects
@@ -168,7 +178,34 @@ After shooting something (called the victim) with a gun (called the weapon):
 A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 6.  The description of the revolver is "It's a mean-looking revolver.  Somebody tried to take it from you once.  Once."  The inventory listing of the revolver is "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
 
 
-Section 4 - Other Rules
+Section 4 - Help System
+
+[Taken from 'Y is Y'? example in Recipe Book]
+A thing can be examined or unexamined. A thing is usually unexamined. Carry out examining something: now the noun is examined.
+Taking inventory is acting confused. Looking is acting confused. Examining an examined thing is acting confused.
+After acting confused for the sixth turn:
+	say "(If you are feeling lost, try typing HELP for suggestions.)"
+
+Check quitting the game:
+	say "You're sure? ";
+	if player consents, say "[line break]You were getting close to a breakthrough, you know.[line break]";
+	otherwise stop the action.
+	
+Understand "who" or "what" or "when" or "where" or "why" or "how" or "who's" or "what's" or "when's" or "where's" or "why's" or "how's" as "[query]".
+
+Understand "[query] [text]" as a mistake ("This game understands commands such as '[command prompt]examine [a random thing that can be seen by the player]', but not direct questions. For more instructions, type HELP.").
+
+Include Basic Screen Effects by Emily Short. Include Menus by Emily Short.Include Basic Help Menu by Emily Short.
+
+Table of Basic Help Options (continued)
+title   	 subtable   	 description	toggle
+"Contacting the Author"   	 --   	 "This game is far from bug-free!  If you discover any problems or difficulties (or just have suggestions), please contact me at sussman@red-bean.com."	--
+
+
+
+
+
+Section 5 - Other Rules
 
 Understand "look [thing]" as examining.
 Understand "look over [thing]" as examining.
@@ -215,7 +252,7 @@ Report waiting for clock:
 Understand "credits" as listing credits.
 Listing credits is an action applying to nothing.
 Carry out listing credits:
-	say "Huge thanks to the following beta-testers:  Malcolm Rowe, Beth and Mitri Vaneechitheront, Jim Blandy, John Lodder, Atul Varma and Frances Collins-Sussman."
+	say "Huge thanks to these game testers:  Malcolm Rowe, Beth and Mitri Vaneechitheront, Jim Blandy, John Lodder, Atul Varma, Dan Biemer and Frances Collins-Sussman."
 
 Understand "hide [thing]" as hiding.
 Hiding is an action applying to one thing.

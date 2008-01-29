@@ -1,0 +1,120 @@
+
+
+GENERAL THINGS THAT NEED IMPROVEMENT
+====================================
+
+  * First-order nouns need to be fleshed out EVERYWHERE.
+
+      Players expect to be at least able to examine everything
+      mentioned in prose, and perhaps even interact with it.
+
+  * Sounds and smells are needed EVERYWHERE.
+
+      At least invisible create regions of sound/smell.
+
+  * Red herrings are proving cruel.
+
+      Players get really frustrated with bucket and pine cone.  Either
+      they should be removed, hinted that they're distractions, or
+      make them marginally useful (perhaps as alternate solutions to
+      puzzles.)
+
+  * Sloppiness in implementing different aspects of main puzzle:
+
+     1. Confusion about squirrel.
+
+         People want to be able to interact with it more.  Need more
+         hints about its desire/fears.  Clarify role of hat.
+
+     2. Confusion about fetching the box.
+
+         Can people figure out how to reach it?
+
+     3. Confusion about how to use sparker.
+
+         Make it clearer that fuse is really gone, and that sparker
+         should take its place.  Make it clear that sparker requires
+         pressure to move.
+
+     3. Confusion about rock-circle.
+
+         It's relation to the bluff isn't clear -- where is it?  Do
+         people realize it protects?
+
+  * Need scoring system.
+
+      Give players positive feedback when they accomplish things,
+      rather than confusing aimlessness.
+
+  * Need real help system.
+
+       Let players ask for progressive hints.
+
+  * Warn users about making game unwinnable.
+
+       Shooting the squirrel.  Throwing things into chasm. Missing the
+       train.  Blowing up dynamite prematurely.  Running out of
+       bullets.  (other things?)
+
+
+
+
+REPORTED BUGS
+=============
+
+* gun shoots without bullets
+
+* chipmunk:
+
+     - can't see acorn unless you place it on *grounded* bundle.
+     - doesn't do anything when left alone with acorn
+     - if dead, understand 'chipmunk' as the chipmunk corpse.
+
+* box is openable without taking it first
+
+* after the explosion, looking in tunnel shouldn't be 'empty'.
+
+* rock formation:
+
+     - description should change when inside them
+     - make it clear that it's protected / far from tunnel
+     - when objects are inside it, clarify their protection?
+
+* 'tunnel-arch' is a valid noun?  really? ('put bundle in tunnel-arch')
+
+* buggy explosion sequence:  build whole contraption with acorn, pick
+  it up, carry it into rocks, drop it.  BOOM, yet you're not dead!
+
+* explosion should loop over *all* animate object that can see it, so
+  more than one creature can die (2 animals + player)
+
+
+
+REQUESTED ENHANCEMENTS
+======================
+
+* hat should only allow objects to enter it when it's not being worn.
+
+* get rid of string altogether -- just mention it falling away when
+  the box is fetched.
+
+* things should be droppable/throwable into chasm, including self
+
+* understand 'kick chipmunk' as 'hit chipmunk'
+
+* make chipmunk catchable?  pettable?  releaseable?
+
+* bucket should be wearable
+
+* sparker should be able to BURN certain things!
+
+* alternate puzzle solution:  put chipmunk corpse on sparker, vulture
+  swoops down to set it off.  (vulture should swoop on corpses in
+  general)
+
+* 'kick bucket' should say something.
+
+* make dynamite explodable in other ways:  hit/shoot bundle, shoot
+  box, pushing sparker directly or with stick.
+
+
