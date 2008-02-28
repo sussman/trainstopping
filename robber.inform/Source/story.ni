@@ -69,9 +69,9 @@ Rule for deciding the concealed possessions of the hat:
 	if the player wears the hat, yes;
 	otherwise no.
 	
-Before putting a thing into the hat:
+[Before putting a thing into the hat:
 	if the hat is worn, say "You'll have to remove the hat first.";
-	otherwise continue the action.
+	otherwise continue the action.]
 
 After wearing the hat:  
 	say "Yeehaw!";

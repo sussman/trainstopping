@@ -8,9 +8,9 @@
         <bibliographic>
             <title>Trainstopping</title>
             <author>Ben Collins-Sussman</author>
-            <headline>An IntroComp 2007 game entry</headline>
+            <headline>A wild west debacle</headline>
             <genre>Western</genre>
-            <firstpublished>2007</firstpublished>
+            <firstpublished>2008</firstpublished>
             <description>BAM! A mug of ale hits the table, splashing your shoes. Muddy Charlie slumps back in his chair, eyes you carefully, and starts to chuckle.<br/>'You know your problem? You don't think big enough.'<br/>His expression is familiar. Last time you saw that look, it was just before you two decided to rustle the mayor's private herd back in 1866. That didn't work so well.<br/>'What now?' you ask. 'A new idea?'<br/>'Big plans.' He grins widely. 'That new cross-country railroad is almost finished. It's gonna change everything... bigger trains, more people... and prize cargo.'<br/>'A train holdup? Are you kidding?'<br/>'Relax. This time we got [italic type]technology[roman type] on our side.' He leans close and whispers: 'Made in Sweden... or Germany. It's big, dangerous, and nobody knows about it yet.'<br/>'A new weapon?'<br/>'Dynamic, buddy. Dynamic Might.'</description>
             <language>en</language>
             <group>Inform</group>
@@ -18,22 +18,22 @@
         <releases>
             <attached>
                 <release>
-                    <releasedate>2007-08-26</releasedate>
-                    <version>8</version>
+                    <releasedate>2008-02-16</releasedate>
+                    <version>9</version>
                     <compiler>Inform 7</compiler>
-                    <compilerversion>4W37</compilerversion>
+                    <compilerversion>5J39</compilerversion>
                 </release>
             </attached>
         </releases>
         <colophon>
             <generator>Inform 7</generator>
-            <generatorversion>4W37</generatorversion>
-            <originated>2007-08-26</originated>
+            <generatorversion>5J39</generatorversion>
+            <originated>2008-02-16</originated>
         </colophon>
         <zcode>
-            <serial>070826</serial>
-            <release>8</release>
-            <compiler>Inform 7 build 4W37</compiler>
+            <serial>080216</serial>
+            <release>9</release>
+            <compiler>Inform 7 build 5J39</compiler>
         </zcode>
     </story>
 </ifindex>
