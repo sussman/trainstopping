@@ -1,4 +1,7 @@
 
+Before, check, carry out, and report all continue by default; Instead and After stop by default.
+
+
 
 GENERAL THINGS THAT NEED IMPROVEMENT
 ====================================
@@ -54,7 +57,7 @@ GENERAL THINGS THAT NEED IMPROVEMENT
 
        Shooting the squirrel.  Throwing things into chasm. Missing the
        train.  Blowing up dynamite prematurely.  Running out of
-       bullets.  (other things?)
+       bullets when shooting the branch.
 
 
 

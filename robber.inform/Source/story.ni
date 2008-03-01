@@ -45,7 +45,7 @@ The story genre is "Western".
 Use full-length room descriptions and the serial comma.
 After printing the banner text, say "(Type HELP if you're new to interactive fiction.)"
 
-The maximum score is 20.
+The maximum score is 11.
 
 When play begins:
         say the story description;
@@ -69,18 +69,15 @@ Rule for deciding the concealed possessions of the hat:
 	if the player wears the hat, yes;
 	otherwise no.
 	
-[Before putting a thing into the hat:
-	if the hat is worn, say "You'll have to remove the hat first.";
-	otherwise continue the action.]
+Before inserting something into the hat:
+	if the hat is worn, say "You'll have to remove the hat first." instead.
+
+After inserting a revolver into the hat for the first time:  award 1 point.
 
 After wearing the hat:  
-	say "Yeehaw!";
 	repeat with item running through things in the hat begin;
 	say "[The item] is now concealed from view.";
-	[if the item is the revolver, award 1 point; only the first time!!]
 	end repeat;
-	[loop over concealed possessions of hat, say they're concealed, award a point]
-
 
 
 [### TODO:  many many people put gun in hat, think things are conceealed, yet they're not until you 'wear hat'.   We should either scratch this rule, or make it plainly obvious that the hat must be worn to conceal things.]
@@ -432,6 +429,8 @@ Instead of putting something on the sparker tool:
 	if the sparker tool is in the bundle and the bundle is held, say "That would be hard to balance.  Try dropping the bundle first.";
 	otherwise continue the action.
 
+After inserting the sparker tool into the stick bundle for the first time:  award 1 point.
+
 Instead of squeezing the sparker tool, try pushing instead.
 Instead of pushing the sparker tool:
         say "The sparker tool shoots a few sparks from one end.";
@@ -477,6 +476,7 @@ To explode the bundle:
                 	if the bundle is visible, say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and the entire front of the bluff violently collapses downward, filling the tunnel below!";
                 	now the tunnel is closed;
                 	now the bluff is destroyed;
+		award 5 points;
         	end if;
 	remove the bundle from play;
 	continue the action.
@@ -502,10 +502,11 @@ Before examining the tunnel for the first time:  move the stick to the tunnel;  
 
 A rule for reaching inside the track below:  allow access.
 
-Instead of taking the stick:
+Instead of taking the stick when the stick is in the tunnel:
 	say "You carefully reach over the edge of the bluff and pluck the stick from the tunnel's arch.";
-	move the stick to the player.
-	
+	move the stick to the player;
+	award 1 point.
+
 The Bluff is a room.  The Bluff is either normal or destroyed.  The Bluff is normal.  "[if the Bluff is normal]You're standing on a wide bluff about fifty feet up a small mountain,[otherwise]You're standing on the edge of a dangerous, collapsed bluff[end if] overlooking a landscape of sun-blasted plains and craggy hills.  Below you, a train track runs out of a narrow tunnel though the hill. [if the tunnel is closed](Of course, the tunnel is now completely full of rocks and dirt.) [end if] On the far edge of the bluff you see a strange rock formation, and a path wanders southwest through the brush.  [if Train Arrival is happening] [paragraph break]A long train is approaching! [end if]".  Instead of going down from the Bluff, say "You'd surely fall to your death!"  
 
 The circle of rocks is here.  Understand "rocks" and "circle" and "formation" and "rock formation" and "stones" as the circle of rocks.  The circle of rocks is scenery.  The circle of rocks is a transparent enterable container.  The description is "The rocks are a few feet high, and are roughly arranged in a circle, almost like an oversized fire-pit.  It's not clear if they fell into this formation, or were pushed.  Either way, they make some good cover from an explosion."
@@ -515,7 +516,7 @@ The Grassy Plateau is southwest of the Bluff.  "[if unvisited]The land opens up 
 Instead of going up in the Grassy Plateau, try going east.
 Instead of going down in the Summit, try going west.
 
-The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  Understand "cone" and "pinecone" as the pine cone. The description of the pine cone is "Yep, it's a pine cone." [red herring]  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."  Instead of smelling in the Copse, say "Ah, pine.  Just like home."
+The Copse is below the Grassy Plateau and north of the Dirt Road.  "[if unvisited]At last, some shade![paragraph break][end if]You're in a section of dense pine forest at the base of a small mountain.  There are cones and needles littered about, and the treetops chatter with birdsong.  The slope continues up the mountain, or back down towards the road."  A pine cone is here.  Understand "cone" and "pinecone" as the pine cone. The description of the pine cone is "Yep, it's a pine cone.  It seems to be vaguely red-tinted.  And smells of sea creatures." [red herring]  A pine tree is in the Copse.  The pine tree is scenery.  The description of the pine tree is "It's a particularly tall pine tree."  Instead of climbing the pine tree, say "You're too old for that.  No jewel-encrusted egg for you."  Instead of smelling in the Copse, say "Ah, pine.  Just like home."
 
 Instead of going north in the Copse, try going up.
 Instead of going south in the Grassy Plateau, try going down.
@@ -545,6 +546,8 @@ Instead of going to a room from the Rope Bridge:
 
 The Lone Tree Bluff is west of the Rope Bridge.  "This is a very small bluff, almost an island in a sea of open air.  A gigantic oak tree dominates the space; it's an eruption of countless branches and thick bushy leaves."
 
+After going to the Lone Tree Bluff for the first time:  award 1 point.
+
 A bucket is in the Lone Tree Bluff.  The bucket is a portable, transparent, open container.  "Looks like someone left a rusty old bucket here."  The description is "It's an old green bucket, well-used." [Red herring]  The carrying capacity of the bucket is 1.
 
 An oak tree is in the Lone Tree Bluff.  The oak tree is scenery.  "The tree is huge and leafy, but you don't see any fruit.  Just some strong branches." The branch is part of the oak tree.  Understand "branches" and "leaves" as the branch.  The branch is a supporter.  The description of the branch is  "You see a particularly long branch, fairly high-up.[if the branch supports something]  You see [a list of things supported by the branch] up there.[end if]".  
@@ -573,6 +576,8 @@ After shooting the branch:
 	end if;
 	continue the action.
 	
+After taking the acorn for the first time:  award 1 point.
+
 The Summit is east of the Grassy Plateau.  "[if unvisited]You wander east, and slowly climb up the mountain.[paragraph break][end if]Here at the top the mountain, the wind blows strong and carries the smell of endless summer.  There are no trees up here, no tall grass, but bits of shrubbery dot the area.  The view is remarkable, though;  you can see grassy hills for miles around.  A train track clearly extends north into the distance, running away from this mountain."
 
 The cliff is in the Summit.  The cliff is scenery.  The description is "It's a stark drop at the eastern edge of the summit.  [if the box is on the outcropping]Looking over the cliff, you see a small wooden box sitting on an outcropping about five feet below.[end if]  [if the string is in the shrub]There's a string tied to the box, leading up to a shrub.[end if]".
@@ -593,6 +598,7 @@ Instead of taking the box for the first time:
 		say "You lean over the cliff, but the box is at least a couple of feet out of reach.  Maybe if you had some way of grabbing it by its looped handle?";
 	otherwise;
 		say "You lean over the cliff and slowly hook the box's looped handle on the end of your stick, carefully bringing it up to you.";
+		award 1 point;
 		continue the action;
 	end if.
 
