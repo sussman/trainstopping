@@ -59,7 +59,9 @@ Section 1 - Player's Inventory
 
 Instead of examining the player, say "Big boots, pants, plains hat and a tattered overcoat.  Almost... isquiesque.  You're quite the desperado, ain't ya?".
 
-The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 2.  The inventory listing of the hat is "a wide-brimmed hat [if the hat is worn by the player](being worn)[otherwise](being carried)[end if]".  Instead of eating the hat, say "If you don't complete this mission, you sure will!"
+The player wears a hat.  The hat is a portable container.  The description of the hat is "A wide-brimmed hat to protect you from the sun, and which clearly marks you as a denizen of the plains.  [if the hat contains something]In the hat you see [contents of hat].[end if]".  The carrying capacity of the hat is 2.   Instead of eating the hat, say "If you don't complete this mission, you sure will!"
+
+Rule for printing the name of the hat while taking inventory: say "a wide-brimmed hat [if the hat is worn by the player](being worn)[otherwise](being carried)[end if]".
 
 Rule for deciding the concealed possessions of the player:
 	if the particular possession is inside the hat or the bucket, yes;
@@ -163,7 +165,7 @@ After shooting something (called the victim) with a gun (called the weapon):
 		remove the vulture from play;
 		move the vulture corpse to the location of the player;
 	end if;
-	continue the action.
+	continue the action;
 	if the victim is a person
 	begin;
 		say "Aren't you in enough trouble already?";
@@ -172,7 +174,7 @@ After shooting something (called the victim) with a gun (called the weapon):
 
 [Report shooting it with: ??]
 
-A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 6.  The description of the revolver is "It's a mean-looking revolver.  Somebody tried to take it from you once.  Once."  The inventory listing of the revolver is "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
+A revolver is a gun.  The player carries a revolver.  Understand "gun" and "pistol" as the revolver.  The bullet count of the revolver is 6.  The description of the revolver is "It's a mean-looking revolver.  Somebody tried to take it from you once.  Once."  Rule for printing the name of the revolver while taking inventory: say "your trusty revolver".  Instead of dropping the revolver, say "Are you nuts?  What kind of outlaw are you!?"
 
 
 Section 4 - Help System
@@ -454,26 +456,22 @@ To explode the bundle:
 	end if;
 	
 	[Step 2:  make the explosion kill other people if necessary]
-	if the bundle can be seen by the player and the player is unprotected
-	begin;
-		Say "Unfortunately, being unprotected, you were engulfed by the flames.";
-		end the game saying "Ouch";
-		stop the action;
-	end if;
+	if the player can see the bundle:
+		say "oof";
+		if the player is unprotected:
+			say "Unfortunately, being unprotected, you were engulfed by the flames.";
+			end the game saying "Ouch";
+			stop the action;
 
-	if the bundle can be seen by someone (called the victim)
-	begin;
-		if the victim is unprotected
-		begin;
-			if the victim is visible, say "[The victim] screams and is torn apart by the exposion.";
+	if the bundle can be seen by someone (called the victim):
+		if the victim is unprotected and the victim is visible:
+			say "[The victim] screams and is torn apart by the exposion.";
 			remove the victim from play;
-		end if;
-	end if;
-		
+
 	[Step 3:  possibly destroy the bluff]
         	if the bundle is in the bluff
         	begin;
-                	if the bundle is visible, say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and the entire front of the bluff violently collapses downward, filling the tunnel below!";
+		if the player is in the bluff then say "If that weren't enough, you hear a low rumble, and suddenly the ground begins to crack and crumble.  The earth opens up, and the entire front of the bluff violently collapses downward, filling the tunnel below!";
                 	now the tunnel is closed;
                 	now the bluff is destroyed;
 		award 5 points;
